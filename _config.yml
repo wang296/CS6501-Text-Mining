@@ -1,0 +1,8 @@
+name: "CS 6501: Information Retrieval"
+highlighter: rouge
+baseurl: "/~wang296/Course/IR_Fall"
+future: true
+source: .
+destination: _site
+host: blum.cs.uiuc.edu
+markdown: redcarpet
