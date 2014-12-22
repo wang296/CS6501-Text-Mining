@@ -4,7 +4,7 @@ layout: default
 # Welcome!
 This is the course website for **CS 6501:** ***Text Mining***.
 
-**Instructor**: [Hongning Wang](http://sifaka.cs.uiuc.edu/~wang296/)   
+**Instructor**: [Hongning Wang](http://www.cs.virginia.edu/~hw5x/)   
 **Lecture time and place**: Tuesday/Thursday 9:30am-10:45am, Rice Hall 340   
 **Contact Info**: [Piazza](piazza.com/virginia/spring2015/cs6501/home)   
 **Office Hour**: Hongning Wang: Thursday 11am-12pm, Rice Hall 408    

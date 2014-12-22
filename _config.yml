@@ -1,8 +1,26 @@
-name: "CS 6501: Text Mining"
-highlighter: rouge
-baseurl: "/~hw5x/Course/Text-Mining-2015-Spring/_site"
-future: true
-source: .
-destination: _site
-host: http://www.cs.virginia.edu/
-markdown: redcarpet
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               'CS 6501: Text Mining'
+tagline:             'CS 6501: Text Mining'
+description:         'We will cover important topics in text mining including: basic natural language processing techniques, document representation, text categorization and clustering, document summarization, sentiment analysis, social network and social media analysis, probabilistic topic models and text visualization.'
+host:								 http://www.cs.virginia.edu/
+baseurl:             /
+paginate:            5
+
+# About/contact
+author:
+  name:              Hongning Wang
+  url:               http://www.cs.virginia.edu/~hw5x/
+  email:             hw5x@virginia.edu
+
+# Custom vars
+version:             1.0.0
