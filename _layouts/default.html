@@ -1,19 +1,65 @@
----
-layout: blank
----
-      <article>
-        <header>
-          <h1><a href="{{ page.url | prepend: site.baseur }}">{{ page.title }}</a></h1>
-          <p>{% if page.author %}{{ page.author }} • {% endif %}{% if page.date %}<time>{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}{% if page.categories %} • {{ page.categories | join: ','}}{% endif %}</p>
-        </header>
-        <div>
-{{ content }}
-        </div>
-        {% if site.isso_domain and page.id %}
-        <section id="isso-thread"></section>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% if page.title %} {{ page.title }} | {% endif %} CS 6501 Spring
+        2015: Text Mining</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/pygments/default.css" />
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+                         displayMath: [['\\[','\\]'], ['$$','$$']]}});
+    </script>
+
+    <script type="text/javascript"
+      src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> 
+    
+    <!-- <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
+		</script> -->
+
+    <div id="main">
+      <header>
+      	<h1>Text Mining</h1>
+        <h3>CS 6501 Spring 2015</h3>
+      </header>
+      <nav class="topnav">
+        <ul class="navigation">
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li>-</li>
+          <li><a href="{{ site.baseurl }}/lectures.html">Lectures</a></li>
+          <li>-</li>
+          <li><a href="{{ site.baseurl }}/presentation.html">Paper Presentation</a></li>
+          <li>-</li>
+          <li><a href="{{ site.baseurl }}/assignments.html">Homework</a></li>
+          <li>-</li>
+          <li><a href="{{ site.baseurl }}/midterm.html">Midterm</a></li>
+          <li>-</li>
+          <li><a href="{{ site.baseurl }}/project.html">Project</a></li>
+          <li>-</li>
+          <li><a href="{{ site.baseurl }}/resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <section class="content">
+        {% if page.title %}
+        <h1 class="title">{{ page.title }}</h1>
         {% endif %}
-        {% if site.disqus_username  and page.id %}
-        <div id="disqus_thread"></div>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        {% if page.date %}
+        <span class="date">Posted: {{ page.date | date: '%B' }} {{ page.date | date: '%d' | ordinalize }}, {{ page.date | date: '%Y' }}</span>
         {% endif %}
-      </article>
+        {{ content }}
+      </section>
+      <footer>
+        <p>&copy; Hongning Wang - Department of Computer Science at University of Virginia | All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
