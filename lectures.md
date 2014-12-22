@@ -16,7 +16,7 @@ title: Lectures
 
 > We will briefly discuss the basic building blocks of a modern search engine system, including web crawler, inverted index, query processing, search result interface. 
 
-- ### **Day 1**: Basic search engine architecture
+- ### **Day 1**: Basic search engine architecture      
     - *Sha, Fei, and Fernando Pereira. "Shallow parsing with conditional random fields." In Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology-Volume 1, pp. 134-141. Association for Computational Linguistics, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=1073473))
 	- *Collins, Michael. "Ranking algorithms for named-entity extraction: Boosting and the voted perceptron." In Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, pp. 489-496. Association for Computational Linguistics, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=1073165))
 	- *McCallum, Andrew, and Wei Li. "Early results for named entity recognition with conditional random fields, feature induction and web-enhanced lexicons." In Proceedings of the seventh conference on Natural language learning at HLT-NAACL 2003-Volume 4, pp. 188-191. Association for Computational Linguistics, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=1119206))
@@ -50,7 +50,7 @@ title: Lectures
 
 ---
 
-## Lecture IV: Text Categorization
+## Lecture IV: Document Categorization
 
 > Assessing the quality of deployed system is essential for retrieval system development. Many different measures for evaluating the performance of information retrieval systems have been proposed. We will discuss both the classical evaluation metrics, e.g., Mean Average Precision, and modern advance, e.g., interleaving.
 
@@ -65,7 +65,7 @@ title: Lectures
 
 ---
 
-## Lecture V: Text Clustering
+## Lecture V: Document Clustering
 > We will discuss the unique characteristic of web: inter-connection, and introduce Google's winning algorithm PageRank. We will also introduce the application of link analysis techniques in a similar domain: social network analysis.                      
            
 - ### **Day 1**: Flat structure clustering         
@@ -131,17 +131,9 @@ title: Lectures
 
 > We will introduce modern applications in search systems, including recommendation, personalization, and online advertising, if time allows.
 
-- ### **Day 1**: Recommendation
-	- *Koren, Yehuda, Robert Bell, and Chris Volinsky. "Matrix factorization techniques for recommender systems." Computer 42, no. 8 (2009): 30-37.* ([PDF](https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf))
-	- *Breese, John S., David Heckerman, and Carl Kadie. "Empirical analysis of predictive algorithms for collaborative filtering." In Proceedings of the Fourteenth conference on Uncertainty in artificial intelligence, pp. 43-52. Morgan Kaufmann Publishers Inc., 1998.* ([PDF](http://dl.acm.org/citation.cfm?id=2074100))
-    - *Zhang, Yi, Jamie Callan, and Thomas Minka. "Novelty and redundancy detection in adaptive filtering." In Proceedings of the 25th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 81-88. ACM, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=564393))
-    - *Koren, Yehuda. "Collaborative filtering with temporal dynamics." Communications of the ACM 53, no. 4 (2010): 89-97.* ([PDF](http://dl.acm.org/citation.cfm?id=1721677))
-    - *Rendle, Steffen, Christoph Freudenthaler, and Lars Schmidt-Thieme. "Factorizing personalized markov chains for next-basket recommendation." In Proceedings of the 19th international conference on World wide web, pp. 811-820. ACM, 2010.* ([PDF](http://dl.acm.org/citation.cfm?id=1772773))
-    - *Sarwar, Badrul, George Karypis, Joseph Konstan, and John Riedl. "Item-based collaborative filtering recommendation algorithms." In Proceedings of the 10th international conference on World Wide Web, pp. 285-295. ACM, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=372071))
-    - *Ma, Hao, Dengyong Zhou, Chao Liu, Michael R. Lyu, and Irwin King. "Recommender systems with social regularization." In Proceedings of the fourth ACM international conference on Web search and data mining, pp. 287-296. ACM, 2011.* ([PDF](http://dl.acm.org/citation.cfm?id=1935877))
-    - *Herlocker, Jonathan L., Joseph A. Konstan, Loren G. Terveen, and John T. Riedl. "Evaluating collaborative filtering recommender systems." ACM Transactions on Information Systems (TOIS) 22, no. 1 (2004): 5-53.* ([PDF](http://dl.acm.org/citation.cfm?id=963772))
+
 	
-- ### **Day 2**: Sentiment analysis
+- ### **Day 1**: Sentiment analysis
 	- *Pang, Bo, and Lillian Lee. "Opinion mining and sentiment analysis." Foundations and trends in information retrieval 2, no. 1-2 (2008): 1-135.* ([PDF](http://dl.acm.org/citation.cfm?id=1454712))
 	- *Esuli, Andrea, and Fabrizio Sebastiani. "Sentiwordnet: A publicly available lexical resource for opinion mining." In Proceedings of LREC, vol. 6, pp. 417-422. 2006.* ([PDF](http://gandalf.aksis.uib.no/lrec2006/pdf/384_pdf.pdf))
 	- *Wilson, Theresa, Janyce Wiebe, and Paul Hoffmann. "Recognizing contextual polarity in phrase-level sentiment analysis." In Proceedings of the conference on human language technology and empirical methods in natural language processing, pp. 347-354. Association for Computational Linguistics, 2005.* ([PDF](http://dl.acm.org/citation.cfm?id=1220619))
@@ -151,4 +143,17 @@ title: Lectures
 	- *Dave, Kushal, Steve Lawrence, and David M. Pennock. "Mining the peanut gallery: Opinion extraction and semantic classification of product reviews." In Proceedings of the 12th international conference on World Wide Web, pp. 519-528. ACM, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=775226))
 	- *Pang, Bo, and Lillian Lee. "Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales." In Proceedings of the 43rd Annual Meeting on Association for Computational Linguistics, pp. 115-124. Association for Computational Linguistics, 2005.* ([PDF](http://dl.acm.org/citation.cfm?id=1219855))
 
+- ### **Day 2**: Document summarization
+	
+	
+- ### **Day 3**: Recommendation
+	- *Koren, Yehuda, Robert Bell, and Chris Volinsky. "Matrix factorization techniques for recommender systems." Computer 42, no. 8 (2009): 30-37.* ([PDF](https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf))
+	- *Breese, John S., David Heckerman, and Carl Kadie. "Empirical analysis of predictive algorithms for collaborative filtering." In Proceedings of the Fourteenth conference on Uncertainty in artificial intelligence, pp. 43-52. Morgan Kaufmann Publishers Inc., 1998.* ([PDF](http://dl.acm.org/citation.cfm?id=2074100))
+    - *Zhang, Yi, Jamie Callan, and Thomas Minka. "Novelty and redundancy detection in adaptive filtering." In Proceedings of the 25th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 81-88. ACM, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=564393))
+    - *Koren, Yehuda. "Collaborative filtering with temporal dynamics." Communications of the ACM 53, no. 4 (2010): 89-97.* ([PDF](http://dl.acm.org/citation.cfm?id=1721677))
+    - *Rendle, Steffen, Christoph Freudenthaler, and Lars Schmidt-Thieme. "Factorizing personalized markov chains for next-basket recommendation." In Proceedings of the 19th international conference on World wide web, pp. 811-820. ACM, 2010.* ([PDF](http://dl.acm.org/citation.cfm?id=1772773))
+    - *Sarwar, Badrul, George Karypis, Joseph Konstan, and John Riedl. "Item-based collaborative filtering recommendation algorithms." In Proceedings of the 10th international conference on World Wide Web, pp. 285-295. ACM, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=372071))
+    - *Ma, Hao, Dengyong Zhou, Chao Liu, Michael R. Lyu, and Irwin King. "Recommender systems with social regularization." In Proceedings of the fourth ACM international conference on Web search and data mining, pp. 287-296. ACM, 2011.* ([PDF](http://dl.acm.org/citation.cfm?id=1935877))
+    - *Herlocker, Jonathan L., Joseph A. Konstan, Loren G. Terveen, and John T. Riedl. "Evaluating collaborative filtering recommender systems." ACM Transactions on Information Systems (TOIS) 22, no. 1 (2004): 5-53.* ([PDF](http://dl.acm.org/citation.cfm?id=963772))
 
+- ### **Day 4**: Document visualization
