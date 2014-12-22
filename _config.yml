@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               'CS 6501: Text Mining'
-tagline:             'CS 6501: Text Mining'
-description:         'We will cover important topics in text mining including: basic natural language processing techniques, document representation, text categorization and clustering, document summarization, sentiment analysis, social network and social media analysis, probabilistic topic models and text visualization.'
+title:               CS 6501: Text Mining
+tagline:             <a href="http://www.cs.virginia.edu/">CS@UVa</a>
+description:         'Formula for this course: <br>$$Text Mining = Data Mining + Text Data$$'
 host:								 http://www.cs.virginia.edu/
 baseurl:             /~hw5x/Course/Text-Mining-2015-Spring/_site
 
