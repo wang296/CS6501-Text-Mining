@@ -10,7 +10,7 @@ relative_permalinks: true
 
 # Setup
 title:               'CS 6501: Text Mining'
-tagline:             '<a href="http://www.cs.virginia.edu/">CS@UVa</a>'
+tagline:             'Spring 2015 &middot; <a href="http://www.cs.virginia.edu/">CS@UVa</a>'
 description:         'Formula for this course: <br><b>Text Mining = Data Mining + Text Data</b>'
 host:								 'http://www.cs.virginia.edu/'
 baseurl:             /~hw5x/Course/Text-Mining-2015-Spring/_site
