@@ -7,7 +7,7 @@ title: Lecture Contents
 
 > We will highlight the basic structure and major topics of this course, and go over some logistic issues and course requirements.     
 
-- **Day 1**: Introduction ([slides]({{site.baseurl}}/docs/Introduction to Information Retrieval.pptx), [course policy]({{site.baseurl}}/docs/Course Policy.pptx))  
+- **Day 1**: Introduction
              
  
 
