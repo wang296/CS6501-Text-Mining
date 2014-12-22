@@ -7,11 +7,7 @@ The course midterm will be late in the semester (after we have covered most of t
 
 Exam questions include True/False question, short answer questions, and short essay questions. 
 
-A review lecture will be given prior to the exam. Practice midterm exam will be provided one week before the exam.
+A review lecture will be given prior to the exam, practice midterm questions will be provided one week before the exam.
 
-A [practice midterm]({{site.baseurl}}/practice-midterm.html) is provided from the Spring 2014 offering in UIUC. The format and coverage of our midterm will be slightly different from this one.  
 
-Important topics for the coming midterm exam have been listed [here]({{site.baseurl}}/midterm-list.html).  
-
-The solutions of our midterm exam questions can be found [here]({{site.baseurl}}/docs/PDFs/midterm-solution.pdf).
 
