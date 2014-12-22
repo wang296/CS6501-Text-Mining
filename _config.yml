@@ -1,8 +1,8 @@
-name: "CS 6501: Information Retrieval"
+name: "CS 6501: Text Mining"
 highlighter: rouge
-baseurl: "/~wang296/Course/IR_Fall"
+baseurl: "/~hw5x/Course/Text-Mining-2015-Spring/_site"
 future: true
 source: .
 destination: _site
-host: blum.cs.uiuc.edu
+host: http://www.cs.virginia.edu/
 markdown: redcarpet
