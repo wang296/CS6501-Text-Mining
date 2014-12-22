@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Homework Assignments (by date posted)
+layout: page
+title: Homework
 ---
 {% if site.categories.mps %}
 ## Written Assignments ##
