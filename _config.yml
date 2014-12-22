@@ -13,8 +13,7 @@ title:               'CS 6501: Text Mining'
 tagline:             'CS 6501: Text Mining'
 description:         'We will cover important topics in text mining including: basic natural language processing techniques, document representation, text categorization and clustering, document summarization, sentiment analysis, social network and social media analysis, probabilistic topic models and text visualization.'
 host:								 http://www.cs.virginia.edu/
-baseurl:             /
-paginate:            5
+baseurl:             /~hw5x/Course/Text-Mining-2015-Spring/_site
 
 # About/contact
 author:
