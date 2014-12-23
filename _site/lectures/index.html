@@ -131,11 +131,42 @@
 <h2>Lecture II: Natural Language Processing</h2>
 
 <blockquote>
-<p>We will briefly discuss the basic building blocks of a modern search engine system, including web crawler, inverted index, query processing, search result interface. </p>
+<p>We will briefly provide an introduction to computational linguistics, from morphology (word formation) and syntax (sentence structure) to semantics (meaning), as the first step to process and analyze text data. Public natural langauge processing (NLP) toolkits will be introduced for you to understand and practice with those techniques. </p>
 </blockquote>
 
 <ul>
-<li>### <strong>Day 1</strong>: Basic search engine architecture<br>
+<li><h3><strong>Day 1</strong>: Get familiar with NLP pipeline</h3>
+
+<ul>
+<li><em>Torres-Carrasquillo, Pedro A., Douglas A. Reynolds, and J. R. Deller Jr. &quot;Language identification using Gaussian mixture model tokenization.&quot; In Acoustics, Speech, and Signal Processing (ICASSP), 2002 IEEE International Conference on, vol. 1, pp. I-757. IEEE, 2002.</em> (<a href="http://llwebprod2.ll.mit.edu/mission/communications/publications/publication-files/full_papers/020513_Torres.pdf">PDF</a>)</li>
+<li><em>Chung, Tagyoung, and Daniel Gildea. &quot;Unsupervised tokenization for machine translation.&quot; In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 2-Volume 2, pp. 718-726. Association for Computational Linguistics, 2009.</em> (<a href="http://www.aclweb.org/anthology/D/D09/D09-1075.pdf">PDF</a>)</li>
+<li><em>Lovins, Julie B. Development of a stemming algorithm. MIT Information Processing Group, Electronic Systems Laboratory, 1968.</em> (<a href="http://mt-archive.info/MT-1968-Lovins.pdf">PDF</a>)</li>
+<li>Porter, Martin. &quot;Snowball: A language for stemming algorithms.&quot; (2001). (<a href="http://snowball.tartarus.org/texts/introduction.html">PDF</a>)<br></li>
+</ul></li>
+<li><h3><strong>Day 2</strong>: Part-of-Speech Tagging &amp; Chunking</h3>
+
+<ul>
+<li><em>Brill, Eric. &quot;A simple rule-based part of speech tagger.&quot; In Proceedings of the workshop on Speech and Natural Language, pp. 112-116. Association for Computational Linguistics, 1992.</em> (<a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a460532.pdf">PDF</a>)</li>
+<li><em>Schmid, Helmut. &quot;Probabilistic part-of-speech tagging using decision trees.&quot; In Proceedings of the international conference on new methods in language processing, vol. 12, pp. 44-49. 1994.</em> (<a href="http://ittelkom.ac.id/staf/imd/Riset/POS%20Tagging/Using%20Decision%20Tree.pdf">PDF</a>)</li>
+<li><em>Ratnaparkhi, Adwait. &quot;A maximum entropy model for part-of-speech tagging.&quot; In Proceedings of the conference on empirical methods in natural language processing, vol. 1, pp. 133-142. 1996.</em> (<a href="http://www.ling.helsinki.fi/kit/2011s/clt350/docs/Ratnaparkhi-tagging96.pdf">PDF</a>)</li>
+<li><em>Gimpel, Kevin, Nathan Schneider, Brendan O&#39;Connor, Dipanjan Das, Daniel Mills, Jacob Eisenstein, Michael Heilman, Dani Yogatama, Jeffrey Flanigan, and Noah A. Smith. &quot;Part-of-speech tagging for twitter: Annotation, features, and experiments.&quot; In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: short papers-Volume 2, pp. 42-47. Association for Computational Linguistics, 2011.</em> (<a href="http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA547371&amp;%3BLocation=U2&amp;%3Bdoc=GetTRDoc.pdf&amp;origin=publication_detail">PDF</a>)</li>
+<li><em>Ramshaw, Lance A., and Mitchell P. Marcus. &quot;Text chunking using transformation-based learning.&quot; In Natural language processing using very large corpora, pp. 157-176. Springer Netherlands, 1999.</em> (<a href="http://arxiv.org/pdf/cmp-lg/9505040">PDF</a>)</li>
+<li><em>Kudo, Taku, and Yuji Matsumoto. &quot;Chunking with support vector machines.&quot; In Proceedings of the second meeting of the North American Chapter of the Association for Computational Linguistics on Language technologies, pp. 1-8. Association for Computational Linguistics, 2001.</em> (<a href="http://dl.acm.org/citation.cfm?id=1073361">PDF</a>)</li>
+<li><em>Ando, Rie Kubota, and Tong Zhang. &quot;A high-performance semi-supervised learning method for text chunking.&quot; In Proceedings of the 43rd annual meeting on association for computational linguistics, pp. 1-9. Association for Computational Linguistics, 2005.</em> (<a href="http://www.aclweb.org/anthology/P/P05/P05-1.pdf#page=29">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 3</strong>: Lexical Semantics &amp; Word Senses</h3>
+
+<ul>
+<li><em>Miller, George A., Richard Beckwith, Christiane Fellbaum, Derek Gross, and Katherine J. Miller. &quot;Introduction to wordnet: An on-line lexical database.&quot; International journal of lexicography 3, no. 4 (1990): 235-244.</em> (<a href="http://www.researchgate.net/publication/31441225_Introduction_to_WordNet_An_On-line_Lexical_Database*/file/9c96052a8b7ca401b1.pdf">PDF</a>)</li>
+<li><em>Gildea, Daniel, and Daniel Jurafsky. &quot;Automatic labeling of semantic roles.&quot; Computational linguistics 28, no. 3 (2002): 245-288.</em> (<a href="http://ftp.icsi.berkeley.edu/ftp/pub/techreports/2001/tr-01-005.pdf">PDF</a>)</li>
+<li><em>Palmer, Martha, Daniel Gildea, and Paul Kingsbury. &quot;The proposition bank: An annotated corpus of semantic roles.&quot; Computational linguistics 31, no. 1 (2005): 71-106.</em> (<a href="http://www.cs.rochester.edu/%7Egildea/palmer-propbank-cl.pdf">PDF</a>)</li>
+<li><em>Pedersen, Ted, Siddharth Patwardhan, and Jason Michelizzi. &quot;WordNet:: Similarity: measuring the relatedness of concepts.&quot; In Demonstration Papers at HLT-NAACL 2004, pp. 38-41. Association for Computational Linguistics, 2004.</em> (<a href="http://www.aaai.org/Papers/AAAI/2004/AAAI04-160.pdf">PDF</a>)</li>
+<li><em>Yarowsky, David. &quot;Unsupervised word sense disambiguation rivaling supervised methods.&quot; In Proceedings of the 33rd annual meeting on Association for Computational Linguistics, pp. 189-196. Association for Computational Linguistics, 1995.</em> (<a href="http://www.cse.unt.edu/%7Erada/CSCE5330/Papers/Yarowsky.ACL95.pdf">PDF</a>)</li>
+<li><em>Ide, Nancy, and Jean Véronis. &quot;Introduction to the special issue on word sense disambiguation: the state of the art.&quot; Computational linguistics 24, no. 1 (1998): 2-40.</em> (<a href="http://promethee.philo.ulg.ac.be/engdep1/download/prolog/lexdis/docs/lexdis/otherpap/veronis-ide-wsd.pdf">PDF</a>)</li>
+<li><em>Lesk, Michael. &quot;Automatic sense disambiguation using machine readable dictionaries: how to tell a pine cone from an ice cream cone.&quot; In Proceedings of the 5th annual international conference on Systems documentation, pp. 24-26. ACM, 1986.</em> (<a href="http://promethee.philo.ulg.ac.be/engdep1/download/prolog/lexdis/docs/lexdis/otherpap/Lesk%20clean.pdf">PDF</a>)</li>
+<li><em>Yarowsky, David. &quot;Unsupervised word sense disambiguation rivaling supervised methods.&quot; In Proceedings of the 33rd annual meeting on Association for Computational Linguistics, pp. 189-196. Association for Computational Linguistics, 1995.</em> (<a href="http://www.cse.unt.edu/%7Erada/CSCE5330/Papers/Yarowsky.ACL95.pdf">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 4</strong>: Shallow parsing &amp; Named entity recognition</h3>
 
 <ul>
 <li><em>Sha, Fei, and Fernando Pereira. &quot;Shallow parsing with conditional random fields.&quot; In Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology-Volume 1, pp. 134-141. Association for Computational Linguistics, 2003.</em> (<a href="http://dl.acm.org/citation.cfm?id=1073473">PDF</a>)</li>
@@ -143,6 +174,8 @@
 <li><em>McCallum, Andrew, and Wei Li. &quot;Early results for named entity recognition with conditional random fields, feature induction and web-enhanced lexicons.&quot; In Proceedings of the seventh conference on Natural language learning at HLT-NAACL 2003-Volume 4, pp. 188-191. Association for Computational Linguistics, 2003.</em> (<a href="http://dl.acm.org/citation.cfm?id=1119206">PDF</a>)</li>
 <li><em>Moschitti, Alessandro. &quot;A study on convolution kernels for shallow semantic parsing.&quot; In Proceedings of the 42nd Annual Meeting on Association for Computational Linguistics, p. 335. Association for Computational Linguistics, 2004.</em> (<a href="http://dl.acm.org/citation.cfm?id=1218998">PDF</a>)</li>
 <li><em>Poon, Hoifung, and Pedro Domingos. &quot;Unsupervised semantic parsing.&quot; In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 1-Volume 1, pp. 1-10. Association for Computational Linguistics, 2009.</em> (<a href="http://dl.acm.org/citation.cfm?id=1699512">PDF</a>)</li>
+<li><em>Nadeau, David, and Satoshi Sekine. &quot;A survey of named entity recognition and classification.&quot; Lingvisticae Investigationes 30, no. 1 (2007): 3-26.</em> (<a href="http://nlp.cs.nyu.edu/sekine/papers/li07.pdf">PDF</a>)</li>
+<li><em>Ritter, Alan, Sam Clark, and Oren Etzioni. &quot;Named entity recognition in tweets: an experimental study.&quot; In Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 1524-1534. Association for Computational Linguistics, 2011.</em> (<a href="http://dl.acm.org/citation.cfm?id=2145595">PDF</a>)</li>
 </ul></li>
 </ul>
 
@@ -151,7 +184,7 @@
 <h2>Lecture III: Document Representation</h2>
 
 <blockquote>
-<p>Retrieval model, a.k.a., ranking algorithm, is arguably the most important component of a retrieval system and directly determines search effectiveness. We will discuss classical retrieval models, including Boolean, vector space, probabilistic and language models. We will also introduce the most recent development of learning-based ranking algorithms, i.e., learning-to-rank.</p>
+<p>We will discuss how to represent the unstructured text documents with appropriate format and structure to support later automated text mining algorithms.</p>
 </blockquote>
 
 <ul>
@@ -162,67 +195,141 @@
 <li><em>Salton, Gerard, and Christopher Buckley. &quot;Term-weighting approaches in automatic text retrieval.&quot; Information processing &amp; management 24, no. 5 (1988): 513-523.</em> (<a href="http://www.sciencedirect.com/science/article/pii/0306457388900210">PDF</a>)</li>
 <li><em>Raghavan, Vijay V., and SK Michael Wong. &quot;A critical analysis of vector space model for information retrieval.&quot; Journal of the American Society for information Science 37, no. 5 (1986): 279-287.</em> (<a href="http://www.sics.se/%7Ejussi/Artiklar/2008.04.01.ECIR_Glasgow_filament/2007_rejected_SIGIR/filament/refs/raghavan.pdf">PDF</a>)</li>
 <li><em>Singhal, Amit, Chris Buckley, and Mandar Mitra. &quot;Pivoted document length normalization.&quot; In Proceedings of the 19th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 21-29. ACM, 1996.</em> (<a href="http://dl.acm.org/citation.cfm?id=243206">PDF</a>)</li>
-<li><em>Turney, Peter D., and Patrick Pantel. &quot;From frequency to meaning: Vector space models of semantics.&quot; Journal of artificial intelligence research 37, no. 1 (2010): 141-188.</em> (<a href="http://www.aaai.org/Papers/JAIR/Vol37/JAIR-3705.pdf">PDF</a>)</li>
-<li><em>Deerwester, Scott C., Susan T. Dumais, Thomas K. Landauer, George W. Furnas, and Richard A. Harshman. &quot;Indexing by latent semantic analysis.&quot; JASIS 41, no. 6 (1990): 391-407.</em> (<a href="http://www.cob.unt.edu/itds/faculty/evangelopoulos/dsci5910/LSA_Deerwester1990.pdf">PDF</a>)</li>
+<li><em>Turney, Peter D., and Patrick Pantel. &quot;From frequency to meaning: Vector space models of semantics.&quot; Journal of artificial intelligence research 37, no. 1 (2010): 141-188.</em> (<a href="http://www.aaai.org/Papers/JAIR/Vol37/JAIR-3705.pdf">PDF</a>)<br></li>
 <li><em>Sahlgren, Magnus. &quot;The Word-Space Model: Using distributional analysis to represent syntagmatic and paradigmatic relations between words in high-dimensional vector spaces.&quot; (2006).</em> (<a href="http://www.diva-portal.org/smash/record.jsf?pid=diva2:189276">PDF</a>)</li>
+<li><em>Erk, Katrin, and Sebastian Padó. &quot;A structured vector space model for word meaning in context.&quot; In Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 897-906. Association for Computational Linguistics, 2008.</em> (<a href="http://t3-1.yum2.net/index/nlp.stanford.edu/pubs/structuredVS.pdf">PDF</a>)</li>
+<li><em>Zwarts, Joost, and Yoad Winter. &quot;Vector space semantics: A model-theoretic analysis of locative prepositions.&quot; Journal of logic, language and information 9, no. 2 (2000): 169-211.</em> (<a href="http://link.springer.com/article/10.1023/A:1008384416604">PDF</a>)</li>
 </ul></li>
-<li><h3><strong>Day 2</strong>: Language models</h3>
+<li><h3><strong>Day 2</strong>: N-gram language models</h3>
 
 <ul>
 <li><em>Ponte, Jay M., and W. Bruce Croft. &quot;A language modeling approach to information retrieval.&quot; In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 275-281. ACM, 1998.</em> (<a href="http://dl.acm.org/citation.cfm?id=291008">PDF</a>)</li>
 <li><em>Lavrenko, Victor, and W. Bruce Croft. &quot;Relevance based language models.&quot; In Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 120-127. ACM, 2001.</em> (<a href="http://dl.acm.org/citation.cfm?id=383972">PDF</a>)</li>
-<li><em>Berger, Adam, and John Lafferty. &quot;Information retrieval as statistical translation.&quot; In Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval, pp. 222-229. ACM, 1999.</em> (<a href="http://dl.acm.org/citation.cfm?id=312681">PDF</a>)</li>
 <li><em>Zhai, Chengxiang, and John Lafferty. &quot;A study of smoothing methods for language models applied to ad hoc information retrieval.&quot; In Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 334-342. ACM, 2001.</em> (<a href="http://dl.acm.org/citation.cfm?id=384019">PDF</a>)</li>
 <li><em>Gao, Jianfeng, Jian-Yun Nie, Guangyuan Wu, and Guihong Cao. &quot;Dependence language model for information retrieval.&quot; In Proceedings of the 27th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 170-177. ACM, 2004.</em> (<a href="http://dl.acm.org/citation.cfm?id=1009024">PDF</a>)</li>
 <li><em>Metzler, Donald, and W. Bruce Croft. &quot;A Markov random field model for term dependencies.&quot; In Proceedings of the 28th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 472-479. ACM, 2005.</em> (<a href="http://dl.acm.org/citation.cfm?id=1076115">PDF</a>)</li>
-<li><em>Song, Fei, and W. Bruce Croft. &quot;A general language model for information retrieval.&quot; Proceedings of the eighth international conference on Information and knowledge management. ACM, 1999.</em> (<a href="http://dl.acm.org/citation.cfm?id=320022">PDF</a>)</li>
+<li><em>Brants, Thorsten, Ashok C. Popat, Peng Xu, Franz J. Och, and Jeffrey Dean. &quot;Large language models in machine translation.&quot; In In Proceedings of the Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning. 2007.</em> (<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.324.3653">PDF</a>)</li>
+<li><em>Li, Xiaoyan, and W. Bruce Croft. &quot;Time-based language models.&quot; In Proceedings of the twelfth international conference on Information and knowledge management, pp. 469-475. ACM, 2003.</em> (<a href="http://dl.acm.org/citation.cfm?id=956951">PDF</a>)</li>
 </ul></li>
 </ul>
 
 <hr>
 
-<h2>Lecture IV: Document Categorization</h2>
+<h2>Lecture IV: Text Categorization</h2>
 
 <blockquote>
-<p>Assessing the quality of deployed system is essential for retrieval system development. Many different measures for evaluating the performance of information retrieval systems have been proposed. We will discuss both the classical evaluation metrics, e.g., Mean Average Precision, and modern advance, e.g., interleaving.</p>
+<p>Document categorization refers to the task of assigning a text document to one or more classes or categories. We will discuss several basic supervised text categorization algorithms.</p>
 </blockquote>
 
 <ul>
-<li>### <strong>Day 1</strong>: Vector space model 
+<li><h3><strong>Day 1</strong>: Feature selection</h3>
 
 <ul>
+<li><em>Kohavi, Ron, and George H. John. &quot;Wrappers for feature subset selection.&quot; Artificial intelligence 97, no. 1 (1997): 273-324.</em> (<a href="http://www.sciencedirect.com/science/article/pii/S000437029700043X">PDF</a>)</li>
+<li><em>Guyon, Isabelle, and André Elisseeff. &quot;An introduction to variable and feature selection.&quot; The Journal of Machine Learning Research 3 (2003): 1157-1182.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/GuyonE03.pdf">PDF</a>)</li>
+<li><em>Yang, Yiming, and Jan O. Pedersen. &quot;A comparative study on feature selection in text categorization.&quot; In ICML, vol. 97, pp. 412-420. 1997.</em> (<a href="http://casa.disi.unitn.it/%7Emoschitt/Projects/yang97comparative.pdf">PDF</a>)</li>
+<li><em>Kira, Kenji, and Larry A. Rendell. &quot;The feature selection problem: Traditional methods and a new algorithm.&quot; In AAAI, pp. 129-134. 1992.</em> (<a href="http://www.aaai.org/Papers/AAAI/1992/AAAI92-020.pdf">PDF</a>)</li>
+<li><em>Forman, George. &quot;An extensive empirical study of feature selection metrics for text classification.&quot; The Journal of machine learning research 3 (2003): 1289-1305.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/Forman03.pdf">PDF</a>)</li>
+<li><em>Rogati, Monica, and Yiming Yang. &quot;High-performing feature selection for text classification.&quot; In Proceedings of the eleventh international conference on Information and knowledge management, pp. 659-661. ACM, 2002.</em> (<a href="http://www.cs.cmu.edu/afs/cs/Web/People/dgovinda/pdf/rogati-cikm02.pdf">PDF</a>)</li>
+<li><em>Liu, Huan, and Lei Yu. &quot;Toward integrating feature selection algorithms for classification and clustering.&quot; Knowledge and Data Engineering, IEEE Transactions on 17, no. 4 (2005): 491-502.</em> (<a href="http://web.iaincirebon.ac.id/ebook/luke/ieeeexplore/Knowledge_and_Data_Engineering/Toward_integrating_feature_selection_algorithms_for_classification_and_clustering-m7s.pdf">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 2</strong>: Naive Bayes &amp; kNN</h3>
+
+<ul>
+<li><em>Zhang, Harry. &quot;The optimality of naive Bayes.&quot; AA 1, no. 2 (2004): 3.</em> (<a href="http://www.aaai.org/Papers/FLAIRS/2004/Flairs04-097.pdf">PDF</a>)</li>
+<li><em>Rish, Irina. &quot;An empirical study of the naive Bayes classifier.&quot; In IJCAI 2001 workshop on empirical methods in artificial intelligence, vol. 3, no. 22, pp. 41-46. 2001.</em> (<a href="http://www.researchgate.net/publication/228845263_An_empirical_study_of_the_naive_Bayes_classifier/file/60b7d52dc3ccd8d692.pdf">PDF</a>)</li>
+<li><em>Eyheramendy, Susana, David D. Lewis, and David Madigan. &quot;On the naive bayes model for text categorization.&quot; (2003).</em> (<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.20.4949">PDF</a>)</li>
+<li><em>Peng, Fuchun, Dale Schuurmans, and Shaojun Wang. &quot;Augmenting naive bayes classifiers with statistical language models.&quot; Information Retrieval 7, no. 3-4 (2004): 317-345.</em> (<a href="http://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1090&amp;context=cs_faculty_pubs">PDF</a>)</li>
+<li><em>Yang, Yiming, and Xin Liu. &quot;A re-examination of text categorization methods.&quot; In Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval, pp. 42-49. ACM, 1999.</em> (<a href="http://dl.acm.org/citation.cfm?id=312647">PDF</a>)</li>
+<li><em>Yang, Yiming. &quot;An evaluation of statistical approaches to text categorization.&quot; Information retrieval 1, no. 1-2 (1999): 69-90.</em> (<a href="http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA327980">PDF</a>)</li>
+<li><em>Beyer, Kevin, Jonathan Goldstein, Raghu Ramakrishnan, and Uri Shaft. &quot;When is “nearest neighbor” meaningful?.&quot; In Database Theory—ICDT’99, pp. 217-235. Springer Berlin Heidelberg, 1999.</em> (<a href="http://research.cs.wisc.edu/techreports/1998/TR1377.pdf">PDF</a>)</li>
+<li><em>Keller, James M., Michael R. Gray, and James A. Givens. &quot;A fuzzy k-nearest neighbor algorithm.&quot; Systems, Man and Cybernetics, IEEE Transactions on 4 (1985): 580-585.</em> (<a href="http://www.cs.missouri.edu/%7Eskubicm/8820/FuzzyKNN.pdf">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 3</strong>: Logistic regression</h3>
+
+<ul>
+<li><em>Jordan, A. &quot;On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes.&quot; Advances in neural information processing systems 14 (2002): 841.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/nips02-AA28.pdf">PDF</a>)</li>
+<li><em>Hosmer Jr, David W., and Stanley Lemeshow. Applied logistic regression. John Wiley &amp; Sons, 2004.</em> (<a href="http://books.google.com/books?hl=en&amp;lr=&amp;id=Po0RLQ7USIMC&amp;oi=fnd&amp;pg=PR5&amp;dq=logistic+regression&amp;ots=Do50mh_mGR&amp;sig=AvM9kLUFDIxicYsbEp4FKdbzOyg#v=onepage&amp;q=logistic%20regression&amp;f=false">PDF</a>)</li>
+<li><em>Peduzzi, Peter, John Concato, Elizabeth Kemper, Theodore R. Holford, and Alvan R. Feinstein. &quot;A simulation study of the number of events per variable in logistic regression analysis.&quot; Journal of clinical epidemiology 49, no. 12 (1996): 1373-1379.</em> (<a href="http://www.sciencedirect.com/science/article/pii/S0895435696002363">PDF</a>)</li>
+<li><em>Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. &quot;Additive logistic regression: a statistical view of boosting (with discussion and a rejoinder by the authors).&quot; The annals of statistics 28, no. 2 (2000): 337-407.</em> (<a href="http://projecteuclid.org/download/pdf_1/euclid.aos/1016218223">PDF</a>)</li>
+<li><em>Genkin, Alexander, David D. Lewis, and David Madigan. &quot;Large-scale Bayesian logistic regression for text categorization.&quot; Technometrics 49, no. 3 (2007): 291-304.</em> (<a href="http://www.stat.columbia.edu/%7Emadigan/PAPERS/techno.pdf">PDF</a>)</li>
+<li><em>Lewis, David D., and William A. Gale. &quot;A sequential algorithm for training text classifiers.&quot; In Proceedings of the 17th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 3-12. Springer-Verlag New York, Inc., 1994.</em> (<a href="http://arxiv.org/pdf/cmp-lg/9407020">PDF</a>)</li>
+<li><em>Zhang, Jian, Rong Jin, Yiming Yang, and Alexander G. Hauptmann. &quot;Modified logistic regression: An approximation to svm and its applications in large-scale text categorization.&quot; In ICML, pp. 888-895. 2003.</em> (<a href="http://www.aaai.org/Papers/ICML/2003/ICML03-115.pdf">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 4</strong>: Support vector machine</h3>
+
+<ul>
+<li><em>Suykens, Johan AK, and Joos Vandewalle. &quot;Least squares support vector machine classifiers.&quot; Neural processing letters 9, no. 3 (1999): 293-300.</em> (<a href="http://link.springer.com/article/10.1023/A:1018628609742">PDF</a>)</li>
 <li><em>Joachims, Thorsten. &quot;Training linear SVMs in linear time.&quot; In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 217-226. ACM, 2006.</em> (<a href="http://dl.acm.org/citation.cfm?id=1150429">PDF</a>)</li>
 <li><em>Nigam, Kamal, Andrew Kachites McCallum, Sebastian Thrun, and Tom Mitchell. &quot;Text classification from labeled and unlabeled documents using EM.&quot; Machine learning 39, no. 2-3 (2000): 103-134.</em> (<a href="http://link.springer.com/article/10.1023/A:1007692713085">PDF</a>)</li>
-<li><em>Yang, Yiming, and Xin Liu. &quot;A re-examination of text categorization methods.&quot; In Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval, pp. 42-49. ACM, 1999.</em> (<a href="http://dl.acm.org/citation.cfm?id=312647">PDF</a>)</li>
-<li><em>Yang, Yiming, and Jan O. Pedersen. &quot;A comparative study on feature selection in text categorization.&quot; In ICML, vol. 97, pp. 412-420. 1997.</em> (<a href="http://casa.disi.unitn.it/%7Emoschitt/Projects/yang97comparative.pdf">PDF</a>)</li>
 <li><em>Lodhi, Huma, Craig Saunders, John Shawe-Taylor, Nello Cristianini, and Chris Watkins. &quot;Text classification using string kernels.&quot; The Journal of Machine Learning Research 2 (2002): 419-444.</em> (<a href="http://dl.acm.org/citation.cfm?id=944799">PDF</a>)</li>
-<li><em>Sriram, Bharath, Dave Fuhry, Engin Demir, Hakan Ferhatosmanoglu, and Murat Demirbas. &quot;Short text classification in twitter to improve information filtering.&quot; In Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval, pp. 841-842. ACM, 2010.</em> (<a href="http://dl.acm.org/citation.cfm?id=1835643">PDF</a>)</li>
-<li><em>Joachims, Thorsten. A Probabilistic Analysis of the Rocchio Algorithm with TFIDF for Text Categorization. No. CMU-CS-96-118. CARNEGIE-MELLON UNIV PITTSBURGH PA DEPT OF COMPUTER SCIENCE, 1996.</em> (<a href="http://oai.dtic.mil/oai/oai?verb=getRecord&amp;metadataPrefix=html&amp;identifier=ADA307731">PDF</a>)</li>
+<li><em>Sriram, Bharath, Dave Fuhry, Engin Demir, Hakan Ferhatosmanoglu, and Murat Demirbas. &quot;Short text classification in twitter to improve information filtering.&quot; In Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval, pp. 841-842. ACM, 2010.</em> (<a href="http://dl.acm.org/citation.cfm?id=1835643">PDF</a>)<br></li>
+<li><em>Tong, Simon, and Daphne Koller. &quot;Support vector machine active learning with applications to text classification.&quot; The Journal of Machine Learning Research 2 (2002): 45-66.</em> (<a href="http://dl.acm.org/citation.cfm?id=944793">PDF</a>)</li>
+<li><em>Joachims, Thorsten. &quot;Transductive inference for text classification using support vector machines.&quot; In ICML, vol. 99, pp. 200-209. 1999.</em> (<a href="http://www1.cs.columbia.edu/%7Edplewis/candidacy/joachims99transductive.pdf">PDF</a>)</li>
+<li><em>Fan, Rong-En, Kai-Wei Chang, Cho-Jui Hsieh, Xiang-Rui Wang, and Chih-Jen Lin. &quot;LIBLINEAR: A library for large linear classification.&quot; The Journal of Machine Learning Research 9 (2008): 1871-1874.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/fan08a.pdf">PDF</a>)</li>
 </ul></li>
 </ul>
 
 <hr>
 
-<h2>Lecture V: Document Clustering</h2>
+<h2>Lecture V: Text Clustering</h2>
 
 <blockquote>
 <p>We will discuss the unique characteristic of web: inter-connection, and introduce Google&#39;s winning algorithm PageRank. We will also introduce the application of link analysis techniques in a similar domain: social network analysis.                      </p>
 </blockquote>
 
 <ul>
-<li>### <strong>Day 1</strong>: Flat structure clustering<br>
+<li><h3><strong>Day 1</strong>: k-Means &amp; EM - flat structure document clustering</h3>
 
 <ul>
+<li><em>Liu, Tao, Shengping Liu, Zheng Chen, and Wei-Ying Ma. &quot;An evaluation on feature selection for text clustering.&quot; In ICML, vol. 3, pp. 488-495. 2003.</em> (<a href="http://www.aaai.org/Papers/ICML/2003/ICML03-065.pdf">PDF</a>)</li>
+<li><em>Hartigan, John A., and Manchek A. Wong. &quot;Algorithm AS 136: A k-means clustering algorithm.&quot; Applied statistics (1979): 100-108.</em> (<a href="http://www.labri.fr/perso/bpinaud/userfiles/downloads/hartigan_1979_kmeans.pdf">PDF</a>)</li>
+<li><em>Wagstaff, Kiri, Claire Cardie, Seth Rogers, and Stefan Schrödl. &quot;Constrained k-means clustering with background knowledge.&quot; In ICML, vol. 1, pp. 577-584. 2001.</em> (<a href="https://web.cse.msu.edu/%7Ecse802/notes/ConstrainedKmeans.pdf">PDF</a>)<br></li>
+<li><em>Kanungo, Tapas, David M. Mount, Nathan S. Netanyahu, Christine D. Piatko, Ruth Silverman, and Angela Y. Wu. &quot;An efficient k-means clustering algorithm: Analysis and implementation.&quot; Pattern Analysis and Machine Intelligence, IEEE Transactions on 24, no. 7 (2002): 881-892.</em> (<a href="http://surface.syr.edu/cgi/viewcontent.cgi?article=1042&amp;context=eecs">PDF</a>)<br></li>
+<li><em>Jain, Anil K. &quot;Data clustering: 50 years beyond K-means.&quot; Pattern Recognition Letters 31, no. 8 (2010): 651-666.</em> (<a href="http://www.cse.msu.edu/biometrics/Publications/Clustering/JainClustering_PRL10.pdf">PDF</a>)</li>
+<li><em>Zamir, Oren, and Oren Etzioni. &quot;Web document clustering: A feasibility demonstration.&quot; In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 46-54. ACM, 1998.</em> (<a href="http://dl.acm.org/citation.cfm?id=290956">PDF</a>)</li>
+<li><em>Dhillon, Inderjit S., and Dharmendra S. Modha. &quot;Concept decompositions for large sparse text data using clustering.&quot; Machine learning 42, no. 1-2 (2001): 143-175.</em> (<a href="http://www.cs.utexas.edu/users/inderjit/public_papers/concept_mlj.pdf">PDF</a>)</li>
+<li><em>Dempster, Arthur P., Nan M. Laird, and Donald B. Rubin. &quot;Maximum likelihood from incomplete data via the EM algorithm.&quot; Journal of the Royal Statistical Society. Series B (Methodological) (1977): 1-38.</em> (<a href="http://www.jstor.org/stable/2984875">PDF</a>)</li>
+<li><em>On the convergence properties of the EM algorithm</em> (<a href="http://www.jstor.org/stable/2240463">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 2</strong>: Agglomerative clustering - hierarchical structure document clustering</h3>
+
+<ul>
+<li><em>Steinbach, Michael, George Karypis, and Vipin Kumar. &quot;A comparison of document clustering techniques.&quot; In KDD workshop on text mining, vol. 400, no. 1, pp. 525-526. 2000.</em> (<a href="https://wwws.cs.umn.edu/tech_reports_upload/tr2000/00-034.ps">PDF</a>)</li>
+<li><em>Hotho, Andreas, Alexander Maedche, and Steffen Staab. &quot;Ontology-based text document clustering.&quot; KI 16, no. 4 (2002): 48-54.</em> (<a href="http://pdf.aminer.org/000/386/677/ontology_based_text_document_clustering.pdf">PDF</a>)</li>
+<li><em>Karypis, George, Eui-Hong Han, and Vipin Kumar. &quot;Chameleon: Hierarchical clustering using dynamic modeling.&quot; Computer 32, no. 8 (1999): 68-75.</em> (<a href="http://glaros.dtc.umn.edu/gkhome/fetch/papers/chameleon.pdf">PDF</a>)</li>
+<li><em>Navarro, Julio F., Carlos S. Frenk, and Simon DM White. &quot;A Universal density profile from hierarchical clustering.&quot; The Astrophysical Journal 490, no. 2 (1997): 493.</em> (<a href="http://arxiv.org/pdf/astro-ph/9611107">PDF</a>)</li>
+<li><em>Zhao, Ying, and George Karypis. &quot;Evaluation of hierarchical clustering algorithms for document datasets.&quot; In Proceedings of the eleventh international conference on Information and knowledge management, pp. 515-524. ACM, 2002.</em> (<a href="http://dl.acm.org/citation.cfm?id=584877">PDF</a>)</li>
+<li><em>Fung, Benjamin CM, Ke Wang, and Martin Ester. &quot;Hierarchical document clustering using frequent itemsets.&quot; In SDM, vol. 3, pp. 59-70. 2003.</em> (<a href="http://epubs.siam.org/doi/abs/10.1137/1.9781611972733.6">PDF</a>)</li>
+<li><em>Willett, Peter. &quot;Recent trends in hierarchic document clustering: a critical review.&quot; Information Processing &amp; Management 24, no. 5 (1988): 577-597.</em> (<a href="http://www.sciencedirect.com/science/article/pii/0306457388900271">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 3</strong>: Word clustering</h3>
+
+<ul>
+<li><em>Deerwester, Scott C., Susan T. Dumais, Thomas K. Landauer, George W. Furnas, and Richard A. Harshman. &quot;Indexing by latent semantic analysis.&quot; JASIS 41, no. 6 (1990): 391-407.</em> (<a href="http://www.cob.unt.edu/itds/faculty/evangelopoulos/dsci5910/LSA_Deerwester1990.pdf">PDF</a>)</li>
+<li><em>Baker, L. Douglas, and Andrew Kachites McCallum. &quot;Distributional clustering of words for text classification.&quot; In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 96-103. ACM, 1998.</em> (<a href="http://dl.acm.org/citation.cfm?id=290970">PDF</a>)</li>
+<li><em>Bengio, Yoshua, Holger Schwenk, Jean-Sébastien Senécal, Fréderic Morin, and Jean-Luc Gauvain. &quot;Neural probabilistic language models.&quot; In Innovations in Machine Learning, pp. 137-186. Springer Berlin Heidelberg, 2006.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/BengioDVJ03.pdf">PDF</a>)</li>
+<li><em>Bekkerman, Ron, Ran El-Yaniv, Naftali Tishby, and Yoad Winter. &quot;Distributional word clusters vs. words for text categorization.&quot; The Journal of Machine Learning Research 3 (2003): 1183-1208.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/BekkermanETW03.pdf">PDF</a>)</li>
+<li><em>Curran, James Richard. &quot;From distributional to semantic similarity.&quot; (2004).</em> (<a href="https://www.era.lib.ed.ac.uk/handle/1842/563">PDF</a>)</li>
+<li><em>Lin, Dekang. &quot;Automatic retrieval and clustering of similar words.&quot; In Proceedings of the 17th international conference on Computational linguistics-Volume 2, pp. 768-774. Association for Computational Linguistics, 1998.</em> (<a href="http://www.aclweb.org/anthology/P/P98/P98-2127.pdf">PDF</a>)</li>
+<li><em>Pereira, Fernando, Naftali Tishby, and Lillian Lee. &quot;Distributional clustering of English words.&quot; In Proceedings of the 31st annual meeting on Association for Computational Linguistics, pp. 183-190. Association for Computational Linguistics, 1993.</em> (<a href="http://pdf.aminer.org/000/346/498/probability_table_compression_using_distributional_clustering_for_scanning_n_tuple.pdf">PDF</a>)</li>
+</ul></li>
+<li><h3><strong>Day 4</strong>: Other clustering algorithms</h3>
+
+<ul>
+<li><em>Larsen, Bjornar, and Chinatsu Aone. &quot;Fast and effective text mining using linear-time document clustering.&quot; In Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 16-22. ACM, 1999.</em> (<a href="http://dl.acm.org/citation.cfm?id=312186">PDF</a>)</li>
 <li><em>Basu, Sugato, Mikhail Bilenko, and Raymond J. Mooney. &quot;A probabilistic framework for semi-supervised clustering.&quot; In Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 59-68. ACM, 2004.</em> (<a href="http://dl.acm.org/citation.cfm?id=1014062">PDF</a>)</li>
 <li><em>Xu, Wei, Xin Liu, and Yihong Gong. &quot;Document clustering based on non-negative matrix factorization.&quot; In Proceedings of the 26th annual international ACM SIGIR conference on Research and development in informaion retrieval, pp. 267-273. ACM, 2003.</em> (<a href="http://dl.acm.org/citation.cfm?id=860485">PDF</a>)</li>
-<li><em>Zhao, Ying, and George Karypis. &quot;Evaluation of hierarchical clustering algorithms for document datasets.&quot; In Proceedings of the eleventh international conference on Information and knowledge management, pp. 515-524. ACM, 2002.</em> (<a href="http://dl.acm.org/citation.cfm?id=584877">PDF</a>)</li>
-<li><em>Dhillon, Inderjit S. &quot;Co-clustering documents and words using bipartite spectral graph partitioning.&quot; In Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 269-274. ACM, 2001.</em> (<a href="http://dl.acm.org/citation.cfm?id=502550">PDF</a>)</li>
+<li><em>Dhillon, Inderjit S., Yuqiang Guan, and Brian Kulis. &quot;Kernel k-means: spectral clustering and normalized cuts.&quot; In Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 551-556. ACM, 2004.</em> (<a href="http://dl.acm.org/citation.cfm?id=1014118">PDF</a>)</li>
+<li><em>Ng, Andrew Y., Michael I. Jordan, and Yair Weiss. &quot;On spectral clustering: Analysis and an algorithm.&quot; Advances in neural information processing systems 2 (2002): 849-856.</em> (<a href="http://machinelearning.wustl.edu/mlpapers/paper_files/nips02-AA35.pdf">PDF</a>)</li>
+<li><em>Dhillon, Inderjit S. &quot;Co-clustering documents and words using bipartite spectral graph partitioning.&quot; In Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 269-274. ACM, 2001.</em> (<a href="http://dl.acm.org/citation.cfm?id=502550">PDF</a>)<br></li>
+<li><em>Cai, Deng, Xiaofei He, and Jiawei Han. &quot;Document clustering using locality preserving indexing.&quot; Knowledge and Data Engineering, IEEE Transactions on 17, no. 12 (2005): 1624-1637.</em> (<a href="http://mall.psy.ohio-state.edu/LexicalSemantics/CaiHeHan05.pdf">PDF</a>)<br></li>
 </ul></li>
 </ul>
 
 <hr>
 
-<h2>Lecture VII: Topic Models</h2>
+<h2>Lecture VI: Topic Models</h2>
 
 <blockquote>
 <p>Text information takes a major portion of online information. Properly modeling text documents is essential for improving search effectiveness and discovering actionable knowledge. We will introduce basic text mining techniques, including text categorization, clustering and topic models.</p>
@@ -308,8 +415,18 @@
 <li><em>Hu, Minqing, and Bing Liu. &quot;Mining and summarizing customer reviews.&quot; In Proceedings of the tenth ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 168-177. ACM, 2004.</em> (<a href="http://dl.acm.org/citation.cfm?id=1014073">PDF</a>)</li>
 <li><em>Dave, Kushal, Steve Lawrence, and David M. Pennock. &quot;Mining the peanut gallery: Opinion extraction and semantic classification of product reviews.&quot; In Proceedings of the 12th international conference on World Wide Web, pp. 519-528. ACM, 2003.</em> (<a href="http://dl.acm.org/citation.cfm?id=775226">PDF</a>)</li>
 <li><em>Pang, Bo, and Lillian Lee. &quot;Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales.&quot; In Proceedings of the 43rd Annual Meeting on Association for Computational Linguistics, pp. 115-124. Association for Computational Linguistics, 2005.</em> (<a href="http://dl.acm.org/citation.cfm?id=1219855">PDF</a>)</li>
+<li><em>Wilson, Theresa, Paul Hoffmann, Swapna Somasundaran, Jason Kessler, Janyce Wiebe, Yejin Choi, Claire Cardie, Ellen Riloff, and Siddharth Patwardhan. &quot;OpinionFinder: A system for subjectivity analysis.&quot; In Proceedings of hlt/emnlp on interactive demonstrations, pp. 34-35. Association for Computational Linguistics, 2005.</em> (<a href="http://www.egr.msu.edu/%7Ejchai/EMNLP05/demoabstracts/book.pdf#page=42">PDF</a>)</li>
 </ul></li>
-<li><h3><strong>Day 2</strong>: Document summarization</h3></li>
+<li><h3><strong>Day 2</strong>: Document summarization</h3>
+
+<ul>
+<li><em>Barzilay, Regina, Kathleen R. McKeown, and Michael Elhadad. &quot;Information fusion in the context of multi-document summarization.&quot; In Proceedings of the 37th annual meeting of the Association for Computational Linguistics on Computational Linguistics, pp. 550-557. Association for Computational Linguistics, 1999.</em> (<a href="http://dl.acm.org/citation.cfm?id=1034760">PDF</a>)</li>
+<li><em>Carbonell, Jaime, and Jade Goldstein. &quot;The use of MMR, diversity-based reranking for reordering documents and producing summaries.&quot; In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 335-336. ACM, 1998.</em> (<a href="http://dl.acm.org/citation.cfm?id=291025">PDF</a>)</li>
+<li><em>Goldstein, Jade, Vibhu Mittal, Jaime Carbonell, and Mark Kantrowitz. &quot;Multi-document summarization by sentence extraction.&quot; In Proceedings of the 2000 NAACL-ANLPWorkshop on Automatic summarization-Volume 4, pp. 40-48. Association for Computational Linguistics, 2000.</em> (<a href="http://dl.acm.org/citation.cfm?id=1117580">PDF</a>)</li>
+<li><em>Wan, Xiaojun, Jianwu Yang, and Jianguo Xiao. &quot;Manifold-Ranking Based Topic-Focused Multi-Document Summarization.&quot; In IJCAI, vol. 7, pp. 2903-2908. 2007.</em> (<a href="http://www.aaai.org/Papers/IJCAI/2007/IJCAI07-467.pdf">PDF</a>)</li>
+<li><em>Wan, Xiaojun, and Jianwu Yang. &quot;Multi-document summarization using cluster-based link analysis.&quot; In Proceedings of the 31st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 299-306. ACM, 2008.</em> (<a href="http://dl.acm.org/citation.cfm?id=1390386">PDF</a>)</li>
+<li><em>Mani, Inderjeet, and Eric Bloedorn. &quot;Multi-document summarization by graph search and matching.&quot; arXiv preprint cmp-lg/9712004 (1997).</em> (<a href="http://arxiv.org/pdf/cmp-lg/9712004">PDF</a>)</li>
+</ul></li>
 <li><h3><strong>Day 3</strong>: Recommendation</h3>
 
 <ul>
@@ -322,7 +439,18 @@
 <li><em>Ma, Hao, Dengyong Zhou, Chao Liu, Michael R. Lyu, and Irwin King. &quot;Recommender systems with social regularization.&quot; In Proceedings of the fourth ACM international conference on Web search and data mining, pp. 287-296. ACM, 2011.</em> (<a href="http://dl.acm.org/citation.cfm?id=1935877">PDF</a>)</li>
 <li><em>Herlocker, Jonathan L., Joseph A. Konstan, Loren G. Terveen, and John T. Riedl. &quot;Evaluating collaborative filtering recommender systems.&quot; ACM Transactions on Information Systems (TOIS) 22, no. 1 (2004): 5-53.</em> (<a href="http://dl.acm.org/citation.cfm?id=963772">PDF</a>)</li>
 </ul></li>
-<li><h3><strong>Day 4</strong>: Document visualization</h3></li>
+<li><h3><strong>Day 4</strong>: Document visualization</h3>
+
+<ul>
+<li><em>Fortuna, Blaz, Dunja Mladenić, and Marko Grobelnik. &quot;Visualization of text document corpus.&quot; (2005).</em> (<a href="http://eprints.pascal-network.org/archive/00001197/">PDF</a>)</li>
+<li><em>Liu, Hugo, Ted Selker, and Henry Lieberman. &quot;Visualizing the affective structure of a text document.&quot; In CHI&#39;03 extended abstracts on Human factors in computing systems, pp. 740-741. ACM, 2003.</em> (<a href="http://dl.acm.org/citation.cfm?id=765961">PDF</a>)</li>
+<li><em>Shiping, Huang, Matthew O. Ward, and Elke A. Rundensteiner. &quot;Exploration of dimensionality reduction for text visualization.&quot; In Coordinated and Multiple Views in Exploratory Visualization, 2005.(CMV 2005). Proceedings. Third International Conference on, pp. 63-74. IEEE, 2005.</em> (<a href="http://digitalcommons.wpi.edu/cgi/viewcontent.cgi?article=1139&amp;context=computerscience-pubs">PDF</a>)</li>
+<li><em>Risch, John, Anne Kao, Stephen R. Poteet, and Y-J. Jason Wu. &quot;Text visualization for visual text analytics.&quot; In Visual data mining, pp. 154-171. Springer Berlin Heidelberg, 2008.</em> (<a href="http://link.springer.com/chapter/10.1007/978-3-540-71080-6_11#page-1">PDF</a>)</li>
+<li><em>Cui, Weiwei, Yingcai Wu, Shixia Liu, Furu Wei, Michelle X. Zhou, and Huamin Qu. &quot;Context preserving dynamic word cloud visualization.&quot; In Pacific Visualization Symposium (PacificVis), 2010 IEEE, pp. 121-128. IEEE, 2010.</em> (<a href="http://research.microsoft.com/en-us/um/people/weiweicu/images/wordpv.pdf">PDF</a>)</li>
+<li><em>Viégas, Fernanda B., and Martin Wattenberg. &quot;Timelines tag clouds and the case for vernacular visualization.&quot; interactions 15, no. 4 (2008): 49-52.</em> (<a href="http://dl.acm.org/citation.cfm?id=1374501">PDF</a>)</li>
+<li><em>Kaser, Owen, and Daniel Lemire. &quot;Tag-cloud drawing: Algorithms for cloud visualization.&quot; arXiv preprint cs/0703109 (2007).</em> (<a href="http://arxiv.org/pdf/cs.DS/0703109">PDF</a>)</li>
+<li><em>Bateman, Scott, Carl Gutwin, and Miguel Nacenta. &quot;Seeing things in the clouds: the effect of visual features on tag cloud selections.&quot; In Proceedings of the nineteenth ACM conference on Hypertext and hypermedia, pp. 193-202. ACM, 2008.</em> (<a href="http://dl.acm.org/citation.cfm?id=1379130">PDF</a>)</li>
+</ul></li>
 </ul>
 
 </div>
