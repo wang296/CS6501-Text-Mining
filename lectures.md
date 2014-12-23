@@ -3,7 +3,7 @@ layout: page
 title: Lectures
 ---
 
-## Lecture I: Course overview
+## Lecture I: [Course overview](http://en.wikipedia.org/wiki/Text_mining)
 
 > We will highlight the basic structure and major topics of this course, and go over some logistic issues and course requirements.     
 
@@ -11,11 +11,11 @@ title: Lectures
              
 
 -----
-## Lecture II: Natural Language Processing
+## Lecture II: [Natural Language Processing](http://en.wikipedia.org/wiki/Natural_language_processing)
 
 > We will briefly provide an introduction to computational linguistics, from morphology (word formation) and syntax (sentence structure) to semantics (meaning), as the first step to process and analyze text data. Public natural langauge processing (NLP) toolkits will be introduced for you to understand and practice with those techniques. 
 
-- ### **Day 1**: Get familiar with NLP pipeline      
+- ### **Day 1**: Get familiar with NLP pipelines      
     - *Torres-Carrasquillo, Pedro A., Douglas A. Reynolds, and J. R. Deller Jr. "Language identification using Gaussian mixture model tokenization." In Acoustics, Speech, and Signal Processing (ICASSP), 2002 IEEE International Conference on, vol. 1, pp. I-757. IEEE, 2002.* ([PDF](http://llwebprod2.ll.mit.edu/mission/communications/publications/publication-files/full_papers/020513_Torres.pdf))
     - *Chung, Tagyoung, and Daniel Gildea. "Unsupervised tokenization for machine translation." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 2-Volume 2, pp. 718-726. Association for Computational Linguistics, 2009.* ([PDF](http://www.aclweb.org/anthology/D/D09/D09-1075.pdf))
     - *Lovins, Julie B. Development of a stemming algorithm. MIT Information Processing Group, Electronic Systems Laboratory, 1968.* ([PDF](http://mt-archive.info/MT-1968-Lovins.pdf))
@@ -78,7 +78,7 @@ title: Lectures
 
 ----
 
-## Lecture IV: Text Categorization
+## Lecture IV: [Text Categorization](http://en.wikipedia.org/wiki/Document_classification)
 
 > Document categorization refers to the task of assigning a text document to one or more classes or categories. We will discuss several basic supervised text categorization algorithms.
 
@@ -122,10 +122,10 @@ title: Lectures
 
 ---
 
-## Lecture V: Text Clustering
-> We will discuss the unique characteristic of web: inter-connection, and introduce Google's winning algorithm PageRank. We will also introduce the application of link analysis techniques in a similar domain: social network analysis.                      
+## Lecture V: [Text Clustering](http://en.wikipedia.org/wiki/Document_clustering)
+> Text clustering refers to the task of identifying the clustering structure of a corpus of text documents and assigning documents to the identified cluster(s). We will discuss two typical types of clustering algorithms, i.e., centroid-based clustering (e.g., k-means clustering) and connectivity-based clustering (a.k.a., hierarchical clustering).                   
            
-- ### **Day 1**: k-Means & EM - flat structure document clustering      
+- ### **Day 1**: k-Means & EM - flat structure clustering      
 	- *Liu, Tao, Shengping Liu, Zheng Chen, and Wei-Ying Ma. "An evaluation on feature selection for text clustering." In ICML, vol. 3, pp. 488-495. 2003.* ([PDF](http://www.aaai.org/Papers/ICML/2003/ICML03-065.pdf))
 	- *Hartigan, John A., and Manchek A. Wong. "Algorithm AS 136: A k-means clustering algorithm." Applied statistics (1979): 100-108.* ([PDF](http://www.labri.fr/perso/bpinaud/userfiles/downloads/hartigan_1979_kmeans.pdf))
 	- *Wagstaff, Kiri, Claire Cardie, Seth Rogers, and Stefan Schrödl. "Constrained k-means clustering with background knowledge." In ICML, vol. 1, pp. 577-584. 2001.* ([PDF](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf))   
@@ -136,7 +136,7 @@ title: Lectures
 	- *Dempster, Arthur P., Nan M. Laird, and Donald B. Rubin. "Maximum likelihood from incomplete data via the EM algorithm." Journal of the Royal Statistical Society. Series B (Methodological) (1977): 1-38.* ([PDF](http://www.jstor.org/stable/2984875))
 	- *On the convergence properties of the EM algorithm* ([PDF](http://www.jstor.org/stable/2240463))
 	
-- ### **Day 2**: Agglomerative clustering - hierarchical structure document clustering                 
+- ### **Day 2**: Agglomerative clustering - hierarchical structure clustering                 
 	- *Steinbach, Michael, George Karypis, and Vipin Kumar. "A comparison of document clustering techniques." In KDD workshop on text mining, vol. 400, no. 1, pp. 525-526. 2000.* ([PDF](https://wwws.cs.umn.edu/tech_reports_upload/tr2000/00-034.ps))
 	- *Hotho, Andreas, Alexander Maedche, and Steffen Staab. "Ontology-based text document clustering." KI 16, no. 4 (2002): 48-54.* ([PDF](http://pdf.aminer.org/000/386/677/ontology_based_text_document_clustering.pdf))
 	- *Karypis, George, Eui-Hong Han, and Vipin Kumar. "Chameleon: Hierarchical clustering using dynamic modeling." Computer 32, no. 8 (1999): 68-75.* ([PDF](http://glaros.dtc.umn.edu/gkhome/fetch/papers/chameleon.pdf))
@@ -165,9 +165,9 @@ title: Lectures
 
 ----
 
-## Lecture VI: Topic Models
+## Lecture VI: [Topic Models](http://en.wikipedia.org/wiki/Topic_model)
 
-> Text information takes a major portion of online information. Properly modeling text documents is essential for improving search effectiveness and discovering actionable knowledge. We will introduce basic text mining techniques, including text categorization, clustering and topic models.
+> Topic models are a suite of algorithms that uncover the hidden thematic structure in document collections. We will introduce the general idea of topic modeling, two basic topic models, i.e., Probabilistic Latent Semantic Indexing (pLSI) and Latent Dirichlet Allocation (LDA), and their variants for different application scenarios, including classification, imagine annotation, collaborative filtering, and hierarchical topical structure modeling.
 
 - ### **Day 1**: Topic models I 
 	- *Hofmann, Thomas. "Probabilistic latent semantic analysis." In Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence, pp. 289-296. Morgan Kaufmann Publishers Inc., 1999.* ([PDF](http://dl.acm.org/citation.cfm?id=2073829))
@@ -188,9 +188,9 @@ title: Lectures
 
 ----
 
-## Lecture VII: Social Media and Network Analysis
+## Lecture VII: [Social Media and Network Analysis](http://en.wikipedia.org/wiki/Social_network_analysis)
 
-> We will discuss the unique characteristic of web: inter-connection, and introduce Google's winning algorithm PageRank. We will also introduce the application of link analysis techniques in a similar domain: social network analysis.
+> We will apply the introduced text mining algorithms on social media and introduce Google's winning algorithm PageRank. We will also introduce the application of link analysis techniques in social network analysis.
 
 - ### **Day 1**: Pagerank and HITS            
     - *Page, Lawrence, Sergey Brin, Rajeev Motwani, and Terry Winograd. "The PageRank citation ranking: Bringing order to the web." (1999).* ([PDF](http://ilpubs.stanford.edu:8090/422))
@@ -219,8 +219,7 @@ title: Lectures
 
 ## Lecture VIII: Text Mining Applications
 
-> We will introduce modern applications in search systems, including recommendation, personalization, and online advertising, if time allows.
-
+> We will introduce some modern text mining applications, including sentiment analysis,  document summarization, recommendation, and document visualization.
 
 - ### **Day 1**: Sentiment analysis
 	- *Pang, Bo, and Lillian Lee. "Opinion mining and sentiment analysis." Foundations and trends in information retrieval 2, no. 1-2 (2008): 1-135.* ([PDF](http://dl.acm.org/citation.cfm?id=1454712))
