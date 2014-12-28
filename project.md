@@ -22,6 +22,7 @@ Your project will be graded based on the following required components:
 	* State your motivation, research problem, and expected outcome of your course project.
 	* Due in the end of 5th week of semester. 
 	* Discussion with instructor prior to deadline is encouraged.
+	* Due in the in the end of **5th week**.
 * Project presentation (40%)
 	* 20 minutes presentation about what you have done for this course project. Format could be tailored according to the nature of the project, e.g., slides presentation and/or system demo.
 	* Performance will be graded by both instructor and peer students (**no self-grading**).

@@ -35,8 +35,9 @@ The following list and comments only represent the instructor's personal opinion
 - [WWW](http://www.www2014.wwwconference.org/): Another most important and influential conference in IR field (attract more attention from industry), proceedings of publications can be found [here](http://dl.acm.org/event.cfm?id=RE334).
 - [WSDM](http://www.wsdm-conference.org/): A new but quickly raising conference in the field, attracking attentions from both industry and academia. Proceedings of publications can be found [here](http://dl.acm.org/event.cfm?id=RE102).
 - [CIKM](http://cikmconference.org/): A major conference in the field of data mining and information retrieval. Proceedings of publications can be found [here](http://dl.acm.org/event.cfm?id=RE302).
+- [ACL](http://www.aclweb.org/): A major conference for computational linguistics research. A Digital archive of research papers in computational linguistics at [ACL Anthology](http://www.aclweb.org/anthology/).
 - [TOIS](http://tois.acm.org/): One of major journals for information retrieval and data mining field. 
-- If you are interested in rankings or indices of those conferences and journals, you may take a look at [Google Scholar's Metrics](http://scholar.google.com/citations?view_op=top_venues&hl=en). IR is under this [category](http://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng_databasesinformationsystems).
+- If you are interested in rankings or indices of those conferences and journals, you may take a look at [Google Scholar's Metrics](http://scholar.google.com/citations?view_op=top_venues&hl=en).
 
 ## Text Mining Toolkits
 
