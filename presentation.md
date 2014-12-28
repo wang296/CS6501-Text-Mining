@@ -9,7 +9,7 @@ After each lecture, there will be three to ten recommended readings. Everyone is
 
 It is preferred that the students could present the paper on the day when the topic is covered in the lecture, such that the audiences can get different flavors of the topic. The student presentation will be placed at the end of the class (unless the student requires to present at the beginning of the class).
 
-Giving an impressive presentation is an art. Some helpful tips can be found in the [resource page]({{site.baseurl}}/resources.html).
+Giving an impressive presentation is an art. Some helpful tips can be found in the [resource page]({{site.baseurl}}/resources).
 
 Both the instructor and other students will grade the presentation (**no self-grading**). The detailed grading criteria are as follows.
 

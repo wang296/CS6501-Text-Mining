@@ -34,7 +34,7 @@ Your project will be graded based on the following required components:
 An official [rubric for the final report]({{site.baseurl}}/docs/project-report-rubric.pdf) and [rubric for the project presentation]({{site.baseurl}}/docs/project-presentation-rubric.pdf) can be found here.
 
 Note that you are required to use the provided templates for your project proposal and final report. See the
-[Resources]({{site.baseurl}}/resources.html) page for the template and example file.
+[Resources]({{site.baseurl}}/resources) page for the template and example file.
 
 # Pick a topic
 
@@ -136,7 +136,7 @@ the proposal and presentation, only with more details. Pay special attention to 
 challenges that you have solved and your detailed solutions. Basic sections to be included in the report should be the same as those in a conference paper, e.g., abstract, introduction, related work, method, experiment and conclusion. If you are developing a demo system or toolkit, your report should follow the format of a demo paper.
 
 You are required to use LaTeX for your project report. See the
-[Resources]({{site.baseurl}}/resources.html) page for the template and example
+[Resources]({{site.baseurl}}/resources) page for the template and example
 file. The project report must be **at most** ten pages with that format (no minimal requirement, as long as you feel it is sufficient to prove the merit of your work).
 
 
