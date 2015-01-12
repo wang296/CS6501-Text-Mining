@@ -8,7 +8,7 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Lecture time and place**: Tuesday/Thursday 9:30am-10:45am, Rice Hall 340   
 **Contact Info**: [Piazza](https://piazza.com/virginia/spring2015/cs6501/home)   
 **Office Hour**: Hongning Wang: Thursday 11am-12pm, Rice Hall 408    
-**Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar.html)
+**Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
 **January 11**: The [course syllabus]({{site.baseurl}}/docs/syllabus.pdf), [lecture schedule]({{site.baseurl}}/lectures/), and [course policy]({{site.baseurl}}/docs/CoursePolicy.pptx) have been finalized.
