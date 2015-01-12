@@ -7,53 +7,11 @@ title: Lectures
 
 > We will highlight the basic structure and major topics of this course, and go over some logistic issues and course requirements.     
 
-- **Day 1**: Introduction
-             
+- **Day 1**: Introduction ([Course Policy]({{site.baseurl}}/docs/CoursePolicy.pptx))
 
 -----
-## Lecture II: [Natural Language Processing](http://en.wikipedia.org/wiki/Natural_language_processing)
 
-> We will briefly provide an introduction to computational linguistics, from morphology (word formation) and syntax (sentence structure) to semantics (meaning), as the first step to process and analyze text data. Public natural langauge processing (NLP) toolkits will be introduced for you to understand and practice with those techniques. 
-
-- ### **Day 1**: Get familiar with NLP pipelines      
-    - *Torres-Carrasquillo, Pedro A., Douglas A. Reynolds, and J. R. Deller Jr. "Language identification using Gaussian mixture model tokenization." In Acoustics, Speech, and Signal Processing (ICASSP), 2002 IEEE International Conference on, vol. 1, pp. I-757. IEEE, 2002.* ([PDF](http://llwebprod2.ll.mit.edu/mission/communications/publications/publication-files/full_papers/020513_Torres.pdf))
-    - *Chung, Tagyoung, and Daniel Gildea. "Unsupervised tokenization for machine translation." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 2-Volume 2, pp. 718-726. Association for Computational Linguistics, 2009.* ([PDF](http://www.aclweb.org/anthology/D/D09/D09-1075.pdf))
-    - *Lovins, Julie B. Development of a stemming algorithm. MIT Information Processing Group, Electronic Systems Laboratory, 1968.* ([PDF](http://mt-archive.info/MT-1968-Lovins.pdf))
-    - Porter, Martin. "Snowball: A language for stemming algorithms." (2001). ([PDF](http://snowball.tartarus.org/texts/introduction.html))   
-                   	
-- ### **Day 2**: Part-of-Speech Tagging, Chunking & Named entity recognition	 
-	- *Ratnaparkhi, Adwait. "A maximum entropy model for part-of-speech tagging." In Proceedings of the conference on empirical methods in natural language processing, vol. 1, pp. 133-142. 1996.* ([PDF](http://www.ling.helsinki.fi/kit/2011s/clt350/docs/Ratnaparkhi-tagging96.pdf))
-	- *Gimpel, Kevin, Nathan Schneider, Brendan O'Connor, Dipanjan Das, Daniel Mills, Jacob Eisenstein, Michael Heilman, Dani Yogatama, Jeffrey Flanigan, and Noah A. Smith. "Part-of-speech tagging for twitter: Annotation, features, and experiments." In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: short papers-Volume 2, pp. 42-47. Association for Computational Linguistics, 2011.* ([PDF](http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA547371&%3BLocation=U2&%3Bdoc=GetTRDoc.pdf&origin=publication_detail))
-	- *Kudo, Taku, and Yuji Matsumoto. "Chunking with support vector machines." In Proceedings of the second meeting of the North American Chapter of the Association for Computational Linguistics on Language technologies, pp. 1-8. Association for Computational Linguistics, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=1073361))
-	- *Ando, Rie Kubota, and Tong Zhang. "A high-performance semi-supervised learning method for text chunking." In Proceedings of the 43rd annual meeting on association for computational linguistics, pp. 1-9. Association for Computational Linguistics, 2005.* ([PDF](http://www.aclweb.org/anthology/P/P05/P05-1.pdf#page=29))
-	- *Sha, Fei, and Fernando Pereira. "Shallow parsing with conditional random fields." In Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology-Volume 1, pp. 134-141. Association for Computational Linguistics, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=1073473))
-	- *Collins, Michael. "Ranking algorithms for named-entity extraction: Boosting and the voted perceptron." In Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, pp. 489-496. Association for Computational Linguistics, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=1073165))
-	- *Moschitti, Alessandro. "A study on convolution kernels for shallow semantic parsing." In Proceedings of the 42nd Annual Meeting on Association for Computational Linguistics, p. 335. Association for Computational Linguistics, 2004.* ([PDF](http://dl.acm.org/citation.cfm?id=1218998))
-	- *Poon, Hoifung, and Pedro Domingos. "Unsupervised semantic parsing." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 1-Volume 1, pp. 1-10. Association for Computational Linguistics, 2009.* ([PDF](http://dl.acm.org/citation.cfm?id=1699512))
-	- *Ritter, Alan, Sam Clark, and Oren Etzioni. "Named entity recognition in tweets: an experimental study." In Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 1524-1534. Association for Computational Linguistics, 2011.* ([PDF](http://dl.acm.org/citation.cfm?id=2145595))
-	
-- ### **Day 3**: Lexical Semantics & Word Senses
-	- *Miller, George A., Richard Beckwith, Christiane Fellbaum, Derek Gross, and Katherine J. Miller. "Introduction to wordnet: An on-line lexical database." International journal of lexicography 3, no. 4 (1990): 235-244.* ([PDF](http://www.researchgate.net/publication/31441225_Introduction_to_WordNet_An_On-line_Lexical_Database*/file/9c96052a8b7ca401b1.pdf))
-	- *Gildea, Daniel, and Daniel Jurafsky. "Automatic labeling of semantic roles." Computational linguistics 28, no. 3 (2002): 245-288.* ([PDF](http://ftp.icsi.berkeley.edu/ftp/pub/techreports/2001/tr-01-005.pdf))
-	- *Palmer, Martha, Daniel Gildea, and Paul Kingsbury. "The proposition bank: An annotated corpus of semantic roles." Computational linguistics 31, no. 1 (2005): 71-106.* ([PDF](http://www.cs.rochester.edu/~gildea/palmer-propbank-cl.pdf))
-	- *Pedersen, Ted, Siddharth Patwardhan, and Jason Michelizzi. "WordNet:: Similarity: measuring the relatedness of concepts." In Demonstration Papers at HLT-NAACL 2004, pp. 38-41. Association for Computational Linguistics, 2004.* ([PDF](http://www.aaai.org/Papers/AAAI/2004/AAAI04-160.pdf))
-	- *Yarowsky, David. "Unsupervised word sense disambiguation rivaling supervised methods." In Proceedings of the 33rd annual meeting on Association for Computational Linguistics, pp. 189-196. Association for Computational Linguistics, 1995.* ([PDF](http://www.cse.unt.edu/~rada/CSCE5330/Papers/Yarowsky.ACL95.pdf))
-	- *Ide, Nancy, and Jean Véronis. "Introduction to the special issue on word sense disambiguation: the state of the art." Computational linguistics 24, no. 1 (1998): 2-40.* ([PDF](http://promethee.philo.ulg.ac.be/engdep1/download/prolog/lexdis/docs/lexdis/otherpap/veronis-ide-wsd.pdf))
-	- *Lesk, Michael. "Automatic sense disambiguation using machine readable dictionaries: how to tell a pine cone from an ice cream cone." In Proceedings of the 5th annual international conference on Systems documentation, pp. 24-26. ACM, 1986.* ([PDF](http://promethee.philo.ulg.ac.be/engdep1/download/prolog/lexdis/docs/lexdis/otherpap/Lesk%20clean.pdf))
-	- *Yarowsky, David. "Unsupervised word sense disambiguation rivaling supervised methods." In Proceedings of the 33rd annual meeting on Association for Computational Linguistics, pp. 189-196. Association for Computational Linguistics, 1995.* ([PDF](http://www.cse.unt.edu/~rada/CSCE5330/Papers/Yarowsky.ACL95.pdf))
-
-- ### **Day 4**: Machine Translation
-	- *Papineni, Kishore, Salim Roukos, Todd Ward, and Wei-Jing Zhu. "BLEU: a method for automatic evaluation of machine translation." In Proceedings of the 40th annual meeting on association for computational linguistics, pp. 311-318. Association for Computational Linguistics, 2002.* ([PDF](http://www.aclweb.org/anthology/P02-1040.pdf))
-	- *Koehn, Philipp, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan et al. "Moses: Open source toolkit for statistical machine translation." In Proceedings of the 45th Annual Meeting of the ACL on Interactive Poster and Demonstration Sessions, pp. 177-180. Association for Computational Linguistics, 2007.* ([PDF](http://www.aclweb.org/anthology/P/P07/P07-2.pdf#page=193))
-	- *Och, Franz Josef. "Minimum error rate training in statistical machine translation." In Proceedings of the 41st Annual Meeting on Association for Computational Linguistics-Volume 1, pp. 160-167. Association for Computational Linguistics, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=1075117))
-	- *Brown, Peter F., Vincent J. Della Pietra, Stephen A. Della Pietra, and Robert L. Mercer. "The mathematics of statistical machine translation: Parameter estimation." Computational linguistics 19, no. 2 (1993): 263-311.* ([PDF](http://dl.acm.org/citation.cfm?id=972474))
-	- *Brown, Peter F., John Cocke, Stephen A. Della Pietra, Vincent J. Della Pietra, Fredrick Jelinek, John D. Lafferty, Robert L. Mercer, and Paul S. Roossin. "A statistical approach to machine translation." Computational linguistics 16, no. 2 (1990): 79-85.* ([PDF](http://dl.acm.org/citation.cfm?id=92860))
-	- *Och, Franz Josef, and Hermann Ney. "Discriminative training and maximum entropy models for statistical machine translation." In Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, pp. 295-302. Association for Computational Linguistics, 2002.* ([PDF](http://www.aclweb.org/anthology/P02-1038.pdf))	
-
-
----
-
-## Lecture III: Document Representation
+## Lecture II: Document Representation
 
 > We will discuss how to represent the unstructured text documents with appropriate format and structure to support later automated text mining algorithms.
 
@@ -67,17 +25,61 @@ title: Lectures
 	- *Erk, Katrin, and Sebastian Padó. "A structured vector space model for word meaning in context." In Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 897-906. Association for Computational Linguistics, 2008.* ([PDF](http://t3-1.yum2.net/index/nlp.stanford.edu/pubs/structuredVS.pdf))
 	- *Zwarts, Joost, and Yoad Winter. "Vector space semantics: A model-theoretic analysis of locative prepositions." Journal of logic, language and information 9, no. 2 (2000): 169-211.* ([PDF](http://link.springer.com/article/10.1023/A:1008384416604))
 	
-- ### **Day 2**: N-gram language models              
+- ### **Day 2**: Language models              
 	- *Ponte, Jay M., and W. Bruce Croft. "A language modeling approach to information retrieval." In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 275-281. ACM, 1998.* ([PDF](http://dl.acm.org/citation.cfm?id=291008))
 	- *Lavrenko, Victor, and W. Bruce Croft. "Relevance based language models." In Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 120-127. ACM, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=383972))
 	- *Zhai, Chengxiang, and John Lafferty. "A study of smoothing methods for language models applied to ad hoc information retrieval." In Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 334-342. ACM, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=384019))
-    - *Gao, Jianfeng, Jian-Yun Nie, Guangyuan Wu, and Guihong Cao. "Dependence language model for information retrieval." In Proceedings of the 27th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 170-177. ACM, 2004.* ([PDF](http://dl.acm.org/citation.cfm?id=1009024))
+	- *Chen, Stanley F., and Joshua Goodman. "An empirical study of smoothing techniques for language modeling." In Proceedings of the 34th annual meeting on Association for Computational Linguistics, pp. 310-318. Association for Computational Linguistics, 1996.* ([PDF](http://dl.acm.org/citation.cfm?id=981904))
+    - *Kneser, Reinhard, and Hermann Ney. "Improved backing-off for m-gram language modeling." In Acoustics, Speech, and Signal Processing, 1995. ICASSP-95., 1995 International Conference on, vol. 1, pp. 181-184. IEEE, 1995.* ([PDF](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=479394))
     - *Metzler, Donald, and W. Bruce Croft. "A Markov random field model for term dependencies." In Proceedings of the 28th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 472-479. ACM, 2005.* ([PDF](http://dl.acm.org/citation.cfm?id=1076115))
     - *Brants, Thorsten, Ashok C. Popat, Peng Xu, Franz J. Och, and Jeffrey Dean. "Large language models in machine translation." In In Proceedings of the Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning. 2007.* ([PDF](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.324.3653))
-    - *Li, Xiaoyan, and W. Bruce Croft. "Time-based language models." In Proceedings of the twelfth international conference on Information and knowledge management, pp. 469-475. ACM, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=956951))
+    - *Teh, Yee Whye. "A hierarchical Bayesian language model based on Pitman-Yor processes." In Proceedings of the 21st International Conference on Computational Linguistics and the 44th annual meeting of the Association for Computational Linguistics, pp. 985-992. Association for Computational Linguistics, 2006.* ([PDF](http://dl.acm.org/citation.cfm?id=1220299))
+    - *Goodman, Joshua T. "A bit of progress in language modeling." Computer Speech & Language 15, no. 4 (2001): 403-434.* ([PDF](http://www.sciencedirect.com/science/article/pii/S0885230801901743))
    
 
 ----
+
+## Lecture III: [Natural Language Processing](http://en.wikipedia.org/wiki/Natural_language_processing)
+
+> We will briefly provide an introduction to computational linguistics, from morphology (word formation) and syntax (sentence structure) to semantics (meaning), as the first step to process and analyze text data. Public natural langauge processing (NLP) toolkits will be introduced for you to understand and practice with those techniques. 
+
+- ### **Day 1**: Get familiar with NLP pipelines      
+    - *Torres-Carrasquillo, Pedro A., Douglas A. Reynolds, and J. R. Deller Jr. "Language identification using Gaussian mixture model tokenization." In Acoustics, Speech, and Signal Processing (ICASSP), 2002 IEEE International Conference on, vol. 1, pp. I-757. IEEE, 2002.* ([PDF](http://llwebprod2.ll.mit.edu/mission/communications/publications/publication-files/full_papers/020513_Torres.pdf))
+    - *Chung, Tagyoung, and Daniel Gildea. "Unsupervised tokenization for machine translation." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 2-Volume 2, pp. 718-726. Association for Computational Linguistics, 2009.* ([PDF](http://www.aclweb.org/anthology/D/D09/D09-1075.pdf))
+    - *Lovins, Julie B. Development of a stemming algorithm. MIT Information Processing Group, Electronic Systems Laboratory, 1968.* ([PDF](http://mt-archive.info/MT-1968-Lovins.pdf))
+    - Porter, Martin. "Snowball: A language for stemming algorithms." (2001). ([PDF](http://snowball.tartarus.org/texts/introduction.html))   
+                   	
+- ### **Day 2**: Part-of-Speech tagging, chunking & named entity recognition	 
+	- *Ratnaparkhi, Adwait. "A maximum entropy model for part-of-speech tagging." In Proceedings of the conference on empirical methods in natural language processing, vol. 1, pp. 133-142. 1996.* ([PDF](http://www.ling.helsinki.fi/kit/2011s/clt350/docs/Ratnaparkhi-tagging96.pdf))
+	- *Gimpel, Kevin, Nathan Schneider, Brendan O'Connor, Dipanjan Das, Daniel Mills, Jacob Eisenstein, Michael Heilman, Dani Yogatama, Jeffrey Flanigan, and Noah A. Smith. "Part-of-speech tagging for twitter: Annotation, features, and experiments." In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: short papers-Volume 2, pp. 42-47. Association for Computational Linguistics, 2011.* ([PDF](http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA547371&%3BLocation=U2&%3Bdoc=GetTRDoc.pdf&origin=publication_detail))
+	- *Kudo, Taku, and Yuji Matsumoto. "Chunking with support vector machines." In Proceedings of the second meeting of the North American Chapter of the Association for Computational Linguistics on Language technologies, pp. 1-8. Association for Computational Linguistics, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=1073361))
+	- *Ando, Rie Kubota, and Tong Zhang. "A high-performance semi-supervised learning method for text chunking." In Proceedings of the 43rd annual meeting on association for computational linguistics, pp. 1-9. Association for Computational Linguistics, 2005.* ([PDF](http://www.aclweb.org/anthology/P/P05/P05-1.pdf#page=29))
+	- *Sha, Fei, and Fernando Pereira. "Shallow parsing with conditional random fields." In Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology-Volume 1, pp. 134-141. Association for Computational Linguistics, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=1073473))
+	- *Collins, Michael. "Ranking algorithms for named-entity extraction: Boosting and the voted perceptron." In Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, pp. 489-496. Association for Computational Linguistics, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=1073165))
+	- *Moschitti, Alessandro. "A study on convolution kernels for shallow semantic parsing." In Proceedings of the 42nd Annual Meeting on Association for Computational Linguistics, p. 335. Association for Computational Linguistics, 2004.* ([PDF](http://dl.acm.org/citation.cfm?id=1218998))
+	- *Poon, Hoifung, and Pedro Domingos. "Unsupervised semantic parsing." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 1-Volume 1, pp. 1-10. Association for Computational Linguistics, 2009.* ([PDF](http://dl.acm.org/citation.cfm?id=1699512))
+	- *Ritter, Alan, Sam Clark, and Oren Etzioni. "Named entity recognition in tweets: an experimental study." In Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 1524-1534. Association for Computational Linguistics, 2011.* ([PDF](http://dl.acm.org/citation.cfm?id=2145595))
+	
+- ### **Day 3**: Lexical semantics & word senses
+	- *Miller, George A., Richard Beckwith, Christiane Fellbaum, Derek Gross, and Katherine J. Miller. "Introduction to wordnet: An on-line lexical database." International journal of lexicography 3, no. 4 (1990): 235-244.* ([PDF](http://www.researchgate.net/publication/31441225_Introduction_to_WordNet_An_On-line_Lexical_Database*/file/9c96052a8b7ca401b1.pdf))
+	- *Gildea, Daniel, and Daniel Jurafsky. "Automatic labeling of semantic roles." Computational linguistics 28, no. 3 (2002): 245-288.* ([PDF](http://ftp.icsi.berkeley.edu/ftp/pub/techreports/2001/tr-01-005.pdf))
+	- *Palmer, Martha, Daniel Gildea, and Paul Kingsbury. "The proposition bank: An annotated corpus of semantic roles." Computational linguistics 31, no. 1 (2005): 71-106.* ([PDF](http://www.cs.rochester.edu/~gildea/palmer-propbank-cl.pdf))
+	- *Pedersen, Ted, Siddharth Patwardhan, and Jason Michelizzi. "WordNet:: Similarity: measuring the relatedness of concepts." In Demonstration Papers at HLT-NAACL 2004, pp. 38-41. Association for Computational Linguistics, 2004.* ([PDF](http://www.aaai.org/Papers/AAAI/2004/AAAI04-160.pdf))
+	- *Yarowsky, David. "Unsupervised word sense disambiguation rivaling supervised methods." In Proceedings of the 33rd annual meeting on Association for Computational Linguistics, pp. 189-196. Association for Computational Linguistics, 1995.* ([PDF](http://www.cse.unt.edu/~rada/CSCE5330/Papers/Yarowsky.ACL95.pdf))
+	- *Ide, Nancy, and Jean Véronis. "Introduction to the special issue on word sense disambiguation: the state of the art." Computational linguistics 24, no. 1 (1998): 2-40.* ([PDF](http://promethee.philo.ulg.ac.be/engdep1/download/prolog/lexdis/docs/lexdis/otherpap/veronis-ide-wsd.pdf))
+	- *Lesk, Michael. "Automatic sense disambiguation using machine readable dictionaries: how to tell a pine cone from an ice cream cone." In Proceedings of the 5th annual international conference on Systems documentation, pp. 24-26. ACM, 1986.* ([PDF](http://promethee.philo.ulg.ac.be/engdep1/download/prolog/lexdis/docs/lexdis/otherpap/Lesk%20clean.pdf))
+	- *Yarowsky, David. "Unsupervised word sense disambiguation rivaling supervised methods." In Proceedings of the 33rd annual meeting on Association for Computational Linguistics, pp. 189-196. Association for Computational Linguistics, 1995.* ([PDF](http://www.cse.unt.edu/~rada/CSCE5330/Papers/Yarowsky.ACL95.pdf))
+
+- ### **Day 4**: Machine translation
+	- *Papineni, Kishore, Salim Roukos, Todd Ward, and Wei-Jing Zhu. "BLEU: a method for automatic evaluation of machine translation." In Proceedings of the 40th annual meeting on association for computational linguistics, pp. 311-318. Association for Computational Linguistics, 2002.* ([PDF](http://www.aclweb.org/anthology/P02-1040.pdf))
+	- *Koehn, Philipp, Hieu Hoang, Alexandra Birch, Chris Callison-Burch, Marcello Federico, Nicola Bertoldi, Brooke Cowan et al. "Moses: Open source toolkit for statistical machine translation." In Proceedings of the 45th Annual Meeting of the ACL on Interactive Poster and Demonstration Sessions, pp. 177-180. Association for Computational Linguistics, 2007.* ([PDF](http://www.aclweb.org/anthology/P/P07/P07-2.pdf#page=193))
+	- *Och, Franz Josef. "Minimum error rate training in statistical machine translation." In Proceedings of the 41st Annual Meeting on Association for Computational Linguistics-Volume 1, pp. 160-167. Association for Computational Linguistics, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=1075117))
+	- *Brown, Peter F., Vincent J. Della Pietra, Stephen A. Della Pietra, and Robert L. Mercer. "The mathematics of statistical machine translation: Parameter estimation." Computational linguistics 19, no. 2 (1993): 263-311.* ([PDF](http://dl.acm.org/citation.cfm?id=972474))
+	- *Brown, Peter F., John Cocke, Stephen A. Della Pietra, Vincent J. Della Pietra, Fredrick Jelinek, John D. Lafferty, Robert L. Mercer, and Paul S. Roossin. "A statistical approach to machine translation." Computational linguistics 16, no. 2 (1990): 79-85.* ([PDF](http://dl.acm.org/citation.cfm?id=92860))
+	- *Och, Franz Josef, and Hermann Ney. "Discriminative training and maximum entropy models for statistical machine translation." In Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, pp. 295-302. Association for Computational Linguistics, 2002.* ([PDF](http://www.aclweb.org/anthology/P02-1038.pdf))	
+
+
+---
 
 ## Lecture IV: [Text Categorization](http://en.wikipedia.org/wiki/Document_classification)
 

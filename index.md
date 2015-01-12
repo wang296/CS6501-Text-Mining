@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar.html)
 
 # Announcements
+**January 1**: The [course syllabus]({{site.baseurl}}/docs/syllabus.pdf), [lecture schedule]({{site.baseurl}}/lectures/), and [course policy]({{site.baseurl}}/docs/CoursePolicy.pptx) have been finalized.
+
 **December 27**: The [course syllabus]({{site.baseurl}}/docs/syllabus.pdf) has been
 updated.
 
