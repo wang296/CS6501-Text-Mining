@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**January 14**: Slides for the Vector Space Model have been posted.
+
 **January 13**: More facts about Big Data and Watson's DeepQA system are posted on our Piazza course page.
 
 **January 12**: Slides for the introduction of this course have been posted.
