@@ -14,3 +14,21 @@ Giving an impressive presentation is an art. Some helpful tips can be found in t
 Both the instructor and other students will grade the presentation (**no self-grading**). The detailed grading criteria are as follows.
 
 Paper presentation sign up is due in the end of **6th week** of the semester. The paper presentation will start on the **7th week**. 
+
+
+-----
+## Sign up sheet
+<center>
+<table border="1" style="width:680px;">
+	<tr>
+		<td>Name</td>
+		<td>Date</td> 
+		<td>Paper Title</td>
+	</tr>
+	<tr>
+		<td>Beilun Wang</td>
+		<td>TBD</td> 
+		<td>On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes.</td>
+	</tr>	
+</table>
+</center>
