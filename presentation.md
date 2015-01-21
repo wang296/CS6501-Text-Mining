@@ -30,5 +30,15 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>TBD</td> 
 		<td>On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes.</td>
 	</tr>	
+	<tr>
+		<td>Mohammad Al Boni</td>
+		<td>TBD</td> 
+		<td>A fuzzy k-nearest neighbor algorithm.</td>
+	</tr>
+	<tr>
+		<td>Keira Zhou</td>
+		<td>TBD</td> 
+		<td>Least squares support vector machine classifiers.</td>
+	</tr>
 </table>
 </center>
