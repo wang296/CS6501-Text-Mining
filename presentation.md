@@ -26,6 +26,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Paper Title</td>
 	</tr>
 	<tr>
+		<td>Lihua Cai</td>
+		<td>TBD</td> 
+		<td>Part-of-speech tagging for twitter: Annotation, features, and experiments.</td>
+	</tr>	
+	<tr>
 		<td>Beilun Wang</td>
 		<td>TBD</td> 
 		<td>On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes.</td>
@@ -39,6 +44,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Keira Zhou</td>
 		<td>TBD</td> 
 		<td>Least squares support vector machine classifiers.</td>
+	</tr>
+	<tr>
+		<td>Peter Wu</td>
+		<td>TBD</td> 
+		<td>The author-topic model for authors and documents.</td>
 	</tr>
 </table>
 </center>
