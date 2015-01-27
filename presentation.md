@@ -29,26 +29,51 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Lihua Cai</td>
 		<td>TBD</td> 
 		<td>Part-of-speech tagging for twitter: Annotation, features, and experiments.</td>
-	</tr>	
+	</tr>
+	<tr>
+		<td>Yu Huang</td>
+		<td>TBD</td> 
+		<td>A structured vector space model for word meaning in context.</td>
+	</tr>		
 	<tr>
 		<td>Beilun Wang</td>
 		<td>TBD</td> 
 		<td>On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes.</td>
 	</tr>	
 	<tr>
-		<td>Mohammad Al Boni</td>
-		<td>TBD</td> 
-		<td>A fuzzy k-nearest neighbor algorithm.</td>
-	</tr>
-	<tr>
 		<td>Keira Zhou</td>
 		<td>TBD</td> 
 		<td>Least squares support vector machine classifiers.</td>
 	</tr>
 	<tr>
+		<td>Mohammad Al Boni</td>
+		<td>TBD</td> 
+		<td>A fuzzy k-nearest neighbor algorithm.</td>
+	</tr>
+	<tr>
+		<td>Mingjun Wang</td>
+		<td>TBD</td> 
+		<td>Constrained k-means clustering with background knowledge.</td>
+	</tr>
+	<tr>
 		<td>Peter Wu</td>
 		<td>TBD</td> 
 		<td>The author-topic model for authors and documents.</td>
+	</tr>
+	<tr>
+		<td>Lin Gong</td>
+		<td>TBD</td> 
+		<td>Measurement and analysis of online social networks.</td>
+	</tr>
+	<tr>
+		<td>Sugandha Agrawal</td>
+		<td>TBD</td> 
+		<td>Scaling personalized web search.</td>
+	</tr>
+	<tr>
+		<td>Jinghe Zhang</td>
+		<td>TBD</td> 
+		<td>Item-based collaborative filtering recommendation algorithms.</td>
 	</tr>
 </table>
 </center>
