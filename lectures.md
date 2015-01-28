@@ -43,7 +43,7 @@ title: Lectures
 
 > We will briefly provide an introduction to computational linguistics, from morphology (word formation) and syntax (sentence structure) to semantics (meaning), as the first step to process and analyze text data. Public natural langauge processing (NLP) toolkits will be introduced for you to understand and practice with those techniques. 
 
-- ### **Day 1**: Get familiar with NLP pipelines      
+- ### **Day 1**: Get familiar with NLP pipelines ([Slides]({{site.baseurl}}/docs/Language Models.pptx))      
     - *Torres-Carrasquillo, Pedro A., Douglas A. Reynolds, and J. R. Deller Jr. "Language identification using Gaussian mixture model tokenization." In Acoustics, Speech, and Signal Processing (ICASSP), 2002 IEEE International Conference on, vol. 1, pp. I-757. IEEE, 2002.* ([PDF](http://llwebprod2.ll.mit.edu/mission/communications/publications/publication-files/full_papers/020513_Torres.pdf))
     - *Chung, Tagyoung, and Daniel Gildea. "Unsupervised tokenization for machine translation." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 2-Volume 2, pp. 718-726. Association for Computational Linguistics, 2009.* ([PDF](http://www.aclweb.org/anthology/D/D09/D09-1075.pdf))
     - *Lovins, Julie B. Development of a stemming algorithm. MIT Information Processing Group, Electronic Systems Laboratory, 1968.* ([PDF](http://mt-archive.info/MT-1968-Lovins.pdf))
