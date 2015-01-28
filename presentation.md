@@ -34,6 +34,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Yu Huang</td>
 		<td>TBD</td> 
 		<td>A structured vector space model for word meaning in context.</td>
+	</tr>
+	<tr>
+		<td>Haoyu Chen</td>
+		<td>TBD</td> 
+		<td>Named entity recognition in tweets: an experimental study.</td>
 	</tr>		
 	<tr>
 		<td>Beilun Wang</td>
@@ -64,6 +69,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Lin Gong</td>
 		<td>TBD</td> 
 		<td>Measurement and analysis of online social networks.</td>
+	</tr>
+	<tr>
+		<td>Danny Brady</td>
+		<td>TBD</td> 
+		<td>Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis.</td>
 	</tr>
 	<tr>
 		<td>Sugandha Agrawal</td>
