@@ -26,6 +26,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Paper Title</td>
 	</tr>
 	<tr>
+		<td>Lingjie Zhang</td>
+		<td>TBD</td> 
+		<td>A study of smoothing methods for language models applied to ad hoc information retrieval.</td>
+	</tr>
+	<tr>
 		<td>Lihua Cai</td>
 		<td>TBD</td> 
 		<td>Part-of-speech tagging for twitter: Annotation, features, and experiments.</td>
