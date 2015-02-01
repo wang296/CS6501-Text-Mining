@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      MP1&mdash; Getting Familiar with Text Processing &middot; CS 6501: Text Mining
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/poole.css">
+  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/syntax.css">
+  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x146" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/UVA_Rotunda_Logo.png">
+  <link rel="shortcut icon" sizes="32x32" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/uva_rotunda.jpg">  
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Formula for this course: <br><b>Text Mining = Data Mining + Text Data</b></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site">Home</a>
+
+    
+
+    
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/assignments/">Homework</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/lectures/">Lectures</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/presentation/">Paper Presentation</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/project/">Course Project</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/resources/">Resources</a>
+        
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+  	<p>
+  		Currently v1.0.0
+  	</p>
+    <p>
+      &copy; 2015. All rights reserved. <a href="http://www.cs.virginia.edu/">CS@UVa</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/~hw5x/Course/Text-Mining-2015-Spring/_site" title="Home">CS 6501: Text Mining</a>
+            <small>Spring 2015 &middot; <a href="http://www.cs.virginia.edu/">CS@UVa</a></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <p>This assignment is designed to help you get familiar with basic document representation and analysis techniques. It  consists of two parts totaling 100 points:</p>
+
+<ul>
+<li><strong>Part 1: <a href="#part1">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, constructing vector space representation for text documents, TF/IDF calculation, and compute similarity among different text documents;</li>
+<li><strong>Part 2: <a href="#part2">Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistic language models, including maximum likelihood estimator, smoothing, generate text from language models, and language model evaluation.</li>
+</ul>
+
+<p>You need to use the CS lab servers to get access to the prepared text documents. Please make sure you have account properly set up on the following three servers before the deadline:</p>
+
+<ul>
+<li>labunix01.cs.virginia.edu</li>
+<li>labunix02.cs.virginia.edu</li>
+<li>labunix03.cs.virginia.edu</li>
+</ul>
+
+<p>If you encountered any technique difficulty in accessing the above servers, e.g., lose of data, software install requirement, or out of disk space, you should immediately send an email to <a href="root@cs.virginia.edu">root@cs.virginia.edu</a> for help.</p>
+
+<h1>Data Set</h1>
+
+<p>The instructor has prepared a medium size collection of Yelp restaurant reviews (14,083 files for training and 4188 for testing). The data set is located at </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp&quot; 
+</code></pre></div>
+<p>on the above CS lab servers. All of you should already have the read authorization to this folder.</p>
+
+<p>The files are named and organized in the following manner:</p>
+
+<ol>
+<li>Each file contains all the reviews for a specific business on Yelp and is named by its unique ID on yelp, e.g., FAhx3UZtXvqNiEAd-GNruQ.json;</li>
+<li><p>All the files are in json format. Each json file contains a json array of reviews and a json object about the information of the restaurant. 
+2.1. The json object for <strong>user review</strong> is defined as follows: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">{          
+    &#39;Author&#39;:&#39;author name (string)&#39;,
+    &#39;ReviewID&#39;:&#39;unique review id (string)&#39;,  
+    &#39;Overall&#39;:&#39;numerical rating of the review (float)&#39;,
+    &#39;Content&#39;:&#39;review text content (string)&#39;,   
+    &#39;Date&#39;:&#39;date when the review was published&#39;,   
+    &#39;Author_Location&#39;:&#39;author&#39;s registered location&#39;  
+} 
+</code></pre></div>
+<p>2.2 The json object for <strong>restaurant info</strong> is defined as follows:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">{                
+    &#39;RestaurantID&#39;:&#39;unique business id in Yelp (string)&#39;,    
+    &#39;Name&#39;:&#39;name of the business (string)&#39;,      
+    &#39;Price&#39;:&#39;Yelp defined price range (string)&#39;,    
+    &#39;RestaurantURL&#39;:&#39;actual URL to the business page on Yelp (string)&#39;,   
+    &#39;Longitude&#39;:&#39;longitude of the business (double)&#39;,              
+    &#39;Latitude&#39;:&#39;latitude of the business (double)&#39;,              
+    &#39;Address&#39;:&#39;address of the business (string)&#39;,       
+    &#39;ImgURL&#39;:&#39;URL to the business&#39;s image on Yelp (string)&#39;     
+} 
+</code></pre></div></li>
+</ol>
+
+<p>A sample Java file for loading the JSON files has been provided in assignment.</p>
+
+<h1><a name="part1"></a>Part 1: Vector Space Model</h1>
+
+<p>Let&#39;s first go over several important concepts and techniques for basic text analysis.</p>
+
+<h2>Tokenization</h2>
+
+<p>Tokenization is the process that one breaks a stream of text into meaningful units. Simple tokenizatoin can be achieved by <a href="http://en.wikipedia.org/wiki/Regular_expression">regular expressions</a>. For example, the follow statement in <a href="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html#split(java.lang.String)">Java split</a> the input string into tokens:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;I&#39;ve practiced for 30 years in pediatrics, and I&#39;ve never seen anything quite like this.&quot;.split(&quot;[\\W]+&quot;)
+</code></pre></div>
+<p>In this statement, we define the boundary for a token to be any non-word sequence. And the corresponding output of this statement is,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">*I*, *ve*, *practiced*, *for*, *30*, *years*, *in*, *pediatrics*, *and*, *I*, *ve*, *never*, *seen*, *anything*, *quite*, *like*, *this*
+</code></pre></div>
+<p>where ** indicate the boundary of a token.</p>
+
+<p>A more advanced solution is the statistic machine learning based approaches. And in this assignment, we will learn how to use the tokenizer in <a href="http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html#tools.tokenizer">OpenNLP</a> (in Java) and <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.tokenize-module.html">NLTK</a> (in Python) to perform tokenization.</p>
+
+<h3>1. Tokenizer in OpenNLP</h3>
+
+<p>The detailed documentation for this tokenizer can be found <a href="http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html#tools.tokenizer">here</a>. You can download the library <a href="http://www.dsgnwrld.com/am//opennlp/opennlp-1.5.3/apache-opennlp-1.5.3-src.zip">here</a> and the trained model file <a href="http://opennlp.sourceforge.net/models-1.5/">here</a> (please choose the English tokenizer). </p>
+
+<p>Once you have properly load the model from file, tokenization can be simply performed by, </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">String tokens[] = tokenizer.tokenize(&quot;An input sample sentence.&quot;);
+</code></pre></div>
+<h3>2. Tokenizer in NLTK</h3>
+
+<p>NLTK provides several implementations of <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.tokenize-module.html">tokenization modules</a>, and many of them are actually regular expression based.</p>
+
+<p>The usage of them is the same and very simple,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; import nltk
+&gt;&gt;&gt; tokenizer = nltk.tokenize.treebank.TreebankWordTokenizer()
+&gt;&gt;&gt; tokenizer.tokenize(&quot;I&#39;ve practiced for 30 years in pediatrics, and I&#39;ve never seen anything quite like this.&quot;)
+[&#39;I&#39;, &quot;&#39;ve&quot;, &#39;practiced&#39;, &#39;for&#39;, &#39;30&#39;, &#39;years&#39;, &#39;in&#39;, &#39;pediatrics&#39;, &#39;,&#39;, &#39;and&#39;, &#39;I&#39;, &quot;&#39;ve&quot;, &#39;never&#39;, &#39;seen&#39;, &#39;anything&#39;, &#39;quite&#39;, &#39;like&#39;, &#39;this&#39;, &#39;.&#39;]
+</code></pre></div>
+<h2>Stemming</h2>
+
+<p>Stemming is the process for reducing inflected (or sometimes derived) words to their stem, base or root form. For example, &quot;ladies&quot; would be mapped to &quot;ladi&quot; as a result of stemming (although &quot;lady&quot; would be a more desirable result).</p>
+
+<h3>1. Stemmers in Java</h3>
+
+<p>Unfortunately, OpenNLP does not support stemming function currently. There are several existing implementations of stemmer in Java available, including <a href="http://snowball.tartarus.org/download.php">Snowball Stemmer</a> and <a href="http://tartarus.org/%7Emartin/PorterStemmer/java.txt">Porter Stemmer</a>. The Snowball Stemmer package contains both of these two popularly used stemmers.</p>
+
+<p>The usage of stemmers Snowball package is very simple,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">SnowballStemmer stemmer = new englishStemmer(); // get an instance of SnowballStemmer for English
+stemmer.setCurrent(token); // set the input
+stemmer.stem(); //perform stemming
+String stem = stemmer.getCurrent(); // get the output
+</code></pre></div>
+<h3>2. Stemmers in NLTK</h3>
+
+<p>NLTK provides several implementations of <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.stem-module.html">stemming modules</a>, which includes the Porter Stemmer and Snowball Stemmer.</p>
+
+<p>The usage of either stemmer in NLTK is very simple. For example, to use Snowball Stemmer,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt;&gt;&gt; from nltk.stem.snowball import EnglishStemmer # load the stemmer module from NLTK
+&gt;&gt;&gt; stemmer = EnglishStemmer() # get an instance of SnowballStemmer for English
+&gt;&gt;&gt; stemmer.stem(&#39;ladies&#39;) # call stemmer to stem the input
+u&#39;ladi&#39;
+</code></pre></div>
+<h2>Stopword removal</h2>
+
+<p>In Information Retrieval, stopwords are the words which are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords which all systems use, and the definition of stopwords are always domain specific. </p>
+
+<p>Here is a popularly used list of stopwords: <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>. And we will use it as the major reference to create our own stopword list for our medical retrieval system.  </p>
+
+<h2>N-gram</h2>
+
+<p>An N-gram is a contiguous sequence of n items from a given sequence of text or speech. For example the bigram (2-gram) representation of the sentence &quot;Information retrieval is helpful for everyone.&quot; would be [&quot;information-retrieval&quot;, &quot;retrieval-is&quot;, &quot;is-helpful&quot;, &quot;helpful-for&quot;, &quot;for-everyone&quot;].</p>
+
+<p>To generate the N-grams, you scan through the list of split tokens and concatenate the consecutive tokens into N-grams. </p>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
