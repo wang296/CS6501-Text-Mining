@@ -178,6 +178,7 @@
 <ul>
 <li><strong>Document</strong>: it refers to each individual Yelp review document. Therefore, one json file will contain multiple review documents.<br></li>
 <li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding ID.<br></li>
+<li><strong>DF/IDF/TF/TTF</strong>: the definitions for those metrics are strictly following those on our lecture slides, unless specifically defined below.</li>
 </ul>
 
 <p>Then, let&#39;s go over several important concepts and techniques for basic text analysis.</p>
@@ -247,12 +248,12 @@ u&#39;ladi&#39;
 
 <p>To generate the N-grams, you simply scan through the list of split tokens and concatenate the consecutive tokens into N-grams. </p>
 
-<h1><a name="part1"></a>Part1: Vector Space Model</h1>
+<h1><a name="part1"></a>Part1: Vector Space Model (50pts)</h1>
 
 <p>There are several steps you need to take in this part of assignment.</p>
 
 <ol>
-<li>Tokenization: tokenize the review content each document into tokens.</li>
+<li>Tokenization: tokenize the review content of each document into tokens.</li>
 <li>Normalization: normalize the tokens from step 1, by removing individual punctuation marks (here is a list of <a href="http://en.wikipedia.org/wiki/Punctuation_of_English">English punctuation marks</a>), converting tokens into lower cases, and recognizing digit numbers, e.g., integers and floats, and map them to a special symbol &quot;NUM&quot;. </li>
 <li>Stemming: stem the tokens back to their root form. </li>
 </ol>
@@ -261,10 +262,10 @@ u&#39;ladi&#39;
 
 <h3>1.1 Understand Zipf&#39;s Law (20pts)</h3>
 
-<p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by following steps.</p>
+<p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by following steps:</p>
 
 <ol>
-<li>For each token, go over all the review documents containing it and accumulate its frequency in those documents, i.e., total term frequency.</li>
+<li>For each token, go over all the review documents (in both <em>train</em> and <em>test</em> folder) containing it and accumulate its frequency in those documents, i.e., total term frequency.</li>
 <li>Order the tokens by their total term frequency in a descending order.</li>
 <li>Create a dot plot by treating each word&#39;s order as x-axis and its frequency as y-axis. Please use log-log scale for this plot.</li>
 </ol>
@@ -273,7 +274,39 @@ u&#39;ladi&#39;
 
 <p>From the resulting plot, can we find strong linear relationship between the x and y axes in the log-log scale? If so, what is the slope of this linear relationship? To answer these questions, you can dump the data into excel and use the plot function there. (You can also use some scientific computing packages for curve fitting for this purpose.)          </p>
 
-<p>Then change the counting statistics in the previous experiment from <em>total term frequency</em> to <em>document frequency</em>, perform the experiment again, and draw the corresponding the curve in log-log scale. According to resulting curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>total term frequency</em> v.s., <em>document frequency</em>, fits Zipf&#39;s law better on this data set? Can you give any explanations about this?</p>
+<p>Then change the counting statistics in the previous experiment from <em>total term frequency</em> to <em>document frequency</em>, perform the experiment again, and draw the corresponding the curve in log-log scale. According to resulting curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>total term frequency</em> v.s., <em>document frequency</em>, fits Zipf&#39;s law better on this data set? Can you give any explanation about why one fits the law better?</p>
+
+<p><strong>What to submit</strong>: </p>
+
+<ol>
+<li>Two curves in log-log space generated above, with the corresponding slopes and intercepts of the linear interpretation results;</li>
+<li>Your answers and thoughts to the above questions.</li>
+</ol>
+
+<h3>1.2 Construct a Controlled Vocabulary (10pts)</h3>
+
+<p>Generate all the bigrams based on the resulting tokens from the pre-processing step (<strong>only in the train folder</strong>), and mix those bigrams with the unigrams as our initial controlled vocabulary.</p>
+
+<p>Collect the DF statistics for all the N-grams in this initial controlled vocabulary (<strong>only in the train folder</strong>), and find out the top 100 N-grams by DF. Compare this list with our initial stopword list and can you find some restaurant review specific stopwords? Merge those top 100 N-grams into the initial stopword list as our final stopword list.</p>
+
+<p>In the meanwhile, filter the N-grams with DF smaller than 50. All the rest N-grams will be used as our controlled vocabulary.</p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>List of sample stopwords you found specific to restaurant reviews.</li>
+<li>The size of the resulting controlled vocabulary.</li>
+<li>Top 50 and bottom 50 N-grams according to DF in the resulting controlled vocabulary, and their corresponding IDFs (<strong>should be estimated only based on the train folder</strong>).</li>
+</ol>
+
+<h3>1.3 Compute similarity between documents (20pts)</h3>
+
+<p>With the above automatically constructed controlled vocabulary, each review document can be represented as a N-gram vector. Specifically, each dimension in this vector space is defined by the mix of unigrams and bigrams specified by the controlled vocabulary; while the weight for each unigram/bigram in a review document is defined by TF-IDF. Specifically, we will use &quot;<strong>Sub-linear TF scaling</strong>&quot; to compute the normalized TF of each unigram/bigram in a review document. Note the IDF statistics should be <strong>only computed based on the train folder</strong>.</p>
+
+<p>Using this document representation to encode all the review documents in the test folder. Under the folder of &quot;/home/hw5x/TextMining/MP1/data/Yelp&quot;, there is a special json file &quot;query.json&quot; manually crafted by the instructor. It contains five carefully selected restaurant reviews from and outside the corpus. Construct the vector space representation for these five reviews (as what you have done for those review documents in the test folder) and find out the most similar reviews to them from the test folder, where the similarity metric is defined as cosine similarity. </p>
+
+<p><strong>What to submit</strong>:
+1. For each of the query document, list the top 3 most similar review document (including Author, Content and Date) from the test folder and the corresponding cosine similarity.</p>
 
       </div>
     </div>
