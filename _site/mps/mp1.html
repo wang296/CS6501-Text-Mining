@@ -111,8 +111,8 @@
         <p>This assignment is designed to help you get familiar with basic document representation and analysis techniques. It  consists of two parts totaling 100 points:</p>
 
 <ul>
-<li><strong>Part 1: <a href="#part1">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, constructing vector space representation for text documents, TF/IDF calculation, and compute similarity among different text documents;</li>
-<li><strong>Part 2: <a href="#part2">Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistic language models, including maximum likelihood estimator, smoothing, generate text from language models, and language model evaluation.</li>
+<li><strong>Part 1: <a href="#vsm">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, constructing vector space representation for text documents, TF/IDF calculation, and compute similarity among different text documents;</li>
+<li><strong>Part 2: <a href="#slm">Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistic language models, including maximum likelihood estimator, smoothing, generate text from language models, and language model evaluation.</li>
 </ul>
 
 <p>You need to use the CS lab servers to get access to the prepared text documents. Please make sure you have account properly set up on the following three servers before the deadline:</p>
@@ -248,15 +248,17 @@ u&#39;ladi&#39;
 
 <p>To generate the N-grams, you simply scan through the list of split tokens and concatenate the consecutive tokens into N-grams. </p>
 
-<h1><a name="part1"></a>Part1: Vector Space Model (50pts)</h1>
+<h2>Pre-processing</h2>
 
-<p>There are several steps you need to take in this part of assignment.</p>
+<p>There are several steps of pre-processing you need to take in this assignment.</p>
 
 <ol>
 <li>Tokenization: tokenize the review content of each document into tokens.</li>
 <li>Normalization: normalize the tokens from step 1, by removing individual punctuation marks (here is a list of <a href="http://en.wikipedia.org/wiki/Punctuation_of_English">English punctuation marks</a>), converting tokens into lower cases, and recognizing digit numbers, e.g., integers and floats, and map them to a special symbol &quot;NUM&quot;. </li>
 <li>Stemming: stem the tokens back to their root form. </li>
 </ol>
+
+<h1><a name="vsm"></a>Part1: Vector Space Model (50pts)</h1>
 
 <p>Based on these processing steps, all the documents are represented as bag-of-words (i.e., unigrams), and we are ready to get some statistics about this corpus.</p>
 
@@ -305,8 +307,14 @@ u&#39;ladi&#39;
 
 <p>Using this document representation to encode all the review documents in the test folder. Under the folder of &quot;/home/hw5x/TextMining/MP1/data/Yelp&quot;, there is a special json file &quot;query.json&quot; manually crafted by the instructor. It contains five carefully selected restaurant reviews from and outside the corpus. Construct the vector space representation for these five reviews (as what you have done for those review documents in the test folder) and find out the most similar reviews to them from the test folder, where the similarity metric is defined as cosine similarity. </p>
 
-<p><strong>What to submit</strong>:
-1. For each of the query document, list the top 3 most similar review document (including Author, Content and Date) from the test folder and the corresponding cosine similarity.</p>
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>For each of the query document, list the top 3 most similar review documents (including Author, Content and Date) from the test folder and the corresponding cosine similarity.</li>
+<li>Without reading the actual content in the query.json file, simply judging from the content of the retrieved most similar review documents, can you tell which type of restaurants are specified in the query.json file (e.g., Indian food or Korean food)?</li>
+</ol>
+
+<h1><a name="slm"></a>Part2: Statistical Language Models (50pts)</h1>
 
       </div>
     </div>
