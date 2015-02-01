@@ -127,7 +127,7 @@
 
 <h1>Data Set</h1>
 
-<p>The instructor has prepared a medium size collection of Yelp restaurant reviews (14,083 files for training and 4188 for testing). The data set is located at </p>
+<p>The instructor has prepared a medium size collection of Yelp restaurant reviews (<strong>14,08</strong>3 files for training and <strong>4188</strong> for testing). The data set is located at </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp&quot; 
 </code></pre></div>
 <p>on the above CS lab servers. All of you should already have the read authorization to this folder.</p>
@@ -135,7 +135,7 @@
 <p>The files are named and organized in the following manner:</p>
 
 <ol>
-<li>Each file contains all the reviews for a specific business on Yelp and is named by its unique ID on yelp, e.g., FAhx3UZtXvqNiEAd-GNruQ.json;</li>
+<li>Each file contains all the reviews for a specific business on Yelp and is named by its unique ID on yelp, e.g., <em>FAhx3UZtXvqNiEAd-GNruQ.json</em>;</li>
 <li><p>All the files are in json format. Each json file contains a json array of reviews and a json object about the information of the restaurant. 
 2.1. The json object for <strong>user review</strong> is defined as follows: </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">{          
@@ -161,11 +161,26 @@
 </code></pre></div></li>
 </ol>
 
-<p>A sample Java file for loading the JSON files has been provided in assignment.</p>
+<p><strong>WARNING</strong>: some collected json files did not strictly follow the above json object definition, e.g., some files are missing or empty. As a result, properly handling the exceptions in json parsing is necessary.</p>
 
-<h1><a name="part1"></a>Part 1: Vector Space Model</h1>
+<h1>Sample implementation</h1>
 
-<p>Let&#39;s first go over several important concepts and techniques for basic text analysis.</p>
+<p>A sample Java project has been provided along with this assignment for demonstration purpose. It includes sample code for loading JSON files, tokenization in OpenNLP and stemming with Snowball Stemmer. </p>
+
+<p>It is preferred for you to follow this sample implementation to finish this assignment. It is also allowed to use Python for this assignment, if you are more confident about Python. However, no sample Python implementation will be provided (some sample package usage is provided below for your reference). </p>
+
+<h1><a name="preparation"></a>Preparation: Basic Text Processing Techniques</h1>
+
+<h1>Terminologies</h1>
+
+<p>Before describing the specification of this assignment, two terminologies that will be repeatedly used below have to be first defined:</p>
+
+<ul>
+<li><strong>Document</strong>: it refers to each individual Yelp review document. Therefore, one json file will contain multiple review documents.<br></li>
+<li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding ID.<br></li>
+</ul>
+
+<p>Then, let&#39;s go over several important concepts and techniques for basic text analysis.</p>
 
 <h2>Tokenization</h2>
 
@@ -222,15 +237,43 @@ u&#39;ladi&#39;
 </code></pre></div>
 <h2>Stopword removal</h2>
 
-<p>In Information Retrieval, stopwords are the words which are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords which all systems use, and the definition of stopwords are always domain specific. </p>
+<p>In basic text analysis, stopwords are the words which are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords which all systems use, and the definition of stopwords are always domain specific. </p>
 
-<p>Here is a popularly used list of stopwords: <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>. And we will use it as the major reference to create our own stopword list for our medical retrieval system.  </p>
+<p>Here is a popularly used list of stopwords: <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>. And we will use it as our initial stopword list for this assignment.  </p>
 
 <h2>N-gram</h2>
 
-<p>An N-gram is a contiguous sequence of n items from a given sequence of text or speech. For example the bigram (2-gram) representation of the sentence &quot;Information retrieval is helpful for everyone.&quot; would be [&quot;information-retrieval&quot;, &quot;retrieval-is&quot;, &quot;is-helpful&quot;, &quot;helpful-for&quot;, &quot;for-everyone&quot;].</p>
+<p>An N-gram is a contiguous sequence of n items from a given sequence of text or speech. For example the bigram (2-gram) representation of the sentence &quot;Text mining is helpful for everyone.&quot; would be [&quot;text-mining&quot;, &quot;mining-is&quot;, &quot;is-helpful&quot;, &quot;helpful-for&quot;, &quot;for-everyone&quot;].</p>
 
-<p>To generate the N-grams, you scan through the list of split tokens and concatenate the consecutive tokens into N-grams. </p>
+<p>To generate the N-grams, you simply scan through the list of split tokens and concatenate the consecutive tokens into N-grams. </p>
+
+<h1><a name="part1"></a>Part1: Vector Space Model</h1>
+
+<p>There are several steps you need to take in this part of assignment.</p>
+
+<ol>
+<li>Tokenization: tokenize the review content each document into tokens.</li>
+<li>Normalization: normalize the tokens from step 1, by removing individual punctuation marks (here is a list of <a href="http://en.wikipedia.org/wiki/Punctuation_of_English">English punctuation marks</a>), converting tokens into lower cases, and recognizing digit numbers, e.g., integers and floats, and map them to a special symbol &quot;NUM&quot;. </li>
+<li>Stemming: stem the tokens back to their root form. </li>
+</ol>
+
+<p>Based on these processing steps, all the documents are represented as bag-of-words (i.e., unigrams), and we are ready to get some statistics about this corpus.</p>
+
+<h3>1.1 Understand Zipf&#39;s Law (20pts)</h3>
+
+<p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by following steps.</p>
+
+<ol>
+<li>For each token, go over all the review documents containing it and accumulate its frequency in those documents, i.e., total term frequency.</li>
+<li>Order the tokens by their total term frequency in a descending order.</li>
+<li>Create a dot plot by treating each word&#39;s order as x-axis and its frequency as y-axis. Please use log-log scale for this plot.</li>
+</ol>
+
+<p><em>Hint: basically, you can maintain a look-up table in memory while you are scanning the documents, so that you only need to go through the corpus once to get the counts for all the tokens.</em></p>
+
+<p>From the resulting plot, can we find strong linear relationship between the x and y axes in the log-log scale? If so, what is the slope of this linear relationship? To answer these questions, you can dump the data into excel and use the plot function there. (You can also use some scientific computing packages for curve fitting for this purpose.)          </p>
+
+<p>Then change the counting statistics in the previous experiment from <em>total term frequency</em> to <em>document frequency</em>, perform the experiment again, and draw the corresponding the curve in log-log scale. According to resulting curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>total term frequency</em> v.s., <em>document frequency</em>, fits Zipf&#39;s law better on this data set? Can you give any explanations about this?</p>
 
       </div>
     </div>
