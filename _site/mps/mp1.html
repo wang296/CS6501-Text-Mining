@@ -108,14 +108,14 @@
       </div>
 
       <div class="container content">
-        <p>This assignment is designed to help you get familiar with basic document representation and analysis techniques. It  consists of two parts totaling 100 points:</p>
+        <p>This assignment is designed to help you get familiar with basic document representation and analysis techniques. It  consists of two parts, totaling 100 points:</p>
 
 <ul>
-<li><strong>Part 1: <a href="#vsm">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, constructing vector space representation for text documents, TF/IDF calculation, and compute similarity among different text documents;</li>
-<li><strong>Part 2: <a href="#slm">Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistic language models, including maximum likelihood estimator, smoothing, generate text from language models, and language model evaluation.</li>
+<li><strong>Part 1: <a href="#vsm">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, construct vector space representation for text documents, TF/IDF calculation, and compute similarity among different text documents;</li>
+<li><strong>Part 2: <a href="#slm">Statistical Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistical language models, including maximum likelihood estimator, smoothing, generate text from language models, and language model evaluation.</li>
 </ul>
 
-<p>You need to use the CS lab servers to get access to the prepared text documents. Please make sure you have account properly set up on the following three servers before the deadline:</p>
+<p>You need to use the CS lab servers to get access to the prepared text documents. Please make sure you have account properly set up on the following three servers:</p>
 
 <ul>
 <li>labunix01.cs.virginia.edu</li>
@@ -127,7 +127,7 @@
 
 <h1>Data Set</h1>
 
-<p>The instructor has prepared a medium size collection of Yelp restaurant reviews (<strong>14,08</strong>3 files for training and <strong>4188</strong> for testing). The data set is located at </p>
+<p>The instructor has prepared a medium size collection of Yelp restaurant reviews (<strong>14,083</strong> files for training and <strong>4188</strong> for testing). The data set is located at </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp&quot; 
 </code></pre></div>
 <p>on the above CS lab servers. All of you should already have the read authorization to this folder.</p>
@@ -135,9 +135,10 @@
 <p>The files are named and organized in the following manner:</p>
 
 <ol>
-<li>Each file contains all the reviews for a specific business on Yelp and is named by its unique ID on yelp, e.g., <em>FAhx3UZtXvqNiEAd-GNruQ.json</em>;</li>
-<li><p>All the files are in json format. Each json file contains a json array of reviews and a json object about the information of the restaurant. 
-2.1. The json object for <strong>user review</strong> is defined as follows: </p>
+<li>Each file contains all the reviews for a specific business on Yelp, and it is named by its unique ID on Yelp, e.g., <em>FAhx3UZtXvqNiEAd-GNruQ.json</em>;</li>
+<li><p>All the files are in json format. Each json file contains a json array of reviews and a json object about the information of the restaurant.              </p>
+
+<p>2.1. The json object for <strong>user review</strong> is defined as follows: </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">{          
     &#39;Author&#39;:&#39;author name (string)&#39;,
     &#39;ReviewID&#39;:&#39;unique review id (string)&#39;,  
@@ -161,27 +162,27 @@
 </code></pre></div></li>
 </ol>
 
-<p><strong>WARNING</strong>: some collected json files did not strictly follow the above json object definition, e.g., some files are missing or empty. As a result, properly handling the exceptions in json parsing is necessary.</p>
+<p><strong>WARNING</strong>: some collected json files might not strictly follow the above json object definitions, e.g., some fields are missing or empty. As a result, properly handling the exceptions in json parsing is necessary.</p>
 
 <h1>Sample implementation</h1>
 
-<p>A sample Java project has been provided along with this assignment for demonstration purpose. It includes sample code for loading JSON files, tokenization in OpenNLP and stemming with Snowball Stemmer. </p>
+<p>A sample Java project has been provided along with this assignment for demonstration purpose. It includes sample code for loading JSON files, tokenization with OpenNLP and stemming with Snowball Stemmer. </p>
 
-<p>It is preferred for you to follow this sample implementation to finish this assignment. It is also allowed to use Python for this assignment, if you are more confident about Python. However, no sample Python implementation will be provided (some sample package usage is provided below for your reference). </p>
+<p>It is recommended for you to follow this sample implementation to finish this assignment. It is also allowed to use Python or any other programming language for this assignment, if you are more confident with them. However, no sample implementation will be provided (some Python package usage examples are provided below for your reference). </p>
 
 <h1><a name="preparation"></a>Preparation: Basic Text Processing Techniques</h1>
 
-<h1>Terminologies</h1>
+<h2>Terminologies</h2>
 
-<p>Before describing the specification of this assignment, two terminologies that will be repeatedly used below have to be first defined:</p>
+<p>Before describing the specification of this assignment, several terminologies that will be repeatedly used below have are defined here:</p>
 
 <ul>
-<li><strong>Document</strong>: it refers to each individual Yelp review document. Therefore, one json file will contain multiple review documents.<br></li>
-<li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding ID.<br></li>
-<li><strong>DF/IDF/TF/TTF</strong>: the definitions for those metrics are strictly following those on our lecture slides, unless specifically defined below.</li>
+<li><strong>Document</strong>: it refers to each individual Yelp review document contained in the json file. Therefore, one json file might contain multiple review documents.<br></li>
+<li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding ID. One json for one restaurant.<br></li>
+<li><strong>DF/IDF/TF/TTF/Cosine similarity</strong>: the definitions for those metrics are strictly following those on our lecture slides, unless specifically defined below.</li>
 </ul>
 
-<p>Then, let&#39;s go over several important concepts and techniques for basic text analysis.</p>
+<p>Then, let&#39;s first go over several important concepts and techniques for basic text analysis.</p>
 
 <h2>Tokenization</h2>
 
@@ -193,7 +194,7 @@
 </code></pre></div>
 <p>where ** indicate the boundary of a token.</p>
 
-<p>A more advanced solution is the statistic machine learning based approaches. And in this assignment, we will learn how to use the tokenizer in <a href="http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html#tools.tokenizer">OpenNLP</a> (in Java) and <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.tokenize-module.html">NLTK</a> (in Python) to perform tokenization.</p>
+<p>A more advanced solution is the statistic machine learning based approaches. And in this assignment, we will learn how to use the tokenizer in <a href="http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html#tools.tokenizer">OpenNLP</a> (in Java) and <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.tokenize-module.html">NLTK</a> (in Python) to perform tokenization. The NLTK package has been installed on all three CS Lab servers.</p>
 
 <h3>1. Tokenizer in OpenNLP</h3>
 
@@ -214,7 +215,7 @@
 </code></pre></div>
 <h2>Stemming</h2>
 
-<p>Stemming is the process for reducing inflected (or sometimes derived) words to their stem, base or root form. For example, &quot;ladies&quot; would be mapped to &quot;ladi&quot; as a result of stemming (although &quot;lady&quot; would be a more desirable result).</p>
+<p>Stemming refers to the process of reducing inflected (or sometimes derived) words to their stem, base or root form. For example, &quot;ladies&quot; would be mapped to &quot;ladi&quot; as a result of stemming (although &quot;lady&quot; would be a more desirable result).</p>
 
 <h3>1. Stemmers in Java</h3>
 
@@ -238,7 +239,7 @@ u&#39;ladi&#39;
 </code></pre></div>
 <h2>Stopword removal</h2>
 
-<p>In basic text analysis, stopwords are the words which are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords which all systems use, and the definition of stopwords are always domain specific. </p>
+<p>In basic text analysis, stopwords are the words that are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords that applicable in all scenarios, and the definition of stopwords are always domain specific. </p>
 
 <p>Here is a popularly used list of stopwords: <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>. And we will use it as our initial stopword list for this assignment.  </p>
 
@@ -250,7 +251,7 @@ u&#39;ladi&#39;
 
 <h2>Pre-processing</h2>
 
-<p>There are several steps of pre-processing you need to take in this assignment.</p>
+<p>There are several general steps of pre-processing you need to take to finish this assignment.</p>
 
 <ol>
 <li>Tokenization: tokenize the review content of each document into tokens.</li>
@@ -260,23 +261,23 @@ u&#39;ladi&#39;
 
 <h1><a name="vsm"></a>Part1: Vector Space Model (50pts)</h1>
 
-<p>Based on these processing steps, all the documents are represented as bag-of-words (i.e., unigrams), and we are ready to get some statistics about this corpus.</p>
+<p>Based on the above pre-processing steps, we are ready to get some statistics about this corpus and represent the documents in vector space.</p>
 
 <h3>1.1 Understand Zipf&#39;s Law (20pts)</h3>
 
 <p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by following steps:</p>
 
 <ol>
-<li>For each token, go over all the review documents (in both <em>train</em> and <em>test</em> folder) containing it and accumulate its frequency in those documents, i.e., total term frequency.</li>
-<li>Order the tokens by their total term frequency in a descending order.</li>
-<li>Create a dot plot by treating each word&#39;s order as x-axis and its frequency as y-axis. Please use log-log scale for this plot.</li>
+<li>For each token, go over all the review documents containing it  (in both <em>train</em> and <em>test</em> folder), and accumulate its frequency in those documents, i.e., total term frequency (TTF).</li>
+<li>Order the tokens by their TTF in a descending order.</li>
+<li>Create a dot plot by treating each word&#39;s order as x-axis and its TTF as y-axis. Please use log-log scale for this plot.</li>
 </ol>
 
-<p><em>Hint: basically, you can maintain a look-up table in memory while you are scanning the documents, so that you only need to go through the corpus once to get the counts for all the tokens.</em></p>
+<p><em>Hint: basically, you can maintain a look-up table in memory while you are scanning through the documents, so that you only need to go through the corpus once to get the counts for all the tokens.</em></p>
 
 <p>From the resulting plot, can we find strong linear relationship between the x and y axes in the log-log scale? If so, what is the slope of this linear relationship? To answer these questions, you can dump the data into excel and use the plot function there. (You can also use some scientific computing packages for curve fitting for this purpose.)          </p>
 
-<p>Then change the counting statistics in the previous experiment from <em>total term frequency</em> to <em>document frequency</em>, perform the experiment again, and draw the corresponding the curve in log-log scale. According to resulting curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>total term frequency</em> v.s., <em>document frequency</em>, fits Zipf&#39;s law better on this data set? Can you give any explanation about why one fits the law better?</p>
+<p>Then change the counting statistics in the previous experiment from <em>total term frequency (TTF)</em> to <em>document frequency (DF)</em>, and perform the experiment again. According to new curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>TTF</em> v.s., <em>DF</em>, fits Zipf&#39;s law better on this data set? Can you give any explanation about why it fits the law better?</p>
 
 <p><strong>What to submit</strong>: </p>
 
@@ -315,6 +316,47 @@ u&#39;ladi&#39;
 </ol>
 
 <h1><a name="slm"></a>Part2: Statistical Language Models (50pts)</h1>
+
+<h3>2.1 Maximum likelihood estimator for statistical language models with smoothing (20pts)</h3>
+
+<p>Use all the review documents in the <strong>train folder</strong> to estimate a unigram language model $p<em>u(w)$ and two bigram language models (with different smoothing). When estimating the bigram language models, using linear interpolation smoothing and absolute discount smoothing based on the unigram language model $p</em>u(w)$ to get two different bi-gram language models, i.e., $p^L<em>b(w</em>i|w<em>{i-1})$ and $p^A</em>b(w<em>i|w</em>{i-1})$.</p>
+
+<p>In linear interpolation smoothing, set the parameter $\lambda=0.9$; and in absolute discount smoothing, set the parameter $\delta=0.1$.</p>
+
+<p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in descending order by $p^L<em>b(w|&#39;good&#39;)$ and $p^A</em>b(w|&#39;good&#39;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
+
+<p><em>HINT: to greatly reduce space complexity, you do not need to actually maintain a $V\times V$ array to maintain the counts and probabilities for bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L<em>b(w</em>i|w<em>{i-1})$ and $p^A</em>b(w<em>i|w</em>{i-1})$.</em> </p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>The top 10 words selected from the corresponding two bigram language models.</li>
+<li>Your explanation of the observations.</li>
+</ol>
+
+<h3>2.2 Generate text documents from language models (15pts)</h3>
+
+<p>Fixing the sentence length to be 15, generate 10 sentences by sampling words from $p<em>u(w)$, $p^L</em>b(w<em>i|w</em>{i-1})$ and $p^A<em>b(w</em>i|w_{i-1})$.</p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>The 10 sentences generated from $p<em>u(w)$, $p^L</em>b(w<em>i|w</em>{i-1})$ and $p^A<em>b(w</em>i|w_{i-1})$.</li>
+</ol>
+
+<h3>2.3 Language model evaluation (15pts)</h3>
+
+<p>Compute perplexity of previously estimated language models, i.e., $p<em>u(w)$, $p^L</em>b(w<em>i|w</em>{i-1})$ and $p^A<em>b(w</em>i|w_{i-1})$, on review documents in the <strong>test folder</strong>.</p>
+
+<p>The perplexity metric defined in our lecture slide is for one document. Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the perplexities.</p>
+
+<p><em>NOTE: to smooth the unseen words in the test folder, use additive smoothing to smooth the unigram language model $p<em>u(w)$ by setting the parameter $\delta=0.1$. Then use the smoothed $\hat p</em>u(w)$ to smooth $p^L<em>b(w</em>i|w<em>{i-1})$ and $p^A</em>b(w<em>i|w</em>{i-1})$.</em></p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>Report the mean and standard deviation of the perplexities for $\hat p<em>u(w)$ to smooth $\hat p^L</em>b(w<em>i|w</em>{i-1})$ and $\hat p^A<em>b(w</em>i|w_{i-1})$ on the test folder.<br></li>
+</ol>
 
       </div>
     </div>
