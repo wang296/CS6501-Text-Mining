@@ -334,7 +334,7 @@ u&#39;ladi&#39;
 
 <p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in descending order by $p^L_b(w|&quot;good&quot;)$ and $p^A_b(w|&quot;good&quot;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
 
-<p><em>HINT: to greatly reduce space complexity, you do not need to actually maintain a $V\times V$ array to maintain the counts and probabilities for bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|&quot;good&quot;)$ and $p^A_b(w|&quot;good&quot;)$.</em> </p>
+<p><em>HINT: to greatly reduce space complexity, you do not need to actually maintain a $V\times V$ array to maintain the counts and probabilities for bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|``good&quot;)$ and $p^A_b(w|&#39;&#39;good&quot;)$.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
