@@ -124,6 +124,8 @@
 <li><strong>Part 2: <a href="#slm">Statistical Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistical language models, including maximum likelihood estimation, smoothing, generate text documents from language models, and language model evaluation.</li>
 </ul>
 
+<p>The deadline and submission guidance are explicitly described <a href="#time">here</a>.</p>
+
 <p>You need to use the CS lab servers to get access to the prepared text documents. Please make sure you have account properly set up on the following three servers:</p>
 
 <ul>
@@ -175,9 +177,11 @@
 
 <h1>Sample implementation</h1>
 
-<p>A sample Java project has been provided along with this assignment for demonstration purpose. It includes sample code for loading JSON files, tokenization with OpenNLP and stemming with Snowball Stemmer. </p>
+<p>A <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/docs/codes/MP1.zip">sample Java project</a> has been provided along with this assignment for demonstration purpose. It includes sample code for loading JSON files, tokenization with OpenNLP and stemming with Snowball Stemmer. </p>
 
 <p>It is recommended for you to follow this sample implementation to finish this assignment. It is also allowed to use Python or any other programming language for this assignment, if you are more confident with them. However, no sample implementation will be provided (some Python package usage examples are provided below for your reference). </p>
+
+<p>NOTE: please carefully read the comments in the sample project. All the sample implementation is for demonstration purpose and please carefully revise it to maximize your implementation&#39;s efficiency.</p>
 
 <h1><a name="preparation"></a>Preparation: Basic Text Processing Techniques</h1>
 
@@ -277,6 +281,7 @@ u&#39;ladi&#39;
 <p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by the following steps:</p>
 
 <ol>
+<li>Process the text document according to the discussed steps above.</li>
 <li>For each token, go over all the review documents containing it  (in both <strong>train</strong> and <strong>test</strong> folder), and accumulate its frequency in those documents, i.e., total term frequency (TTF).</li>
 <li>Order the tokens by their TTF in a descending order.</li>
 <li>Create a dot plot by treating each word&#39;s rank as x-axis and its TTF as y-axis. Please use log-log scale for this plot.</li>
@@ -291,6 +296,7 @@ u&#39;ladi&#39;
 <p><strong>What to submit</strong>: </p>
 
 <ol>
+<li>Paste your code for implementing text normalization.</li>
 <li>Two curves in log-log space generated above, with the corresponding slopes and intercepts of the linear interpretation results;</li>
 <li>Your answers and thoughts to the above questions.</li>
 </ol>
@@ -322,6 +328,7 @@ u&#39;ladi&#39;
 <p><strong>What to submit</strong>:</p>
 
 <ol>
+<li>Paste your code for cosine similarity computation.</li>
 <li>For each of the query document, list the top 3 most similar review documents (including Author, Content and Date) from the test folder and the corresponding cosine similarity.</li>
 <li>Without reading the actual content in the &quot;query.json&quot; file, by simply judging from the content of the retrieved most similar review documents, can you tell which type of restaurants are specified in the query.json file (e.g., Indian food or Korean food)?</li>
 </ol>
@@ -339,6 +346,7 @@ u&#39;ladi&#39;
 <p><strong>What to submit</strong>:</p>
 
 <ol>
+<li>Paste your code for implementing the linear interpolation smoothing and absolute discount smoothing.</li>
 <li>The top 10 words selected from the corresponding two bigram language models.</li>
 <li>Your explanation of the observations about the top words under those two bigram language models.</li>
 </ol>
@@ -352,6 +360,7 @@ u&#39;ladi&#39;
 <p><strong>What to submit</strong>:</p>
 
 <ol>
+<li>Paste your code for implementing the sampling procedure from a language model.</li>
 <li>The 10 sentences generated from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ accordingly, and the corresponding likelihood given by the used language model.</li>
 </ol>
 
@@ -370,9 +379,16 @@ u&#39;ladi&#39;
 <p><strong>What to submit</strong>:</p>
 
 <ol>
+<li>Paste your code for implementing the perplexity calculation of a language model.</li>
 <li>Report the mean and standard deviation of the perplexities for $\hat p_u(w)$, $\hat p^L_b(w_i|w_{i-1})$ and $\hat p^A_b(w_i|w_{i-1})$ on the test folder.<br></li>
 <li>Can you conclude which language model predicts the data in test folder better? And why?</li>
 </ol>
+
+<h1><a name="time"></a>Deadlines &amp; How to submit</h1>
+
+<p>We have two deadlines: Part1 is due on <strong>Feb. 9th 11:59pm</strong>; and Part2 is due on <strong>Feb. 16th 11:59pm</strong>. Therefore, you have in total 14 days to finish this MP. The late policy for all our homework has been carefully illustrated in the course syllabus.</p>
+
+<p>A collab assignment page has been created for this MP. Please submit your written report strictly following the requirement specified above. The report <strong>must be in PDF</strong> format.   </p>
 
       </div>
     </div>
