@@ -120,8 +120,8 @@
         <p>This assignment is designed to help you get familiar with basic document representation and analysis techniques. It  consists of two parts, totaling 100 points:</p>
 
 <ul>
-<li><strong>Part 1: <a href="#vsm">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, construct vector space representation for text documents, TF/IDF calculation, and compute similarity among different text documents;</li>
-<li><strong>Part 2: <a href="#slm">Statistical Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistical language models, including maximum likelihood estimator, smoothing, generate text from language models, and language model evaluation.</li>
+<li><strong>Part 1: <a href="#vsm">Vector Space Model</a></strong> <em>(50 points)</em>: get the basic idea of text processing, e.g., tokenization, stemming, and normalization, construct vector space representation for text documents, TF/IDF weighting, and compute similarity among different text documents;</li>
+<li><strong>Part 2: <a href="#slm">Statistical Language Models</a></strong> <em>(50 points)</em>: get the basic idea of statistical language models, including maximum likelihood estimation, smoothing, generate text documents from language models, and language model evaluation.</li>
 </ul>
 
 <p>You need to use the CS lab servers to get access to the prepared text documents. Please make sure you have account properly set up on the following three servers:</p>
@@ -144,8 +144,8 @@
 <p>The files are named and organized in the following manner:</p>
 
 <ol>
-<li>Each file contains all the reviews for a specific business on Yelp, and it is named by its unique ID on Yelp, e.g., <em>FAhx3UZtXvqNiEAd-GNruQ.json</em>;</li>
-<li><p>All the files are in json format. Each json file contains a json array of reviews and a json object about the information of the restaurant.              </p>
+<li>Each file contains all the review documents for a specific business on Yelp, and it is named by its unique ID on Yelp, e.g., <em>FAhx3UZtXvqNiEAd-GNruQ.json</em>;</li>
+<li><p>All the files are in json format. Each json file contains a json array of reviews (&#39;Reviews&#39;) and a json object about the information of the restaurant (&#39;RestaurantInfo&#39;).              </p>
 
 <p>2.1. The json object for <strong>user review</strong> is defined as follows: </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">{          
@@ -183,15 +183,15 @@
 
 <h2>Terminologies</h2>
 
-<p>Before describing the specification of this assignment, several terminologies that will be repeatedly used below have are defined here:</p>
+<p>Before describing the specifications of this assignment, several terminologies that will be repeatedly used below  are defined here:</p>
 
 <ul>
 <li><strong>Document</strong>: it refers to each individual Yelp review document contained in the json file. Therefore, one json file might contain multiple review documents.<br></li>
-<li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding ID. One json for one restaurant.<br></li>
-<li><strong>DF/IDF/TF/TTF/Cosine similarity</strong>: the definitions for those metrics are strictly following those on our lecture slides, unless specifically defined below.</li>
+<li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding Yelp ID; and one json for one restaurant.<br></li>
+<li><strong>DF/IDF/TF/TTF/Cosine similarity</strong>: the definitions for those metrics strictly follow those on our lecture slides, unless specifically defined below.</li>
 </ul>
 
-<p>Then, let&#39;s first go over several important concepts and techniques for basic text analysis.</p>
+<p>Next, let&#39;s go over several important concepts and techniques for basic text analysis.</p>
 
 <h2>Tokenization</h2>
 
@@ -203,7 +203,7 @@
 </code></pre></div>
 <p>where ** indicate the boundary of a token.</p>
 
-<p>A more advanced solution is the statistic machine learning based approaches. And in this assignment, we will learn how to use the tokenizer in <a href="http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html#tools.tokenizer">OpenNLP</a> (in Java) and <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.tokenize-module.html">NLTK</a> (in Python) to perform tokenization. The NLTK package has been installed on all three CS Lab servers.</p>
+<p>A more advanced solution is the statistic machine learning based approaches. And in this assignment, we will show you how to use the tokenizer in <a href="http://opennlp.apache.org/documentation/1.5.3/manual/opennlp.html#tools.tokenizer">OpenNLP</a> (in Java) and <a href="http://nltk.googlecode.com/svn/trunk/doc/api/nltk.tokenize-module.html">NLTK</a> (in Python) to perform tokenization. The NLTK package has been installed on all three CS lab servers.</p>
 
 <h3>1. Tokenizer in OpenNLP</h3>
 
@@ -248,7 +248,7 @@ u&#39;ladi&#39;
 </code></pre></div>
 <h2>Stopword removal</h2>
 
-<p>In basic text analysis, stopwords are the words that are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords that applicable in all scenarios, and the definition of stopwords are always domain specific. </p>
+<p>In basic text analysis, stopwords are the words that are filtered out before or after processing of natural language text data, based on the assumption that such words do not carry specific semantic meanings. However, there is not one definite list of stopwords that are applicable in all scenarios, and the definition of stopwords are always domain specific. </p>
 
 <p>Here is a popularly used list of stopwords: <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>. And we will use it as our initial stopword list for this assignment.  </p>
 
@@ -262,11 +262,11 @@ u&#39;ladi&#39;
 
 <p>There are several general steps of pre-processing you need to take to finish this assignment.</p>
 
-<ol>
+<ul>
 <li>Tokenization: tokenize the review content of each document into tokens.</li>
 <li>Normalization: normalize the tokens from step 1, by removing individual punctuation marks (here is a list of <a href="http://en.wikipedia.org/wiki/Punctuation_of_English">English punctuation marks</a>), converting tokens into lower cases, and recognizing digit numbers, e.g., integers and floats, and map them to a special symbol &quot;NUM&quot;. </li>
 <li>Stemming: stem the tokens back to their root form. </li>
-</ol>
+</ul>
 
 <h1><a name="vsm"></a>Part1: Vector Space Model (50pts)</h1>
 
@@ -274,17 +274,17 @@ u&#39;ladi&#39;
 
 <h3>1.1 Understand Zipf&#39;s Law (20pts)</h3>
 
-<p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by following steps:</p>
+<p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by the following steps:</p>
 
 <ol>
-<li>For each token, go over all the review documents containing it  (in both <em>train</em> and <em>test</em> folder), and accumulate its frequency in those documents, i.e., total term frequency (TTF).</li>
+<li>For each token, go over all the review documents containing it  (in both <strong>train</strong> and <strong>test</strong> folder), and accumulate its frequency in those documents, i.e., total term frequency (TTF).</li>
 <li>Order the tokens by their TTF in a descending order.</li>
-<li>Create a dot plot by treating each word&#39;s order as x-axis and its TTF as y-axis. Please use log-log scale for this plot.</li>
+<li>Create a dot plot by treating each word&#39;s rank as x-axis and its TTF as y-axis. Please use log-log scale for this plot.</li>
 </ol>
 
 <p><em>Hint: basically, you can maintain a look-up table in memory while you are scanning through the documents, so that you only need to go through the corpus once to get the counts for all the tokens.</em></p>
 
-<p>From the resulting plot, can we find strong linear relationship between the x and y axes in the log-log scale? If so, what is the slope of this linear relationship? To answer these questions, you can dump the data into excel and use the plot function there. (You can also use some scientific computing packages for curve fitting for this purpose.)          </p>
+<p>From the resulting plot, can we find a strong linear relationship between the x and y axes in the log-log scale? If so, what is the slope of this linear relationship? To answer these questions, you can dump the data into excel and use the plot function there. (You can also use some scientific computing packages for curve fitting for this purpose.)          </p>
 
 <p>Then change the counting statistics in the previous experiment from <em>total term frequency (TTF)</em> to <em>document frequency (DF)</em>, and perform the experiment again. According to new curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>TTF</em> v.s., <em>DF</em>, fits Zipf&#39;s law better on this data set? Can you give any explanation about why it fits the law better?</p>
 
@@ -297,44 +297,44 @@ u&#39;ladi&#39;
 
 <h3>1.2 Construct a Controlled Vocabulary (10pts)</h3>
 
-<p>Generate all the bigrams based on the resulting tokens from the pre-processing step (<strong>only in the train folder</strong>), and mix those bigrams with the unigrams as our initial controlled vocabulary.</p>
+<p>According to the procedure illustrated in our lecture slide, generate all the bigrams based on the resulting tokens from the pre-processing step (<strong>only in the train folder</strong>), and mix those bigrams with the unigrams as our initial controlled vocabulary.</p>
 
-<p>Collect the DF statistics for all the N-grams in this initial controlled vocabulary (<strong>only in the train folder</strong>), and find out the top 100 N-grams by DF. Compare this list with our initial stopword list and can you find some restaurant review specific stopwords? Merge those top 100 N-grams into the initial stopword list as our final stopword list.</p>
+<p>Collect the DF statistics for all the N-grams (i.e., unigram and bigram) in this initial controlled vocabulary (<strong>only in the train folder</strong>), and find out the top 100 N-grams by DF. Compare this list with our initial stopword list and can you find some restaurant review specific stopwords? Merge those top 100 N-grams into the initial stopword list as our final stopword list.</p>
 
-<p>In the meanwhile, filter the N-grams with DF smaller than 50. All the rest N-grams will be used as our controlled vocabulary.</p>
+<p>In the meanwhile, filter out the N-grams with DF smaller than 50. All the rest N-grams will be used as our controlled vocabulary.</p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
-<li>List of sample stopwords you found specific to restaurant reviews.</li>
-<li>The size of the resulting controlled vocabulary.</li>
+<li>List of new stopwords you found specific to restaurant reviews.</li>
+<li>The size of the resulting controlled vocabulary (i.e., total N-grams in it).</li>
 <li>Top 50 and bottom 50 N-grams according to DF in the resulting controlled vocabulary, and their corresponding IDFs (<strong>should be estimated only based on the train folder</strong>).</li>
 </ol>
 
 <h3>1.3 Compute similarity between documents (20pts)</h3>
 
-<p>With the above automatically constructed controlled vocabulary, each review document can be represented as a N-gram vector. Specifically, each dimension in this vector space is defined by the mix of unigrams and bigrams specified by the controlled vocabulary; while the weight for each unigram/bigram in a review document is defined by TF-IDF. Specifically, we will use &quot;<strong>Sub-linear TF scaling</strong>&quot; to compute the normalized TF of each unigram/bigram in a review document. Note the IDF statistics should be <strong>only computed based on the train folder</strong>.</p>
+<p>With the above automatically constructed controlled vocabulary, each review document can be represented as a N-gram vector. Specifically, each dimension in this vector space is defined by the mix of unigrams and bigrams defined in the controlled vocabulary; while the weight for each unigram/bigram in a review document is defined by TF-IDF. Specifically, we will use &quot;<strong>Sub-linear TF scaling</strong>&quot; to compute the normalized TF of each unigram/bigram in a review document. Note the IDF statistics should be <strong>only computed based on the train folder</strong>.</p>
 
-<p>Using this document representation to encode all the review documents in the test folder. Under the folder of &quot;/home/hw5x/TextMining/MP1/data/Yelp&quot;, there is a special json file &quot;query.json&quot; manually crafted by the instructor. It contains five carefully selected restaurant reviews from and outside the corpus. Construct the vector space representation for these five reviews (as what you have done for those review documents in the test folder) and find out the most similar reviews to them from the test folder, where the similarity metric is defined as cosine similarity. </p>
+<p>Using this document representation to encode all the review documents in the test folder. </p>
+
+<p>Under the folder of &quot;/home/hw5x/TextMining/MP1/data/Yelp&quot;, there is a special json file named &quot;query.json&quot;, which is manually crafted by the instructor. It contains five carefully selected restaurant reviews from and outside the provided corpus. Construct the vector space representations for these five reviews (as what you have done for those review documents in the test folder) and find out the most similar reviews to them from the test folder, where the similarity metric is defined as cosine similarity. </p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
 <li>For each of the query document, list the top 3 most similar review documents (including Author, Content and Date) from the test folder and the corresponding cosine similarity.</li>
-<li>Without reading the actual content in the query.json file, simply judging from the content of the retrieved most similar review documents, can you tell which type of restaurants are specified in the query.json file (e.g., Indian food or Korean food)?</li>
+<li>Without reading the actual content in the &quot;query.json&quot; file, by simply judging from the content of the retrieved most similar review documents, can you tell which type of restaurants are specified in the query.json file (e.g., Indian food or Korean food)?</li>
 </ol>
 
 <h1><a name="slm"></a>Part2: Statistical Language Models (50pts)</h1>
 
 <h3>2.1 Maximum likelihood estimation for statistical language models with proper smoothing (20pts)</h3>
 
-<p>Use all the review documents in the <strong>train folder</strong> to estimate a unigram language model $p_u(w)$ and two bigram language models (with different smoothing methods). When estimating the bigram language models, using linear interpolation smoothing and absolute discount smoothing based on the unigram language model $p_u(w)$ to get two different bigram language models accordingly, i.e., $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</p>
-
-<p>In linear interpolation smoothing, set the parameter $\lambda=0.9$; and in absolute discount smoothing, set the parameter $\delta=0.1$.</p>
+<p>Use all the review documents in the <strong>train folder</strong> to estimate a unigram language model $p_u(w)$ and two bigram language models (with different smoothing methods specified below). When estimating the bigram language models, using linear interpolation smoothing and absolute discount smoothing based on the unigram language model $p_u(w)$ to get two different bigram language models accordingly, i.e., $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$. In linear interpolation smoothing, set the parameter $\lambda=0.9$; and in absolute discount smoothing, set the parameter $\delta=0.1$.</p>
 
 <p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in a descending order by $p^L_b(w|\unicode{x201C}good&quot;)$ and $p^A_b(w|\unicode{x201C}good&quot;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
 
-<p><em>HINT: to reduce space complexity, you do not need to actually maintain a $V\times V$ array to store the counts and probabilities for the bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|\unicode{x201C}good&quot;)$ and $p^A_b(w|\unicode{x201C}good&quot;)$.</em> </p>
+<p><em>HINT: to reduce space complexity, you do not need to actually maintain a $V\times V$ array to store the counts and probabilities for the bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return the value of $p^L_b(w|\unicode{x201C}good&quot;)$ and $p^A_b(w|\unicode{x201C}good&quot;)$.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
@@ -347,19 +347,23 @@ u&#39;ladi&#39;
 
 <p>Fixing the sentence length to be 15, generate 10 sentences by sampling words from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ respectively.</p>
 
-<p><em>HINT: you can use $p_u(w)$ to generate the first word of a sentence and then sampling from the corresponding a bigram language model when generating from $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em> </p>
+<p><em>HINT: you can use $p_u(w)$ to generate the first word of a sentence and then sampling from the corresponding bigram language model when generating from $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
-<li>The 10 sentences generated from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ accordingly.</li>
+<li>The 10 sentences generated from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ accordingly, and the corresponding likelihood given by the used language model.</li>
 </ol>
 
 <h3>2.3 Language model evaluation (15pts)</h3>
 
-<p>Compute perplexity of the previously estimated language models, i.e., $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$, on review documents in the <strong>test folder</strong>.</p>
+<p>Compute perplexity of the previously estimated language models, i.e., $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$, on all the review documents in the <strong>test folder</strong>.</p>
 
-<p>The perplexity metric defined in our lecture slide is for one document. Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the  resulting perplexities.</p>
+<p>The perplexity metric defined in our lecture slide is for one document (copied below). Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the  resulting perplexities.</p>
+
+<p>$$ PP(w<em>1,w</em>2,\dots,w<em>N) = \sqrt^N{\frac{1}{\prod</em>{i=1}^N p(w<em>i|w</em>{i-1},\dots,w_{i-n+1})}} $$</p>
+
+<p>where $d=w_1,w_2,\dots,w_N$, i.e., a text sequence from testing document $d$.</p>
 
 <p><em>NOTE: to smooth the unseen words in the test folder, use additive smoothing to smooth the unigram language model $p_u(w)$ by setting the parameter $\delta=0.1$. Then use the smoothed $\hat p_u(w)$ to smooth $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em></p>
 
@@ -367,6 +371,7 @@ u&#39;ladi&#39;
 
 <ol>
 <li>Report the mean and standard deviation of the perplexities for $\hat p_u(w)$, $\hat p^L_b(w_i|w_{i-1})$ and $\hat p^A_b(w_i|w_{i-1})$ on the test folder.<br></li>
+<li>Can you conclude which language model predicts the data in test folder better? And why?</li>
 </ol>
 
       </div>
