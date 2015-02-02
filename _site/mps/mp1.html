@@ -326,26 +326,28 @@ u&#39;ladi&#39;
 
 <h1><a name="slm"></a>Part2: Statistical Language Models (50pts)</h1>
 
-<h3>2.1 Maximum likelihood estimator for statistical language models with smoothing (20pts)</h3>
+<h3>2.1 Maximum likelihood estimation for statistical language models with proper smoothing (20pts)</h3>
 
-<p>Use all the review documents in the <strong>train folder</strong> to estimate a unigram language model $p_u(w)$ and two bigram language models (with different smoothing methods). When estimating the bigram language models, using linear interpolation smoothing and absolute discount smoothing based on the unigram language model $p_u(w)$ to get two different bi-gram language models, i.e., $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</p>
+<p>Use all the review documents in the <strong>train folder</strong> to estimate a unigram language model $p_u(w)$ and two bigram language models (with different smoothing methods). When estimating the bigram language models, using linear interpolation smoothing and absolute discount smoothing based on the unigram language model $p_u(w)$ to get two different bigram language models accordingly, i.e., $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</p>
 
 <p>In linear interpolation smoothing, set the parameter $\lambda=0.9$; and in absolute discount smoothing, set the parameter $\delta=0.1$.</p>
 
-<p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in descending order by $p^L_b(w|<code>good&quot;)$ and $p^A\_b(w|</code>good&quot;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
+<p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in a descending order by $p^L_b(w|`<code>good&quot;)$ and $p^A\_b(w|\</code>`good&quot;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
 
-<p><em>HINT: to greatly reduce space complexity, you do not need to actually maintain a $V\times V$ array to maintain the counts and probabilities for bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|<code>good&quot;)$ and $p^A\_b(w|</code>good&quot;)$.</em> </p>
+<p><em>HINT: to reduce space complexity, you do not need to actually maintain a $V\times V$ array to store the counts and probabilities for the bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|``good&quot;)$ and $p^A_b(w|\&#39;&#39;good&quot;)$.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
 <li>The top 10 words selected from the corresponding two bigram language models.</li>
-<li>Your explanation of the observations.</li>
+<li>Your explanation of the observations about the top words under those two bigram language models.</li>
 </ol>
 
-<h3>2.2 Generate text documents from language models (15pts)</h3>
+<h3>2.2 Generate text documents from a language model (15pts)</h3>
 
 <p>Fixing the sentence length to be 15, generate 10 sentences by sampling words from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ respectively.</p>
+
+<p><em>HINT: you can use $p_u(w)$ to generate the first word of a sentence and then sampling from the corresponding a bigram language model when generating from $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
@@ -355,16 +357,16 @@ u&#39;ladi&#39;
 
 <h3>2.3 Language model evaluation (15pts)</h3>
 
-<p>Compute perplexity of previously estimated language models, i.e., $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$, on review documents in the <strong>test folder</strong>.</p>
+<p>Compute perplexity of the previously estimated language models, i.e., $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$, on review documents in the <strong>test folder</strong>.</p>
 
-<p>The perplexity metric defined in our lecture slide is for one document. Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the perplexities.</p>
+<p>The perplexity metric defined in our lecture slide is for one document. Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the  resulting perplexities.</p>
 
 <p><em>NOTE: to smooth the unseen words in the test folder, use additive smoothing to smooth the unigram language model $p_u(w)$ by setting the parameter $\delta=0.1$. Then use the smoothed $\hat p_u(w)$ to smooth $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em></p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
-<li>Report the mean and standard deviation of the perplexities for $\hat p_u(w)$ to smooth $\hat p^L_b(w_i|w_{i-1})$ and $\hat p^A_b(w_i|w_{i-1})$ on the test folder.<br></li>
+<li>Report the mean and standard deviation of the perplexities for $\hat p_u(w)$, $\hat p^L_b(w_i|w_{i-1})$ and $\hat p^A_b(w_i|w_{i-1})$ on the test folder.<br></li>
 </ol>
 
       </div>
