@@ -332,9 +332,9 @@ u&#39;ladi&#39;
 
 <p>In linear interpolation smoothing, set the parameter $\lambda=0.9$; and in absolute discount smoothing, set the parameter $\delta=0.1$.</p>
 
-<p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in descending order by $p^L_b(w|<code>good&#39;)$ and $p^A\_b(w|</code>good&#39;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
+<p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in descending order by $p^L_b(w|&quot;good&quot;)$ and $p^A_b(w|&quot;good&quot;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
 
-<p><em>HINT: to greatly reduce space complexity, you do not need to actually maintain a $V\times V$ array to maintain the counts and probabilities for bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|<code>good&#39;)$ and $p^A\_b(w|</code>good&#39;)$.</em> </p>
+<p><em>HINT: to greatly reduce space complexity, you do not need to actually maintain a $V\times V$ array to maintain the counts and probabilities for bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return $p^L_b(w|&quot;good&quot;)$ and $p^A_b(w|&quot;good&quot;)$.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
