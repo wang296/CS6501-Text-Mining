@@ -361,7 +361,7 @@ u&#39;ladi&#39;
 
 <p>The perplexity metric defined in our lecture slide is for one document (copied below). Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the  resulting perplexities.</p>
 
-<p>$PP(w_1,w_2,\dots,w_N) = \frac{1}{\prod_{i=1}^N p(w_i|w_{i-1},\dots,w_{i-n+1})}$</p>
+<p>$PP(w_1,w_2,\dots,w_N) = \sqrt[N]{\frac{1}{\prod_{i=1}^N p(w_i|w_{i-1},\dots,w_{i-n+1})}}$</p>
 
 <p>where $d=w_1,w_2,\dots,w_N$, i.e., a text sequence from testing document $d$.</p>
 
