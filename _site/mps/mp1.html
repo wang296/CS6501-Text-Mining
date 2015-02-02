@@ -361,9 +361,9 @@ u&#39;ladi&#39;
 
 <p>The perplexity metric defined in our lecture slide is for one document (copied below). Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the  resulting perplexities.</p>
 
-<p>$PP(w_1,w_2,\dots,w_N) = \sqrt[N]{\frac{1}{\prod_{i=1}^N p(w_i|w_{i-1},\dots,w_{i-n+1})}}$</p>
+<p>$PP(w_1,w_2,\dots,w_n) = \sqrt[n]{\frac{1}{\prod_{i=1}^n p(w_i|w_{i-1},\dots,w_{i-N+1})}}$</p>
 
-<p>where $d=w_1,w_2,\dots,w_N$, i.e., a text sequence from testing document $d$.</p>
+<p>where $d=w_1,w_2,\dots,w_n$, i.e., a text sequence from testing document $d$ of length $n$; and the likelihood is computed under an N-gram language model.</p>
 
 <p><em>NOTE: to smooth the unseen words in the test folder, use additive smoothing to smooth the unigram language model $p_u(w)$ by setting the parameter $\delta=0.1$. Then use the smoothed $\hat p_u(w)$ to smooth $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em></p>
 
