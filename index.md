@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**February 2**: [MP1]({{site.baseurl}}/mps/mp1.html) has been posted and it has two deadlines: Feb 9th and Feb 16th.
+
 **January 29**: All lecture slides in PDF format have been posted.
 
 **January 28**: Slides for the introduction of natural language processing have been posted.

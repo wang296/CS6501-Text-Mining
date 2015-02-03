@@ -44,12 +44,7 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Haoyu Chen</td>
 		<td>TBD</td> 
 		<td>Named entity recognition in tweets: an experimental study.</td>
-	</tr>		
-	<tr>
-		<td>Beilun Wang</td>
-		<td>TBD</td> 
-		<td>On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes.</td>
-	</tr>	
+	</tr>
 	<tr>
 		<td>Keira Zhou</td>
 		<td>TBD</td> 
