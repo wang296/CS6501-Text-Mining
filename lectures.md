@@ -7,7 +7,7 @@ title: Lectures
 
 > We will highlight the basic structure and major topics of this course, and go over some logistic issues and course requirements.     
 
-- **Day 1**: Introduction ([Slides]({{site.baseurl}}/docs/IntroductionToTextMining.pptx) [PDF]({{site.baseurl}}/docs/PDFs/IntroductionToTextMining.pdf), [Course Policy]({{site.baseurl}}/docs/CoursePolicy.pptx) [PDF]({{site.baseurl}}/docs/PDFs/CoursePolicy.pdf))
+- **Day 1**: Introduction ([Slides]({{site.baseurl}}/docs/IntroductionToTextMining.pptx), [PDF]({{site.baseurl}}/docs/PDFs/IntroductionToTextMining.pdf); [Course Policy]({{site.baseurl}}/docs/CoursePolicy.pptx), [PDF]({{site.baseurl}}/docs/PDFs/CoursePolicy.pdf))
 
 -----
 
@@ -15,7 +15,7 @@ title: Lectures
 
 > We will discuss how to represent the unstructured text documents with appropriate format and structure to support later automated text mining algorithms.
 
-- ### **Day 1**: [Vector space model](http://en.wikipedia.org/wiki/Vector_space_model) ([Slides]({{site.baseurl}}/docs/VS model.pptx) [PDF]({{site.baseurl}}/docs/PDFs/VS model.pdf))        
+- ### **Day 1**: [Vector space model](http://en.wikipedia.org/wiki/Vector_space_model) ([Slides]({{site.baseurl}}/docs/VS model.pptx), [PDF]({{site.baseurl}}/docs/PDFs/VS model.pdf))        
 	- *Salton, Gerard, Anita Wong, and Chung-Shu Yang. "A vector space model for automatic indexing." Communications of the ACM 18, no. 11 (1975): 613-620.* ([PDF](http://dl.acm.org/citation.cfm?id=361220))
 	- *Salton, Gerard, and Christopher Buckley. "Term-weighting approaches in automatic text retrieval." Information processing & management 24, no. 5 (1988): 513-523.* ([PDF](http://www.sciencedirect.com/science/article/pii/0306457388900210))
 	- *Raghavan, Vijay V., and SK Michael Wong. "A critical analysis of vector space model for information retrieval." Journal of the American Society for information Science 37, no. 5 (1986): 279-287.* ([PDF](http://www.sics.se/~jussi/Artiklar/2008.04.01.ECIR_Glasgow_filament/2007_rejected_SIGIR/filament/refs/raghavan.pdf))
@@ -25,7 +25,7 @@ title: Lectures
 	- *Erk, Katrin, and Sebastian Padó. "A structured vector space model for word meaning in context." In Proceedings of the Conference on Empirical Methods in Natural Language Processing, pp. 897-906. Association for Computational Linguistics, 2008.* ([PDF](http://t3-1.yum2.net/index/nlp.stanford.edu/pubs/structuredVS.pdf))
 	- *Zwarts, Joost, and Yoad Winter. "Vector space semantics: A model-theoretic analysis of locative prepositions." Journal of logic, language and information 9, no. 2 (2000): 169-211.* ([PDF](http://link.springer.com/article/10.1023/A:1008384416604))
 	
-- ### **Day 2**: [Language models](http://en.wikipedia.org/wiki/Language_model) ([Slides]({{site.baseurl}}/docs/Language Models.pptx) [PDF]({{site.baseurl}}/docs/PDFs/Language Models.pdf))              
+- ### **Day 2**: [Language models](http://en.wikipedia.org/wiki/Language_model) ([Slides]({{site.baseurl}}/docs/Language Models.pptx), [PDF]({{site.baseurl}}/docs/PDFs/Language Models.pdf))              
 	- *Ponte, Jay M., and W. Bruce Croft. "A language modeling approach to information retrieval." In Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 275-281. ACM, 1998.* ([PDF](http://dl.acm.org/citation.cfm?id=291008))
 	- *Lavrenko, Victor, and W. Bruce Croft. "Relevance based language models." In Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 120-127. ACM, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=383972))
 	- *Zhai, Chengxiang, and John Lafferty. "A study of smoothing methods for language models applied to ad hoc information retrieval." In Proceedings of the 24th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 334-342. ACM, 2001.* ([PDF](http://dl.acm.org/citation.cfm?id=384019))
@@ -43,7 +43,7 @@ title: Lectures
 
 > We will briefly provide an introduction to computational linguistics, from morphology (word formation) and syntax (sentence structure) to semantics (meaning), as the first step to process and analyze text data. Public natural langauge processing (NLP) toolkits will be introduced for you to understand and practice with those techniques. 
 
-- ### **Day 1**: Get familiar with NLP pipelines ([Slides]({{site.baseurl}}/docs/IntroductionToNLP.pptx) [PDF]({{site.baseurl}}/docs/PDFs/IntroductionToNLP.pdf))      
+- ### **Day 1**: Get familiar with NLP pipelines ([Slides]({{site.baseurl}}/docs/IntroductionToNLP.pptx), [PDF]({{site.baseurl}}/docs/PDFs/IntroductionToNLP.pdf))      
     - *Torres-Carrasquillo, Pedro A., Douglas A. Reynolds, and J. R. Deller Jr. "Language identification using Gaussian mixture model tokenization." In Acoustics, Speech, and Signal Processing (ICASSP), 2002 IEEE International Conference on, vol. 1, pp. I-757. IEEE, 2002.* ([PDF](http://llwebprod2.ll.mit.edu/mission/communications/publications/publication-files/full_papers/020513_Torres.pdf))
     - *Chung, Tagyoung, and Daniel Gildea. "Unsupervised tokenization for machine translation." In Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 2-Volume 2, pp. 718-726. Association for Computational Linguistics, 2009.* ([PDF](http://www.aclweb.org/anthology/D/D09/D09-1075.pdf))
     - *Lovins, Julie B. Development of a stemming algorithm. MIT Information Processing Group, Electronic Systems Laboratory, 1968.* ([PDF](http://mt-archive.info/MT-1968-Lovins.pdf))

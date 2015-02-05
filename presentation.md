@@ -36,9 +36,19 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Part-of-speech tagging for twitter: Annotation, features, and experiments.</td>
 	</tr>
 	<tr>
+		<td>Margaret Furr</td>
+		<td>TBD</td> 
+		<td>Introduction to WordNet-- An On-line Lexical Database.</td>
+	</tr>
+	<tr>
 		<td>Yu Huang</td>
 		<td>TBD</td> 
 		<td>A structured vector space model for word meaning in context.</td>
+	</tr>
+	<tr>
+		<td>Chetan Mishra</td>
+		<td>TBD</td> 
+		<td>A Markov random field model for term dependencies.</td>
 	</tr>
 	<tr>
 		<td>Haoyu Chen</td>
@@ -74,6 +84,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Danny Brady</td>
 		<td>TBD</td> 
 		<td>Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis.</td>
+	</tr>
+	<tr>
+		<td>Sarah Masud Preum</td>
+		<td>TBD</td> 
+		<td>Mining the peanut gallery: Opinion extraction and semantic classification of product reviews.</td>
 	</tr>
 	<tr>
 		<td>Sugandha Agrawal</td>
