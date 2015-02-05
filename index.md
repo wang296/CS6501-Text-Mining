@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**February 4**: Slides for the POS Tagging and Sequence Labeling have been posted.
+
 **February 2**: [MP1]({{site.baseurl}}/mps/mp1.html) has been posted and it has two deadlines: Feb 9th and Feb 16th.
 
 **January 29**: All lecture slides in PDF format have been posted.
