@@ -76,6 +76,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>The author-topic model for authors and documents.</td>
 	</tr>
 	<tr>
+		<td>Md Mustafizur Rahman</td>
+		<td>TBD</td> 
+		<td>Topic Modeling with Network Regularization.</td>
+	</tr>
+	<tr>
 		<td>Lin Gong</td>
 		<td>TBD</td> 
 		<td>Measurement and analysis of online social networks.</td>
