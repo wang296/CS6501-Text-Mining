@@ -56,6 +56,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Named entity recognition in tweets: an experimental study.</td>
 	</tr>
 	<tr>
+		<td>Jason Ye</td>
+		<td>TBD</td> 
+		<td>Tag-cloud drawing: Algorithms for cloud visualization.</td>
+	</tr>
+	<tr>
 		<td>Keira Zhou</td>
 		<td>TBD</td> 
 		<td>Least squares support vector machine classifiers.</td>
