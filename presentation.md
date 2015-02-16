@@ -27,88 +27,83 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	</tr>
 	<tr>
 		<td>Lingjie Zhang</td>
-		<td>TBD</td> 
+		<td>March 3</td> 
 		<td>A study of smoothing methods for language models applied to ad hoc information retrieval.</td>
+	</tr>
+	<tr>
+		<td>Yu Huang</td>
+		<td>March 3</td> 
+		<td>A structured vector space model for word meaning in context.</td>
+	</tr>
+	<tr>
+		<td>Chetan Mishra</td>
+		<td>March 5</td> 
+		<td>A Markov random field model for term dependencies.</td>
+	</tr>
+	<tr>
+		<td>Haoyu Chen</td>
+		<td>March 17</td> 
+		<td>Named entity recognition in tweets: an experimental study.</td>
+	</tr>
+	<tr>
+		<td>Jason Ye</td>
+		<td>March 19</td> 
+		<td>Tag-cloud drawing: Algorithms for cloud visualization.</td>
+	</tr>
+	<tr>
+		<td>Keira Zhou</td>
+		<td>March 22</td> 
+		<td>Least squares support vector machine classifiers.</td>
+	</tr>
+	<tr>
+		<td>Mohammad Al Boni</td>
+		<td>March 26</td> 
+		<td>A fuzzy k-nearest neighbor algorithm.</td>
+	</tr>
+	<tr>
+		<td>Mingjun Wang</td>
+		<td>March 31</td> 
+		<td>Constrained k-means clustering with background knowledge.</td>
+	</tr>
+	<tr>
+		<td>Peter Wu</td>
+		<td>April 2</td> 
+		<td>The author-topic model for authors and documents.</td>
+	</tr>
+	<tr>
+		<td>Md Mustafizur Rahman</td>
+		<td>April 7</td> 
+		<td>Topic Modeling with Network Regularization.</td>
+	</tr>
+	<tr>
+		<td>Lin Gong</td>
+		<td>April 9</td> 
+		<td>Measurement and analysis of online social networks.</td>
+	</tr>
+	<tr>
+		<td>Danny Brady</td>
+		<td>April 14</td> 
+		<td>Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis.</td>
+	</tr>
+	<tr>
+		<td>Sarah Masud Preum</td>
+		<td>April 16</td> 
+		<td>Mining the peanut gallery: Opinion extraction and semantic classification of product reviews.</td>
+	</tr>
+	<tr>
+		<td>Sugandha Agrawal</td>
+		<td>April 21</td> 
+		<td>Scaling personalized web search.</td>
+	</tr>
+	<tr>
+		<td>Jinghe Zhang</td>
+		<td>April 23</td> 
+		<td>Item-based collaborative filtering recommendation algorithms.</td>
 	</tr>
 	<tr>
 		<td>Lihua Cai</td>
 		<td>TBD</td> 
 		<td>Part-of-speech tagging for twitter: Annotation, features, and experiments.</td>
-	</tr>
-	<tr>
-		<td>Margaret Furr</td>
-		<td>TBD</td> 
-		<td>Introduction to WordNet-- An On-line Lexical Database.</td>
-	</tr>
-	<tr>
-		<td>Yu Huang</td>
-		<td>TBD</td> 
-		<td>A structured vector space model for word meaning in context.</td>
-	</tr>
-	<tr>
-		<td>Chetan Mishra</td>
-		<td>TBD</td> 
-		<td>A Markov random field model for term dependencies.</td>
-	</tr>
-	<tr>
-		<td>Haoyu Chen</td>
-		<td>TBD</td> 
-		<td>Named entity recognition in tweets: an experimental study.</td>
-	</tr>
-	<tr>
-		<td>Jason Ye</td>
-		<td>TBD</td> 
-		<td>Tag-cloud drawing: Algorithms for cloud visualization.</td>
-	</tr>
-	<tr>
-		<td>Keira Zhou</td>
-		<td>TBD</td> 
-		<td>Least squares support vector machine classifiers.</td>
-	</tr>
-	<tr>
-		<td>Mohammad Al Boni</td>
-		<td>TBD</td> 
-		<td>A fuzzy k-nearest neighbor algorithm.</td>
-	</tr>
-	<tr>
-		<td>Mingjun Wang</td>
-		<td>TBD</td> 
-		<td>Constrained k-means clustering with background knowledge.</td>
-	</tr>
-	<tr>
-		<td>Peter Wu</td>
-		<td>TBD</td> 
-		<td>The author-topic model for authors and documents.</td>
-	</tr>
-	<tr>
-		<td>Md Mustafizur Rahman</td>
-		<td>TBD</td> 
-		<td>Topic Modeling with Network Regularization.</td>
-	</tr>
-	<tr>
-		<td>Lin Gong</td>
-		<td>TBD</td> 
-		<td>Measurement and analysis of online social networks.</td>
-	</tr>
-	<tr>
-		<td>Danny Brady</td>
-		<td>TBD</td> 
-		<td>Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis.</td>
-	</tr>
-	<tr>
-		<td>Sarah Masud Preum</td>
-		<td>TBD</td> 
-		<td>Mining the peanut gallery: Opinion extraction and semantic classification of product reviews.</td>
-	</tr>
-	<tr>
-		<td>Sugandha Agrawal</td>
-		<td>TBD</td> 
-		<td>Scaling personalized web search.</td>
-	</tr>
-	<tr>
-		<td>Jinghe Zhang</td>
-		<td>TBD</td> 
-		<td>Item-based collaborative filtering recommendation algorithms.</td>
 	</tr>
 </table>
 </center>
