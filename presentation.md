@@ -19,7 +19,7 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 -----
 ## Sign up sheet
 <center>
-<table border="1" style="width:680px;">
+<table border="1" style="width:720px;">
 	<tr>
 		<td>Name</td>
 		<td>Date</td> 
@@ -28,7 +28,7 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	<tr>
 		<td>Lingjie Zhang</td>
 		<td>March 3</td> 
-		<td>A study of smoothing methods for language models applied to ad hoc information retrieval.</td>
+		<td>Opinion Spam and Analysis.</td>
 	</tr>
 	<tr>
 		<td>Yu Huang</td>
@@ -94,6 +94,11 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 		<td>Sugandha Agrawal</td>
 		<td>April 21</td> 
 		<td>Scaling personalized web search.</td>
+	</tr>
+	<tr>
+		<td>Qingyun Wu</td>
+		<td>April 23</td> 
+		<td>A Contextual-Bandit Approach to Personalized News Article Recommendation.</td>
 	</tr>
 	<tr>
 		<td>Jinghe Zhang</td>
