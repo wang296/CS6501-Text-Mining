@@ -7,7 +7,7 @@ highlighter:         pygments
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 relative_permalinks: true
-excerpt_separator:   '###-###'
+excerpt_separator:   '<!--snippet-->'
 # Setup
 title:               'CS 6501: Text Mining'
 tagline:             'Spring 2015 &middot; <a href="http://www.cs.virginia.edu/">CS@UVa</a>'

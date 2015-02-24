@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**February 23**: [Paper presentation schedule]({{site.baseurl}}/presentation/) has been finalized. 
+
 **February 18**: Slides for the Lexical Semantics and Distributional Semantics have been posted.
 
 **February 4**: Slides for the POS Tagging and Sequence Labeling have been posted.
