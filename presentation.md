@@ -19,7 +19,7 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 -----
 ## Sign up sheet
 <center>
-<table border="1" style="width:720px;">
+<table border="1" style="width:730px;">
 	<tr>
 		<td>Name</td>
 		<td>Date</td> 
