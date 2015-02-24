@@ -9,6 +9,7 @@ title: Homework
 - {{ post.date | date: '%B' }}
   {{ post.date | date: '%d' | ordinalize }}, {{ post.date | date: '%Y' }}
   --- [ {{ post.title }} ]( {{site.baseurl}}{{ post.url }} )
+  {{ post.excerpt }}
 {% endfor %}
 
 {% else %}
