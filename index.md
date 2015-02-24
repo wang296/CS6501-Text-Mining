@@ -11,6 +11,10 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**February 23**: Slides for the Statistical Machine Translation have been posted.
+
+**February 23**: [Sample solution for MP1]({{site.baseurl}}/mps/mp1.html#solution) has been posted.
+
 **February 23**: [Paper presentation schedule]({{site.baseurl}}/presentation/) has been finalized. 
 
 **February 18**: Slides for the Lexical Semantics and Distributional Semantics have been posted.
