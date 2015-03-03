@@ -85,7 +85,7 @@ title: Lectures
 
 > Document categorization refers to the task of assigning a text document to one or more classes or categories. We will discuss several basic supervised text categorization algorithms.
 
-- ### **Day 1**: [Feature selection](http://en.wikipedia.org/wiki/Feature_selection)
+- ### **Day 1**: [Feature selection](http://en.wikipedia.org/wiki/Feature_selection) & [Evaluation](http://en.wikipedia.org/wiki/Precision_and_recall) ([Slides]({{site.baseurl}}/docs/TextCategorization.pptx), [PDF]({{site.baseurl}}/docs/PDFs/TextCategorization.pdf))
 	- *Kohavi, Ron, and George H. John. "Wrappers for feature subset selection." Artificial intelligence 97, no. 1 (1997): 273-324.* ([PDF](http://www.sciencedirect.com/science/article/pii/S000437029700043X))
 	- *Guyon, Isabelle, and André Elisseeff. "An introduction to variable and feature selection." The Journal of Machine Learning Research 3 (2003): 1157-1182.* ([PDF](http://machinelearning.wustl.edu/mlpapers/paper_files/GuyonE03.pdf))
 	- *Yang, Yiming, and Jan O. Pedersen. "A comparative study on feature selection in text categorization." In ICML, vol. 97, pp. 412-420. 1997.* ([PDF](http://casa.disi.unitn.it/~moschitt/Projects/yang97comparative.pdf))
