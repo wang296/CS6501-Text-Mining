@@ -27,48 +27,38 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	</tr>
 	<tr>
 		<td>Zeming Lin</td>
-		<td>March 17</td> 
+		<td>March 19</td> 
 		<td>Neural probabilistic language models.</td>
 	</tr>
 	<tr>
 		<td>Chetan Mishra</td>
-		<td>March 17</td> 
+		<td>March 19</td> 
 		<td>A Markov random field model for term dependencies.</td>
 	</tr>
 	<tr>
 		<td>Haoyu Chen</td>
-		<td>March 19</td> 
+		<td>March 24</td> 
 		<td>Named entity recognition in tweets: an experimental study.</td>
 	</tr>
 	<tr>
 		<td>Jason Ye</td>
-		<td>March 19</td> 
+		<td>March 24</td> 
 		<td>Tag-cloud drawing: Algorithms for cloud visualization.</td>
 	</tr>
 	<tr>
 		<td>Mohammad Al Boni</td>
-		<td>March 24</td> 
+		<td>March 26</td> 
 		<td>A fuzzy k-nearest neighbor algorithm.</td>
 	</tr>
 	<tr>
 		<td>Keira Zhou</td>
-		<td>March 24</td> 
+		<td>March 26</td> 
 		<td>Least squares support vector machine classifiers.</td>
 	</tr>
 	<tr>
 		<td>Haoran Hou</td>
-		<td>March 26</td> 
-		<td>Inductive learning algorithms and representations for text categorization.</td>
-	</tr>	
-	<tr>
-		<td>Mingjun Wang</td>
-		<td>March 26</td> 
-		<td>Constrained k-means clustering with background knowledge.</td>
-	</tr>
-	<tr>
-		<td>Peter Wu</td>
 		<td>March 31</td> 
-		<td>The author-topic model for authors and documents.</td>
+		<td>Inductive learning algorithms and representations for text categorization.</td>
 	</tr>
 	<tr>
 		<td>Md Mustafizur Rahman</td>
@@ -82,8 +72,18 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	</tr>
 	<tr>
 		<td>Lin Gong</td>
-		<td>April 7</td> 
+		<td>April 2</td> 
 		<td>Measurement and analysis of online social networks.</td>
+	</tr>
+	<tr>
+		<td>Mingjun Wang</td>
+		<td>April 7</td> 
+		<td>Constrained k-means clustering with background knowledge.</td>
+	</tr>
+	<tr>
+		<td>Peter Wu</td>
+		<td>April 7</td> 
+		<td>The author-topic model for authors and documents.</td>
 	</tr>
 	<tr>
 		<td>Danny Brady</td>
