@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**March 18**: The make-up class will be on March 25, Wednesday, 11am-12:15pm, Rice Hall 340.
+
 **March 2**: Slides for the Text Categorization have been posted.
 
 **February 23**: Slides for the Statistical Machine Translation have been posted.

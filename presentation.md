@@ -11,7 +11,7 @@ It is preferred that the students could present the paper on the day when the to
 
 Giving an impressive presentation is an art. Some helpful tips can be found in the [resource page]({{site.baseurl}}/resources).
 
-Both the instructor and other students will grade the presentation (**no self-grading**). The detailed grading criteria are as follows.
+Both the instructor and other students will grade the presentation (**no self-grading**). The detailed grading criteria are described in our [course syllabus]({{site.baseurl}}/docs/syllabus.pdf).
 
 Paper presentation sign up is due in the end of **6th week** of the semester. The paper presentation will start on the **7th week**. 
 
