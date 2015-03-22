@@ -28,12 +28,12 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	<tr>
 		<td>Zeming Lin</td>
 		<td>March 19</td> 
-		<td>Neural probabilistic language models.</td>
+		<td>[Neural probabilistic language models.]({{site.baseurl}}/docs/Presentation/neuralLM.pdf)</td>
 	</tr>
 	<tr>
 		<td>Chetan Mishra</td>
 		<td>March 19</td> 
-		<td>A Markov random field model for term dependencies.</td>
+		<td>[A Markov random field model for term dependencies.]({{site.baseurl}}/docs/Presentation/paper_presentations_cm5ky.pptx)</td>
 	</tr>
 	<tr>
 		<td>Haoyu Chen</td>
