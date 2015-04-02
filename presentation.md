@@ -63,7 +63,7 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	<tr>
 		<td>Md Mustafizur Rahman</td>
 		<td>March 31</td> 
-		<td>Topic Modeling with Network Regularization.</td>
+		<td>[Topic Modeling with Network Regularization.]({{site.baseurl}}/docs/Presentation/NetPLSA_mustafiz.pptx)</td>
 	</tr>
 	<tr>
 		<td>Xiaoqian Liu</td>
