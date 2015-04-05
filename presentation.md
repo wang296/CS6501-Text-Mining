@@ -15,6 +15,10 @@ Both the instructor and other students will grade the presentation (**no self-gr
 
 Paper presentation sign up is due in the end of **6th week** of the semester. The paper presentation will start on the **7th week**. 
 
+-----
+## Peer-evaluation website
+
+Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.php) for peer evaluation.
 
 -----
 ## Sign up sheet
@@ -68,12 +72,12 @@ Paper presentation sign up is due in the end of **6th week** of the semester. Th
 	<tr>
 		<td>Xiaoqian Liu</td>
 		<td>April 2</td> 
-		<td>Multi-Document Summarization By Sentence Extraction.</td>
+		<td>[Multi-Document Summarization By Sentence Extraction.]({{site.baseurl}}/docs/Presentation/MultiDocumentSummarization.pdf)</td>
 	</tr>
 	<tr>
 		<td>Lin Gong</td>
 		<td>April 2</td> 
-		<td>Measurement and analysis of online social networks.</td>
+		<td>[Measurement and analysis of online social networks.]({{site.baseurl}}/docs/Presentation/04022015-LinGong.pdf)</td>
 	</tr>
 	<tr>
 		<td>Mingjun Wang</td>
