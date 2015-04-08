@@ -161,7 +161,7 @@
 
 <h2>Basic text processing techniques</h2>
 
-<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal. Please find more details in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">description of MP1</a>. Note, in all the following tasks, we will only use <strong>unigram as our features</strong> and <strong>json files in the train folder</strong>.   </p>
+<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal (please use the standard <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>). More action details can be found in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">description of MP1</a>. Note, in all the following tasks, we will only use <strong>unigram as our features</strong> and <strong>json files in the train folder</strong>.   </p>
 
 <h2>Defining the classes</h2>
 
@@ -187,31 +187,29 @@ where A is the number of positive documents containing term t, B is the number o
 
 <p>After this filtering steps, rank the left features by their $IG(t)$ value and $\chi^2(t)$ value in descending orders accordingly. We will choose the top 5000 words from each of these two ordered lists as our candidate features. If we don&#39;t have 5000 features left in Chi Square selection, return whatever you got after filtering.</p>
 
-<p>Before moving onto the next task, merge the feature lists you get from Information Gain and Chi Square, i.e., take union of these two sets of top 5000 features, and use the resulting list as the finalized features (i.e., our controlled vocabulary) for the following tasks. Then, use this controlled vocabulary to construct the vector space representation for all the documents in the collection (i.e., in the train folder). We will <strong>ignore</strong> the documents with less or equal to two non-zero features (i.e., length of the sparse vector less or equal to 2). We will refer to the resulting document collection as <strong>corpus</strong> in our following description.</p>
+<p>Before moving onto the next task, merge the feature lists you have got from Information Gain and Chi Square, i.e., take the union of these two sets of top 5000 features, and use the resulting list as the finalized features (i.e., controlled vocabulary) for the following tasks. Use this controlled vocabulary to construct the vector representation for all the review documents in the train folder, and <strong>ignore</strong> the documents with less or equal to five non-zero features (i.e., length of the resulting sparse vector less or equal to 5). We will refer to the resulting document collection as <strong>corpus</strong> in our following descriptions.</p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
-<li>List of the top 20 words selected by Information Gain and Chi Square accordingly. What is the size of your finalized feature set after merging? How many documents are there in this feature representation? (10 pts).</li>
-<li>Paste your code for Information Gain and Chi Square computation (2*10 pts).</li>
+<li>List of the top 20 words selected by Information Gain and Chi Square accordingly. What is the size of your finalized feature set after merging? How many review documents are there in the resulting corpus after feature selection? (10 pts).</li>
+<li>Paste your code for Information Gain and Chi Square computation (2$\times$10 pts).</li>
 </ol>
 
 <h1><a name="nb"></a>Part2: Naive Bayes (20pts)</h1>
 
 <h3>2.1 Training Naive Bayes with Maximum a Posterior estimator (10pts)</h3>
 
-<p>As we discussed in class, Naive Bayes classifier for text categorization problem boils down to estimate independent N-gram language models for each class. In our problem, we will use unigram language model with additive smoothing (set $\delta=0.1$) to estimate parameters in a Naive Bayes classifier.</p>
+<p>As we discussed in the course lecture, Naive Bayes classifier for text categorization problem can be considered as estimating independent N-gram language models for each class. In this assignment, we will use unigram language model with additive smoothing (set $\delta=0.1$) to estimate parameters in a Naive Bayes text classifier.</p>
 
-<p>You are suggested to reuse your implementation in MP1 for unigram language models here. </p>
+<p>You are suggested to reuse your implementation in MP1 for unigram language models in this task. </p>
 
-<p><em>HINT: you only need to estimate two unigram language models for positive and negative classes accordingly, and $p(c)$ is the ratio of the two classes in the training corpus. You can achieve that by feeding your previous implementation with different subset of documents.</em> </p>
-
-<p>Use the whole corpus to estimate a Naive Bayes classifier. Compute the log ratio between $p(w|c=1)$ and $p(w|c=0)$, i.e., $\log\frac{p(w|c=1)}{p(w|c=0)}$, and rank the features in a descending order with respect to this ratio.</p>
+<p><em>HINT: you only need to estimate two unigram language models for positive and negative classes accordingly, and $p(c)$ is simply the ratio of the two classes in the corpus.</em> </p>
 
 <p><strong>What to submit</strong>:</p>
 
 <ol>
-<li>List of the top 20 and bottom 20 words from the above ranked list. Do they make sense to you in terms of distinguishing the positive opinion from negative opinion? (10 pts).</li>
+<li>Use the whole corpus to estimate a Naive Bayes classifier. Compute the log ratio between $p(w|c=1)$ and $p(w|c=0)$, i.e., $\log\frac{p(w|c=1)}{p(w|c=0)}$, and rank the features in a descending order with respect to this ratio. List of the top 20 and bottom 20 words from the above ranked list. Do they make sense to you in terms of distinguishing the positive opinion from negative opinion? (10 pts).</li>
 </ol>
 
 <h3>2.2 Naive Bayes as a linear classifier (10pts)</h3>
