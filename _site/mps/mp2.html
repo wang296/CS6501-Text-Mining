@@ -128,22 +128,24 @@
 <!--snippet-->
 
 <ul>
-<li><strong>Part 1: <a href="#fv">Feature Selection</a></strong> <em>(30 points)</em>: implement two basic feature selection methods, i.e., Information Gain and Chi Square test, for selecting high-quality text features;<br></li>
-<li><strong>Part 2: <a href="#nb">Naive Bayes</a></strong> <em>(20 points)</em>: build a Naive Bayes classifier for text document classification;</li>
-<li><strong>Part 3: <a href="#knn">k Nearest Neighbor</a></strong> <em>(20 points)</em>: build a k Nearest Neighbor classifier for text document classification;</li>
-<li><strong>Part 4: <a href="#eval">Classification performance evaluation</a></strong> <em>(30 points)</em>: evaluate the constructed classifiers with standard classification performance metrics, including precision, recall and F-measure.<br></li>
+<li><strong>Task 1: <a href="#fv">Feature Selection</a></strong> <em>(30 points)</em>: implement two basic feature selection methods, i.e., Information Gain and Chi Square test, for selecting high-quality text features;<br></li>
+<li><strong>Task 2: <a href="#nb">Naive Bayes</a></strong> <em>(20 points)</em>: build a Naive Bayes classifier for text document classification;</li>
+<li><strong>Task 3: <a href="#knn">k Nearest Neighbor</a></strong> <em>(20 points)</em>: build a k Nearest Neighbor classifier for text document classification;</li>
+<li><strong>Task 4: <a href="#eval">Classification performance evaluation</a></strong> <em>(30 points)</em>: evaluate the constructed classifiers with standard classification performance metrics, including precision, recall and F-measure.<br></li>
 </ul>
 
 <p>The deadline and submission guidance are explicitly described <a href="#time">here</a>.</p>
 
 <h1>Data Set</h1>
 
-<p>We will use the same small Yelp review data set on the CS lab servers (e.g., <em>labunix01.cs.virginia.edu</em>, <em>labunix02.cs.virginia.edu</em>, <em>labunix03.cs.virginia.edu</em>):</p>
+<p>We will use the same small Yelp review data set as we used for MP1 on the CS lab servers (e.g., <em>labunix01.cs.virginia.edu</em>, <em>labunix02.cs.virginia.edu</em>, <em>labunix03.cs.virginia.edu</em>):</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp_Small&quot; 
 </code></pre></div>
 <p>More details of this review data set can be found in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">MP1 description</a>.</p>
 
-<p>Please reuse your implementation for MP1 as much as possible; and based that, you should be able to finish this assignment without too much effort.</p>
+<p>Please reuse your implementation for MP1 as much as possible; and based that, you should be able to finish this assignment without too much effort. </p>
+
+<p><em>HINT: since we have provided a sample solution provided by Mohammad Al Boni, you can refer to that sample implementation to solve the following MP2 tasks.</em> </p>
 
 <h1><a name="preparation"></a>Preparation: Creating the training and testing corpus</h1>
 
@@ -159,31 +161,31 @@
 
 <h2>Basic text processing techniques</h2>
 
-<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal. Please find more details in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">description of MP1</a>. Note, in all the following assignments, we will <strong>only use unigram as our features</strong> and <strong>only use the json files in the train folder</strong>.   </p>
+<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal. Please find more details in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">description of MP1</a>. Note, in all the following tasks, we will only use <strong>unigram as our features</strong> and <strong>json files in the train folder</strong>.   </p>
 
 <h2>Defining the classes</h2>
 
 <p>For each review document in this data set, it is associated with a numeric overall rating in the range of 1 to 5. We will treat the review documents with overall ratings <strong>below 4 as negative (labeled as 0)</strong> and <strong>the rest as positive (labeled as 1)</strong>. As a result, we have created a binary text classification problem. </p>
 
-<h1><a name="fv"></a>Part1: Feature Selection (30pts)</h1>
+<h1><a name="fv"></a>Task 1: Feature Selection (30pts)</h1>
 
-<p>Based on the basic text processing steps we have taken in MP1, we have created a vector representation for every document in our collection. Next we will use two text feature selection methods, i.e., Information Gain and Chi Square, to further refine this representation.</p>
+<p>Based on the basic text processing steps we have taken in MP1, we have created the vector representation for every review document in our collection. Next we will implement two most effective text feature selection methods, i.e., Information Gain and Chi Square, to further refine this representation.</p>
 
-<p>The definitions of Information Gain and Chi Square feature selector are as follows,</p>
+<p>The definitions of Information Gain and Chi Square feature selector are as follows (please also refer to our lecture slides),</p>
 
-<p>$$IG(t) = -\sum_{y={1,2}} p(y)\log p(y) + p(t)\sum_{y={1,2}} p(y|t)\log p(y|t) + p(\bar t)\sum_{y={1,2}} p(y|\bar t)\log p(y|\bar t) $$,
-where $p(y=1|t)$ is the probability we get a positive document where we observe the term t, and $p(y=1|\bar t)$ is the probability we get a positive document where we do not observe the term t.</p>
+<p>$$ IG(t) = -\sum_{y={1,2}} p(y)\log p(y) + p(t)\sum_{y={1,2}} p(y|t)\log p(y|t) + p(\bar t)\sum_{y={1,2}} p(y|\bar t)\log p(y|\bar t) $$,
+where $p(y=1|t)$ is the probability that we get a positive document where we observe the term t, and $p(y=1|\bar t)$ is the probability that we get a positive document where we do not observe the term t.</p>
 
-<p><strong>Note</strong>: we need to define $0\log 0=0$ to avoid zero probabilities in entropy computation.  </p>
+<p><strong>Note</strong>: here we need to define $0\log 0=0$ to avoid zero probabilities in entropy computation.  </p>
 
 <p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)}{(A+C)(B+D)(A+B)(C+D)} $$, 
 where A is the number of positive documents containing term t, B is the number of positive documents not containing term t, C is the number of negative documents containing term t, and D is the number of positive documents not containing term t.</p>
 
-<p>Before we apply these two feature selectors, we will first use DF to perform pre-filtering. We will use the same threshold 50 as in MP1, i.e., removing the terms with DF smaller than 50. </p>
+<p>Before we apply these two feature selection methods, we will perform prefiltering of features by DF. We will use the same threshold <strong>50</strong> as in MP1, i.e., removing the terms with DF smaller than 50. </p>
 
-<p>As required in Chi Square, we will use the threshold <strong>3.841</strong> to filter out the insignificant terms.</p>
+<p>As required in Chi Square, we will use the threshold <strong>3.841</strong> to filter out the insignificant terms, i.e., removing the terms whose $\chi^2(t)&lt;3.841$.</p>
 
-<p>After this filtering steps, rank the left features by their $IG(t)$ value and $\chi^2(t)$ value in descending orders accordingly. And we will choose the top 5000 words from each of these two ordered list as our candidate features. If we don&#39;t have 5000 features left in Chi Square selector, return whatever you got after filtering.</p>
+<p>After this filtering steps, rank the left features by their $IG(t)$ value and $\chi^2(t)$ value in descending orders accordingly. We will choose the top 5000 words from each of these two ordered lists as our candidate features. If we don&#39;t have 5000 features left in Chi Square selection, return whatever you got after filtering.</p>
 
 <p>Before moving onto the next task, merge the feature lists you get from Information Gain and Chi Square, i.e., take union of these two sets of top 5000 features, and use the resulting list as the finalized features (i.e., our controlled vocabulary) for the following tasks. Then, use this controlled vocabulary to construct the vector space representation for all the documents in the collection (i.e., in the train folder). We will <strong>ignore</strong> the documents with less or equal to two non-zero features (i.e., length of the sparse vector less or equal to 2). We will refer to the resulting document collection as <strong>corpus</strong> in our following description.</p>
 
@@ -191,7 +193,7 @@ where A is the number of positive documents containing term t, B is the number o
 
 <ol>
 <li>List of the top 20 words selected by Information Gain and Chi Square accordingly. What is the size of your finalized feature set after merging? How many documents are there in this feature representation? (10 pts).</li>
-<li>Paste your implementation of Information Gain and Chi Square computation (2*10 pts).</li>
+<li>Paste your code for Information Gain and Chi Square computation (2*10 pts).</li>
 </ol>
 
 <h1><a name="nb"></a>Part2: Naive Bayes (20pts)</h1>
