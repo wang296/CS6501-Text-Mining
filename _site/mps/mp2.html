@@ -173,7 +173,7 @@ The deadline and submission guidance are explicitly described <a href="#time">he
 
 <p>The definitions of Information Gain and Chi Square feature selector are as follows (please also refer to our lecture slides),</p>
 
-<p>,
+<p>$$ IG(t) = -\sum_{y} p(y)\log p(y) + p(t)\sum_{y} p(y|t)\log p(y|t) + p(\bar t)\sum_{y} p(y|\bar t)\log p(y|\bar t) $$,
 where $p(y=1|t)$ is the probability that we get a positive document where we observe the term t, and $p(y=1|\bar t)$ is the probability that we get a positive document where we do not observe the term t.</p>
 
 <p><strong>Note</strong>: here we need to define $0\log 0=0$ to avoid zero probabilities in entropy computation.  </p>
