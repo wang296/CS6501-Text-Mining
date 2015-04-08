@@ -165,11 +165,15 @@
 
 <h2>Defining the classes</h2>
 
-<p>For each review document in this data set, it is associated with a numeric overall rating in the range of 1 to 5. We will treat the review documents with overall ratings <strong>below 4 as negative</strong> and <strong>the rest as positive</strong>. As a result, we have created a binary classification problem. </p>
+<p>For each review document in this data set, it is associated with a numeric overall rating in the range of 1 to 5. We will treat the review documents with overall ratings <strong>below 4 as negative</strong> and <strong>the rest as positive</strong>. As a result, we have created a binary text classification problem. </p>
 
 <h1><a name="fv"></a>Part1: Feature Selection (30pts)</h1>
 
-<p>Based on the basic text processing steps we have taken in MP1, we have created a vector representation for every document in our collection.</p>
+<p>Based on the basic text processing steps we have taken in MP1, we have created a vector representation for every document in our collection. Next we will use two text feature selection methods, i.e., Information Gain and Chi Square, to further refine this representation.</p>
+
+<p>The definition of Information Gain and Chi Square feature selector is as follows,</p>
+
+<p>$$IG(t) = -\sum<em>c p(c)\log p(c) + p(t)\sum</em>c p(c|t)\log p(c|t) + p(\head t)\sum_c p(c|\head t)\log p(c|\head t) $$  </p>
 
 <h3>1.1 Understand Zipf&#39;s Law (20pts)</h3>
 
