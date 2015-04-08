@@ -171,15 +171,13 @@
 
 <p>The definitions of Information Gain and Chi Square feature selector are as follows,</p>
 
-<p>$$IG(t) = -\sum_c p(c)\log p(c) + p(t)\sum_c p(c|t)\log p(c|t) + p(\bar t)\sum_c p(c|\bar t)\log p(c|\bar t) $$,</p>
-
-<p>where $p(c=1|t)$ is the probability we get a positive document where we observe the term t, and $p(c|\bar t)$ is the probability we get a positive document where we do not observe the term t.</p>
+<p>$$IG(t) = -\sum_{y={1,2}} p(y)\log p(y) + p(t)\sum_{y={1,2}} p(y|t)\log p(y|t) + p(\bar t)\sum__{y={1,2}} p(y|\bar t)\log p(y|\bar t) $$,
+where $p(y=1|t)$ is the probability we get a positive document where we observe the term t, and $p(y=1|\bar t)$ is the probability we get a positive document where we do not observe the term t.</p>
 
 <p><strong>Note</strong>: we need to define $0\log 0=0$ to avoid zero probabilities in entropy computation.  </p>
 
-<p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)}{(A+C)(B+D)(A+B)(C+D)} $$, </p>
-
-<p>where A is the number of positive documents containing term t, B is the number of positive documents not containing term t, C is the number of negative documents containing term t, and D is the number of positive documents not containing term t.</p>
+<p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)}{(A+C)(B+D)(A+B)(C+D)} $$, 
+where A is the number of positive documents containing term t, B is the number of positive documents not containing term t, C is the number of negative documents containing term t, and D is the number of positive documents not containing term t.</p>
 
 <p>Before we apply these two feature selectors, we will first use DF to perform pre-filtering. We will use the same threshold 50 as in MP1, i.e., removing the terms with DF smaller than 50. </p>
 
@@ -198,13 +196,27 @@
 
 <h1><a name="nb"></a>Part2: Naive Bayes (20pts)</h1>
 
-<h3>2.1 Training Naive Bayes with maximum a posterior estimator (10pts)</h3>
+<h3>2.1 Training Naive Bayes with Maximum a Posterior estimator (10pts)</h3>
 
-<p>As we discussed in class, Naive Bayes classifier for text categorization problem boils down to estimate multiple N-gram language models under each class. In our problem, we will unigram language model with additive smoothing (set $\delta=0.1$) to estimate parameters in a Naive Bayes classifier.</p>
+<p>As we discussed in class, Naive Bayes classifier for text categorization problem boils down to estimate independent N-gram language models for each class. In our problem, we will use unigram language model with additive smoothing (set $\delta=0.1$) to estimate parameters in a Naive Bayes classifier.</p>
 
 <p>You are suggested to reuse your implementation in MP1 for unigram language models here. </p>
 
-<p><em>HINT: you only need to estimate two unigram language models for positive and negative classes accordingly. You can achieve that by feeding your previous implementation with different subset of documents.</em> </p>
+<p><em>HINT: you only need to estimate two unigram language models for positive and negative classes accordingly, and $p(c)$ is the ratio of the two classes in the training corpus. You can achieve that by feeding your previous implementation with different subset of documents.</em> </p>
+
+<p>Use the json files in train folder to estimate a Naive Bayes classifier. Compute the log ratio between $p(w|c=1)$ and $p(w|c=0)$, i.e., $\log\frac{p(w|c=1)}{p(w|c=0)}$, and rank the features in a descending order with respect to this ratio.</p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>List of the top 20 and bottom 20 words from the above ranked list. Do they make sense to you in terms of distinguishing the positive opinion from negative opinion? (10 pts).</li>
+</ol>
+
+<h3>2.2 Apply Naive Bayes as a linear classifier (10pts)</h3>
+
+<p>As discussed in our lecture slides, Naive Bayes for binary classification boils down to be a linear classification model with zero as classification threshold:</p>
+
+<p>$$f(X)=sgn(\log\frac{p(y=1|X)}{p(y=0|X)})=\log\frac{p(c=1)}{p(c=0)}$$ </p>
 
 <h1><a name="time"></a>Deadlines &amp; How to submit</h1>
 
