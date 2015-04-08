@@ -82,12 +82,12 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Mingjun Wang</td>
 		<td>April 7</td> 
-		<td>Constrained k-means clustering with background knowledge.</td>
+		<td>[Constrained k-means clustering with background knowledge.]({{site.baseurl}}/docs/Presentation/COP_TextMining_Mingjun.pdf)</td>
 	</tr>
 	<tr>
 		<td>Peter Wu</td>
 		<td>April 7</td> 
-		<td>The author-topic model for authors and documents.</td>
+		<td>[The author-topic model for authors and documents.]({{site.baseurl}}/docs/Presentation/cw9dd_author_tm.pptx)</td>
 	</tr>
 	<tr>
 		<td>Danny Brady</td>
