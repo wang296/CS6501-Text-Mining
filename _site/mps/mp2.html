@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      MP2&mdash; Text Categorization &middot; CS 6501: Text Mining
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/poole.css">
+  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/syntax.css">
+  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x146" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/UVA_Rotunda_Logo.png">
+  <link rel="shortcut icon" sizes="32x32" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/uva_rotunda.jpg">  
+</head>
+
+
+  <body>
+
+    <script type="text/javascript"
+      src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script> 
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+                         displayMath: [['\\[','\\]'], ['$$','$$']]}});
+    </script>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Formula for this course: <br><b>Text Mining = Data Mining + Text Data</b></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site">Home</a>
+
+    
+
+    
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/assignments/">Homework</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/lectures/">Lectures</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/presentation/">Paper Presentation</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/project/">Course Project</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/quizzes/">Quizzes</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/resources/">Resources</a>
+        
+      
+    
+  </nav>
+
+  <div class="sidebar-item">
+  	<p>
+  		Currently v1.0.0
+  	</p>
+    <p>
+      &copy; 2015. All rights reserved. <a href="http://www.cs.virginia.edu/">CS@UVa</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/~hw5x/Course/Text-Mining-2015-Spring/_site" title="Home">CS 6501: Text Mining</a>
+            <small>Spring 2015 &middot; <a href="http://www.cs.virginia.edu/">CS@UVa</a></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <p>This assignment is designed to help you practice with general steps in building a text categorization system. It  consists of four parts, including feature selection, building Naive Bayes classifier, kNN classifier, and classification performance evaluation, totaling 100 points.</p>
+
+<!--snippet-->
+
+<ul>
+<li><strong>Part 1: <a href="#fv">Feature Selection</a></strong> <em>(30 points)</em>: implement two basic feature selection methods, i.e., Information Gain and Chi Square test, for selecting high-quality text features;<br></li>
+<li><strong>Part 2: <a href="#nb">Naive Bayes</a></strong> <em>(20 points)</em>: build a Naive Bayes classifier for text document classification;</li>
+<li><strong>Part 3: <a href="#knn">k Nearest Neighbor</a></strong> <em>(20 points)</em>: build a k Nearest Neighbor classifier for text document classification;</li>
+<li><strong>Part 4: <a href="#eval">Classification performance evaluation</a></strong> <em>(30 points)</em>: evaluate the constructed classifiers with standard classification performance metrics, including precision, recall and F-measure.<br></li>
+</ul>
+
+<p>The deadline and submission guidance are explicitly described <a href="#time">here</a>.</p>
+
+<h1>Data Set</h1>
+
+<p>We will use the same small Yelp review data set on the CS lab servers (e.g., <em>labunix01.cs.virginia.edu</em>, <em>labunix02.cs.virginia.edu</em>, <em>labunix03.cs.virginia.edu</em>):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp_Small&quot; 
+</code></pre></div>
+<p>More details of this review data set can be found in our previous MP1 description.</p>
+
+<p>Please reuse your implementation for MP1 as much as possible; and based that, you should be able to finish this assignment without too much effort.</p>
+
+<h1><a name="preparation"></a>Preparation: Creating the training and testing corpus</h1>
+
+<h2>Terminologies</h2>
+
+<p>We will keep using the same terminologies as we used in MP1. </p>
+
+<ul>
+<li><strong>Document</strong>: it refers to each individual Yelp review document contained in the json file. Therefore, one json file might contain multiple review documents.<br></li>
+<li><strong>Restaurant</strong>: it refers to a specific restaurant entity contained in the given review data set. It is uniquely identified by the corresponding Yelp ID; and one json for one restaurant.<br></li>
+<li><strong>DF/IDF/TF/TTF/Cosine similarity</strong>: the definitions for those metrics strictly follow those on our lecture slides, unless specifically defined below.</li>
+</ul>
+
+<p>Next, let&#39;s go over several important concepts and techniques for basic text analysis.</p>
+
+<h2>Basic text processing techniques</h2>
+
+<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal. Please find more details in our previous description of MP1.   </p>
+
+<h2>Defining the classes</h2>
+
+<p>For each review document in this data set, it is associated with a numeric overall rating in the range of 1 to 5. We will treat the review documents with overall ratings <strong>below 4 as negative</strong> and <strong>the rest as positive</strong>. As a result, we have created a binary classification problem. </p>
+
+<h1><a name="fv"></a>Part1: Feature Selection (30pts)</h1>
+
+<p>Based on the basic text processing steps we have taken in MP1, we have created a vector representation for every document in our collection.</p>
+
+<h3>1.1 Understand Zipf&#39;s Law (20pts)</h3>
+
+<p>First, let&#39;s validate the Zipf&#39;s law with the provided Yelp review data set. This can be achieved by the following steps:</p>
+
+<ol>
+<li>Process the text document according to the discussed steps above.</li>
+<li>For each token, go over all the review documents containing it  (in both <strong>train</strong> and <strong>test</strong> folder), and accumulate its frequency in those documents, i.e., total term frequency (TTF).</li>
+<li>Order the tokens by their TTF in a descending order.</li>
+<li>Create a dot plot by treating each word&#39;s rank as x-axis and its TTF as y-axis. Please use log-log scale for this plot.</li>
+</ol>
+
+<p><em>Hint: basically, you can maintain a look-up table in memory while you are scanning through the documents, so that you only need to go through the corpus once to get the counts for all the tokens.</em></p>
+
+<p>From the resulting plot, can we find a strong linear relationship between the x and y axes in the log-log scale? If so, what is the slope of this linear relationship? To answer these questions, you can dump the data into excel and use the plot function there. (You can also use some scientific computing packages for curve fitting for this purpose.)          </p>
+
+<p>Then change the counting statistics in the previous experiment from <em>total term frequency (TTF)</em> to <em>document frequency (DF)</em>, and perform the experiment again. According to new curve and corresponding slope and intercept of the linear interpretation, can you conclude which counting statistics, i.e., <em>TTF</em> v.s., <em>DF</em>, fits Zipf&#39;s law better on this data set? Can you give any explanation about why it fits the law better?</p>
+
+<p><strong>What to submit</strong>: </p>
+
+<ol>
+<li>Paste your implementation of text normalization module.</li>
+<li>Two curves in log-log space generated above, with the corresponding slopes and intercepts of the linear interpretation results;</li>
+<li>Your answers and thoughts to the above questions.</li>
+</ol>
+
+<h3>1.2 Construct a Controlled Vocabulary (10pts)</h3>
+
+<p>According to the procedure illustrated in our lecture slide, generate all the bigrams based on the resulting tokens from the pre-processing step (<strong>only in the train folder</strong>), and mix those bigrams with the unigrams as our initial controlled vocabulary.</p>
+
+<p>Collect the DF statistics for all the N-grams (i.e., unigram and bigram) in this initial controlled vocabulary (<strong>only in the train folder</strong>), and find out the top 100 N-grams by DF. Compare this list with our initial stopword list and can you find some restaurant review specific stopwords? Merge those top 100 N-grams into the initial stopword list as our final stopword list.</p>
+
+<p>In the meanwhile, filter out the N-grams with DF smaller than 50. All the rest N-grams will be used as our controlled vocabulary.</p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>List of new stopwords you found specific to restaurant reviews.</li>
+<li>The size of the resulting controlled vocabulary (i.e., total N-grams in it).</li>
+<li>Top 50 and bottom 50 N-grams according to DF in the resulting controlled vocabulary, and their corresponding IDFs (<strong>should be estimated only based on the train folder</strong>).</li>
+</ol>
+
+<h3>1.3 Compute similarity between documents (20pts)</h3>
+
+<p>With the above automatically constructed controlled vocabulary, each review document can be represented as a N-gram vector. Specifically, each dimension in this vector space is defined by the mix of unigrams and bigrams defined in the controlled vocabulary; while the weight for each unigram/bigram in a review document is defined by TF-IDF. Specifically, we will use &quot;<strong>Sub-linear TF scaling</strong>&quot; to compute the normalized TF of each unigram/bigram in a review document. Note the IDF statistics should be <strong>only computed based on the train folder</strong>.</p>
+
+<p>Using this document representation to encode all the review documents in the test folder. </p>
+
+<p>Under the folder of &quot;/home/hw5x/TextMining/MP1/data/Yelp&quot;, there is a special json file named &quot;query.json&quot;, which is manually crafted by the instructor. It contains five carefully selected restaurant reviews from and outside the provided corpus. Construct the vector space representations for these five reviews (as what you have done for those review documents in the test folder) and find out the most similar reviews to them from the test folder, where the similarity metric is defined as cosine similarity. </p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>Paste your implementation of cosine similarity computation.</li>
+<li>For each document in the &quot;query.json&quot; file, list the top 3 most similar review documents (including Author, Content and Date) from the test folder and the corresponding cosine similarity.</li>
+<li>Without reading the actual content in the &quot;query.json&quot; file, by simply judging from the content of the retrieved most similar review documents, can you tell which type of restaurants are specified in the query.json file (e.g., Indian food or Korean food)?</li>
+</ol>
+
+<h1><a name="slm"></a>Part2: Statistical Language Models (50pts)</h1>
+
+<h3>2.1 Maximum likelihood estimation for statistical language models with proper smoothing (20pts)</h3>
+
+<p>Use all the review documents in the <strong>train folder</strong> to estimate a unigram language model $p_u(w)$ and two bigram language models (with different smoothing methods specified below). When estimating the bigram language models, using linear interpolation smoothing and absolute discount smoothing based on the unigram language model $p_u(w)$ to get two different bigram language models accordingly, i.e., $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$. In linear interpolation smoothing, set the parameter $\lambda=0.9$; and in absolute discount smoothing, set the parameter $\delta=0.1$.</p>
+
+<p>From the resulting two bigram language models, find the top 10 words that are most likely to follow the word &quot;good&quot;, i.e., rank the words in a descending order by $p^L_b(w|\unicode{x201C}good&quot;)$ and $p^A_b(w|\unicode{x201C}good&quot;)$ and output the top 10 words. Are those top 10 words the same from these two bigram language models? Explain your observation.</p>
+
+<p><em>HINT: to reduce space complexity, you do not need to actually maintain a $V\times V$ array to store the counts and probabilities for the bigram language models. You can use a sparse data structure, e.g., hash map, to store the seen words/bigrams, and perform the smoothing on the fly, i.e., evoke some function calls to return the value of $p^L_b(w|\unicode{x201C}good&quot;)$ and $p^A_b(w|\unicode{x201C}good&quot;)$.</em> </p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>Paste your implementation of the linear interpolation smoothing and absolute discount smoothing.</li>
+<li>The top 10 words selected from the corresponding two bigram language models.</li>
+<li>Your explanation of the observations about the top words under those two bigram language models.</li>
+</ol>
+
+<h3>2.2 Generate text documents from a language model (15pts)</h3>
+
+<p>Fixing the sentence length to be 15, generate 10 sentences by sampling words from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ respectively.</p>
+
+<p><em>HINT: you can use $p_u(w)$ to generate the first word of a sentence and then sampling from the corresponding bigram language model when generating from $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em> </p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>Paste your implementation of the sampling procedure from a language model.</li>
+<li>The 10 sentences generated from $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$ accordingly, and the corresponding likelihood given by the used language model.</li>
+</ol>
+
+<h3>2.3 Language model evaluation (15pts)</h3>
+
+<p>Compute perplexity of the previously estimated language models, i.e., $p_u(w)$, $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$, on all the review documents in the <strong>test folder</strong>.</p>
+
+<p>The perplexity metric defined in our lecture slide is for one document (copied below). Follow that definition to compute perplexity for every review document in the test folder and compute the mean and standard deviation of the  resulting perplexities.</p>
+
+<p>$PP(w_1,w_2,\dots,w_n) = \sqrt[n]{\frac{1}{\prod_{i=1}^n p(w_i|w_{i-1},\dots,w_{i-N+1})}}$</p>
+
+<p>where $d=w_1,w_2,\dots,w_n$, i.e., a text sequence from testing document $d$ of length $n$; and the likelihood is computed under an N-gram language model.</p>
+
+<p><em>NOTE: to smooth the unseen words in the test folder, use additive smoothing to smooth the unigram language model $p_u(w)$ by setting the parameter $\delta=0.1$. Then use the smoothed $\hat p_u(w)$ to smooth $p^L_b(w_i|w_{i-1})$ and $p^A_b(w_i|w_{i-1})$.</em></p>
+
+<p><strong>What to submit</strong>:</p>
+
+<ol>
+<li>Paste your implementation of the perplexity calculation of a language model.</li>
+<li>Report the mean and standard deviation of the perplexities for $\hat p_u(w)$, $\hat p^L_b(w_i|w_{i-1})$ and $\hat p^A_b(w_i|w_{i-1})$ on the test folder.<br></li>
+<li>Can you conclude which language model predicts the data in test folder better? And why?</li>
+</ol>
+
+<h1><a name="time"></a>Deadlines &amp; How to submit</h1>
+
+<p>We have two deadlines: Part1 is due on <strong>Feb. 12th 11:55pm</strong>; and Part2 is due on <strong>Feb. 19th 11:55pm</strong>. Therefore, you have in total 14 days to finish this MP. The late policy for all our homework has been carefully discussed in the course syllabus.</p>
+
+<p>Two separated collab assignment pages have been created for this MP. Please submit your written report strictly following the requirement specified above. The report <strong>must be in PDF</strong> format.   </p>
+
+<h1><a name="solution"></a>Sample solution</h1>
+
+<p>The following sample solution is provided by Mohammad Al Boni.</p>
+
+<ul>
+<li>Part 1: Vector Space Model, <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/docs/codes/MP1-Part1-Mohammad.pdf">Report</a></li>
+<li>Part 2: Statistical Language Models, <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/docs/codes/MP1-Part2-Mohammad.pdf">Report</a></li>
+<li><a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/docs/codes/MP1-solution-Mohammad.zip">Java Implementation</a>, <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/docs/codes/MP1-Mohammad.pptx">Presentation slides</a></li>
+</ul>
+
+<p>The following derivation of $S$ in absolute discount is provided by Lin Gong.</p>
+
+<ul>
+<li>Proof of $S$ equals to the word types (i.e., unique words) following $w_{i-1}$, <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/docs/codes/MP1-Part2-Lin-AbsoluteDiscount.pdf">Proof</a></li>
+</ul>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
