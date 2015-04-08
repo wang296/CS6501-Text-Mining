@@ -141,7 +141,7 @@
 <p>We will use the same small Yelp review data set on the CS lab servers (e.g., <em>labunix01.cs.virginia.edu</em>, <em>labunix02.cs.virginia.edu</em>, <em>labunix03.cs.virginia.edu</em>):</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp_Small&quot; 
 </code></pre></div>
-<p>More details of this review data set can be found in our previous MP1 description.</p>
+<p>More details of this review data set can be found in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">MP1 description</a>.</p>
 
 <p>Please reuse your implementation for MP1 as much as possible; and based that, you should be able to finish this assignment without too much effort.</p>
 
@@ -157,11 +157,9 @@
 <li><strong>DF/IDF/TF/TTF/Cosine similarity</strong>: the definitions for those metrics strictly follow those on our lecture slides, unless specifically defined below.</li>
 </ul>
 
-<p>Next, let&#39;s go over several important concepts and techniques for basic text analysis.</p>
-
 <h2>Basic text processing techniques</h2>
 
-<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal. Please find more details in our previous description of MP1. Note, in all the following assignments, we will <strong>only use unigram as our features</strong> and <strong>only use the json files in the train folder</strong>.   </p>
+<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal. Please find more details in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">description of MP1</a>. Note, in all the following assignments, we will <strong>only use unigram as our features</strong> and <strong>only use the json files in the train folder</strong>.   </p>
 
 <h2>Defining the classes</h2>
 
@@ -173,19 +171,23 @@
 
 <p>The definitions of Information Gain and Chi Square feature selector are as follows,</p>
 
-<p>$$IG(t) = -\sum_c p(c)\log p(c) + p(t)\sum_c p(c|t)\log p(c|t) + p(\bar t)\sum_c p(c|\bar t)\log p(c|\bar t) $$,
-where $p(c=1|t)$ is the probability we get a positive document where we observe the term t, and p(c|\bar t) is the probability we get a positive document where we do not observe the term t.</p>
+<p>$$IG(t) = -\sum_c p(c)\log p(c) + p(t)\sum_c p(c|t)\log p(c|t) + p(\bar t)\sum_c p(c|\bar t)\log p(c|\bar t) $$,</p>
+
+<p>where $p(c=1|t)$ is the probability we get a positive document where we observe the term t, and $p(c|\bar t)$ is the probability we get a positive document where we do not observe the term t.</p>
 
 <p><strong>Note</strong>: we need to define $0\log 0=0$ to avoid zero probabilities in entropy computation.  </p>
 
-<p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)}{(A+C)(B+D)(A+B)(C+D)} $$, 
-where A is the number of positive documents containing term t, B is the number of positive documents not containing term t, C is the number of negative documents containing term t, and D is the number of positive documents not containing term t.</p>
+<p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)}{(A+C)(B+D)(A+B)(C+D)} $$, </p>
 
-<p>Before we apply these two feature selectors, we will first use DF to perform pre-filtering. We will use the same threshold as in MP1, i.e., remove the terms with DF smaller than 50. In Chi Square, we will use the threshold 3.841 to filter out the insignificant terms.</p>
+<p>where A is the number of positive documents containing term t, B is the number of positive documents not containing term t, C is the number of negative documents containing term t, and D is the number of positive documents not containing term t.</p>
 
-<p>After this filtering steps, rank the left features by their $IG(t)$ value and $\chi^2(t)$ value in descending orders accordingly. And we will choose the top 5000 words from each of these two ordered list as our candidate features.</p>
+<p>Before we apply these two feature selectors, we will first use DF to perform pre-filtering. We will use the same threshold 50 as in MP1, i.e., removing the terms with DF smaller than 50. </p>
 
-<p>Before you move onto the next task, merge the feature list you get from Information Gain and Chi Square, i.e., take union of these two sets of top 5000 feature, and use the resulting list as the finalized features (i.e., our controlled vocabulary) for the following tasks. Then, use this controlled vocabulary to construct the vector space representation for all the documents in the collection (i.e., in the train folder). We will ignore the documents with less or equal to two non-zero features (i.e., length of the sparse vector less or equal to 2).</p>
+<p>As required in Chi Square, we will use the threshold <strong>3.841</strong> to filter out the insignificant terms.</p>
+
+<p>After this filtering steps, rank the left features by their $IG(t)$ value and $\chi^2(t)$ value in descending orders accordingly. And we will choose the top 5000 words from each of these two ordered list as our candidate features. If we don&#39;t have 5000 features left in Chi Square selector, return whatever you got after filtering.</p>
+
+<p>Before moving onto the next task, merge the feature lists you get from Information Gain and Chi Square, i.e., take union of these two sets of top 5000 features, and use the resulting list as the finalized features (i.e., our controlled vocabulary) for the following tasks. Then, use this controlled vocabulary to construct the vector space representation for all the documents in the collection (i.e., in the train folder). We will <strong>ignore</strong> the documents with less or equal to two non-zero features (i.e., length of the sparse vector less or equal to 2).</p>
 
 <p><strong>What to submit</strong>:</p>
 
