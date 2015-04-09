@@ -13,7 +13,7 @@ This is the course website for **CS 6501:** ***Text Mining***.
 # Announcements
 **April 8**: We will have our third quiz tomorrow morning (April 9th, 9:30am-9:45am).
 
-**April 8**: [MP2]]({{site.baseurl}}/mps/mp2.html) has been posted and it is due on April 17th, 11:55pm.
+**April 8**: [MP2]({{site.baseurl}}/mps/mp2.html) has been posted and it is due on April 17th, 11:55pm.
 
 **April 7**: We will have our third make-up class tomorrow morning from 11am to 12:15pm, at Rice Hall 340; and the slides for the Logistic Regression have been posted.
 
