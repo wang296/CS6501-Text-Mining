@@ -179,7 +179,7 @@ where $p(y=1|t)$ is the probability that we get a positive document where we obs
 
 <p><strong>Note</strong>: here we need to define $0\log 0=0$ to avoid zero probabilities in entropy computation.  </p>
 
-<p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)}{(A+C)(B+D)(A+B)(C+D)} $$ 
+<p>$$\chi^2(t) = \frac{(A+B+C+D)(AD-BC)^2}{(A+C)(B+D)(A+B)(C+D)} $$ 
 where A is the number of positive documents containing term t, B is the number of positive documents not containing term t, C is the number of negative documents containing term t, and D is the number of positive documents not containing term t.</p>
 
 <p>Before we apply these two feature selection methods, we need to filter the features by DF first. We will use the same threshold <strong>50</strong> as in MP1, i.e., removing the terms with DF smaller than 50. </p>
