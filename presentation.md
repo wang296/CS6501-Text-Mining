@@ -92,7 +92,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Danny Brady</td>
 		<td>April 9</td> 
-		<td>Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis.</td>
+		<td>[Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis.]({{site.baseurl}}/docs/Presentation/phrase-sentiment-djb4t.pptx)</td>
 	</tr>
 	<tr>
 		<td>Sarah Masud Preum</td>
