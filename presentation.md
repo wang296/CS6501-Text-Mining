@@ -97,12 +97,12 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Sarah Masud Preum</td>
 		<td>April 14</td> 
-		<td>Mining the peanut gallery: Opinion extraction and semantic classification of product reviews.</td>
+		<td>[Mining the peanut gallery: Opinion extraction and semantic classification of product reviews.]({{site.baseurl}}/docs/Presentation/ClassPresentation_SMP_MiningPeanutGallery_14Apr2015.pptx)</td>
 	</tr>
 	<tr>
 		<td>Asif Salekin</td>
 		<td>April 14</td> 
-		<td>Feeler: Emotion Classification of Text Using Vector Space Model.</td>
+		<td>[Feeler: Emotion Classification of Text Using Vector Space Model.]({{site.baseurl}}/docs/Presentation/emotion-as3df.pptx)</td>
 	</tr>
 	<tr>
 		<td>Lingjie Zhang</td>

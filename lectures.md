@@ -128,7 +128,7 @@ title: Lectures
 ## Lecture V: [Text Clustering](http://en.wikipedia.org/wiki/Document_clustering)
 > Text clustering refers to the task of identifying the clustering structure of a corpus of text documents and assigning documents to the identified cluster(s). We will discuss two typical types of clustering algorithms, i.e., centroid-based clustering (e.g., k-means clustering) and connectivity-based clustering (a.k.a., hierarchical clustering).                   
            
-- ### **Day 1**: [k-Means](http://en.wikipedia.org/wiki/K-means_clustering) & [Expectation Maximization](http://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm) - flat structure clustering      
+- ### **Day 1**: [k-Means](http://en.wikipedia.org/wiki/K-means_clustering) & [Expectation Maximization](http://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm) - flat structure clustering      ([Slides for clustering]({{site.baseurl}}/docs/TextClustering.pptx), [PDF for clustering]({{site.baseurl}}/docs/PDFs/TextClustering.pdf))
 	- *Liu, Tao, Shengping Liu, Zheng Chen, and Wei-Ying Ma. "An evaluation on feature selection for text clustering." In ICML, vol. 3, pp. 488-495. 2003.* ([PDF](http://www.aaai.org/Papers/ICML/2003/ICML03-065.pdf))
 	- *Hartigan, John A., and Manchek A. Wong. "Algorithm AS 136: A k-means clustering algorithm." Applied statistics (1979): 100-108.* ([PDF](http://www.labri.fr/perso/bpinaud/userfiles/downloads/hartigan_1979_kmeans.pdf))
 	- *Wagstaff, Kiri, Claire Cardie, Seth Rogers, and Stefan Schrödl. "Constrained k-means clustering with background knowledge." In ICML, vol. 1, pp. 577-584. 2001.* ([PDF](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf))   
