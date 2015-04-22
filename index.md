@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**April 21**: We will have our project presentations on April 30 and May 2, a tentative presentation schedule has been posted [here]({{site.baseurl}}/project/).
+
 **April 13**: Slides for the Support Vector Machines have been posted.
 
 **April 8**: We will have our third quiz tomorrow morning (April 9th, 9:30am-9:45am).

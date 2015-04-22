@@ -184,3 +184,90 @@ The instructor has selected a set of representative course projects from former 
 - **Social influence v.s. homophily**: Users in Yelp write reviews about businesses and make friends who share similar tastes and preferences. However it is unknown whether users become friends because they visited the same restaurants before (i.e., homophily); or they visited the same restaurants because they were friend (i.e., )influence. Distinguishing these two factors are very important for social network based recommendations.    
 
 - **Query intent classification**: Current product search system can only support simply keyword search, e.g., "canon 5d3". It is preferred if the system can support some simple semantic search, e.g., "cheap digit camera with high resolution." The system should be able to correctly map the specifiers of "cheap" and "high" to corresponding aspects of the product, e.g., price and image quality, and return all the results matching such criteria. One can imagine this as a translation process and opinionated review text documents provide nice resource to estimate such translation model.
+
+
+## Presentation Schedule
+<center>
+<table border="1" style="width:730px;">
+	<tr>
+		<td>Name</td>
+		<td>Date</td> 
+		<td>Project Title</td>
+	</tr>
+	<tr>
+		<td>Daniel Brady</td>
+		<td>April 30</td> 
+		<td>Visualization Tool for Sentiment over Space and Time</td>
+	</tr>
+	<tr>
+		<td>Mingjun Wang</td>
+		<td>April 30</td> 
+		<td>Using Textual Content from Twitter for Next-Place Prediction</td>
+	</tr>
+	<tr>
+		<td>Peter Wu</td>
+		<td>April 30</td> 
+		<td>A Data Mining Approach to Protest Outbreak Prediction in the Arab World</td>
+	</tr>
+	<tr>
+		<td>Jinghe Zhang</td>
+		<td>April 30</td> 
+		<td>Recognizing Mental Disorders by Mining College Health Surveillance Network Data</td>
+	</tr>
+	<tr>
+		<td>Haoyu Chen, Haoran Hou</td>
+		<td>April 30</td> 
+		<td>A Question Recommendation System for Question Answer Communities</td>
+	</tr>	
+	<tr>
+		<td>Zeming Lin</td>
+		<td>May 2</td> 
+		<td>Natural Language Processing with LSTM Networks</td>
+	</tr>
+	<tr>
+		<td>Xiaoqian Liu</td>
+		<td>May 2</td> 
+		<td>Text Content-based Music Recommendation by Using Features and Emotions Extracted from Music Critics</td>
+	</tr>
+	<tr>
+		<td>Sugandha Agrawal, Chetan Mishra</td>
+		<td>May 2</td> 
+		<td>Text Mining Project Proposal</td>
+	</tr>
+	<tr>
+		<td>Asif Salekin, Sarah Masud Preum</td>
+		<td>May 2</td> 
+		<td>Detecting Behavioral Events Using Structured Learning</td>
+	</tr>
+	<tr>
+		<td>Md Mustafizur Rahman</td>
+		<td>May 2</td> 
+		<td>Posterior Regularization on Topic Modeling for Labeling Unstructured Data</td>
+	</tr>
+	<tr>
+		<td>Qingyun Wu</td>
+		<td>May 2</td> 
+		<td>A Multi-armed Bandit Approach to News Article Recommendation</td>
+	</tr>
+	<tr>
+		<td>Jason Ye</td>
+		<td>May 2</td> 
+		<td>An Application of Query Auto-Completion on the ReviewMiner Search Engine</td>
+	</tr>
+	<tr>
+		<td>Lingjie Zhang, Yu Huang</td>
+		<td>May 2</td> 
+		<td>Review Spams Detection</td>
+	</tr>	
+	<tr>
+		<td>Mohammad Al Boni, Keira Qi Zhou</td>
+		<td>May 2</td> 
+		<td>User-Specific Sentiment Analysis Using Transfer Learning</td>
+	</tr>
+	<tr>
+		<td>Gong Lin</td>
+		<td>May 2</td> 
+		<td>Using Metric Learning to Enhance Semi-supervised Learning</td>
+	</tr>
+</table>
+</center>

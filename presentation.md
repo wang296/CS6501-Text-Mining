@@ -62,7 +62,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Haoran Hou</td>
 		<td>March 31</td> 
-		<td>Inductive learning algorithms and representations for text categorization.</td>
+		<td>[Inductive learning algorithms and representations for text categorization.](({{site.baseurl}}/docs/Presentation/hh6wh-text-categorization.pdf)</td>
 	</tr>
 	<tr>
 		<td>Md Mustafizur Rahman</td>
@@ -107,27 +107,27 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Lingjie Zhang</td>
 		<td>April 16</td> 
-		<td>Opinion Spam and Analysis.</td>
+		<td>[Opinion Spam and Analysis.]({{site.baseurl}}/docs/Presentation/OpinionSpam-lz2ay.pdf)</td>
 	</tr>
 	<tr>
 		<td>Yu Huang</td>
 		<td>April 16</td> 
-		<td>Finding Deceptive Opinion Spam by Any Stretch of the Imagination.</td>
-	</tr>
-	<tr>
-		<td>Sugandha Agrawal</td>
-		<td>April 21</td> 
-		<td>Scaling personalized web search.</td>
-	</tr>
+		<td>[Finding Deceptive Opinion Spam by Any Stretch of the Imagination.]({{site.baseurl}}/docs/Presentation/Spam_detection_Yu.pptx)</td>
+	</tr>	
 	<tr>
 		<td>Qingyun Wu</td>
 		<td>April 21</td> 
-		<td>A Contextual-Bandit Approach to Personalized News Article Recommendation.</td>
+		<td>[A Contextual-Bandit Approach to Personalized News Article Recommendation.]({{site.baseurl}}/docs/Presentation/LinUCB_qw2ky.pdf)</td>
 	</tr>
 	<tr>
 		<td>Jinghe Zhang</td>
 		<td>April 23</td> 
 		<td>Item-based collaborative filtering recommendation algorithms.</td>
+	</tr>
+	<tr>
+		<td>Sugandha Agrawal</td>
+		<td>April 23</td> 
+		<td>Scaling personalized web search.</td>
 	</tr>
 </table>
 </center>
