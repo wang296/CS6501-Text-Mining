@@ -210,18 +210,13 @@ The instructor has selected a set of representative course projects from former 
 		<td>A Data Mining Approach to Protest Outbreak Prediction in the Arab World</td>
 	</tr>
 	<tr>
-		<td>Haoyu Chen, Haoran Hou</td>
-		<td>April 30</td> 
-		<td>A Question Recommendation System for Question Answer Communities</td>
-	</tr>	
-	<tr>
 		<td>Zeming Lin</td>
 		<td>April 30</td> 
 		<td>Natural Language Processing with LSTM Networks</td>
 	</tr>
 	<tr>
 		<td>Xiaoqian Liu</td>
-		<td>May 2</td> 
+		<td>April 30</td> 
 		<td>Text Content-based Music Recommendation by Using Features and Emotions Extracted from Music Critics</td>
 	</tr>
 	<tr>
@@ -268,6 +263,11 @@ The instructor has selected a set of representative course projects from former 
 		<td>Jinghe Zhang</td>
 		<td>May 2</td> 
 		<td>Recognizing Mental Disorders by Mining College Health Surveillance Network Data</td>
+	</tr>
+	<tr>
+		<td>Haoyu Chen, Haoran Hou</td>
+		<td>May 2</td> 
+		<td>A Question Recommendation System for Question Answer Communities</td>
 	</tr>
 </table>
 </center>
