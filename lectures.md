@@ -128,7 +128,7 @@ title: Lectures
 ## Lecture V: [Text Clustering](http://en.wikipedia.org/wiki/Document_clustering)
 > Text clustering refers to the task of identifying the clustering structure of a corpus of text documents and assigning documents to the identified cluster(s). We will discuss two typical types of clustering algorithms, i.e., centroid-based clustering (e.g., k-means clustering) and connectivity-based clustering (a.k.a., hierarchical clustering).                   
            
-- ### **Day 1**: [k-Means](http://en.wikipedia.org/wiki/K-means_clustering) & [Expectation Maximization](http://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm) - flat structure clustering      ([Slides for clustering]({{site.baseurl}}/docs/TextClustering.pptx), [PDF for clustering]({{site.baseurl}}/docs/PDFs/TextClustering.pdf))
+- ### **Day 1**: [k-Means](http://en.wikipedia.org/wiki/K-means_clustering) & [Expectation Maximization](http://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm) - flat structure clustering      ([Slides for clustering]({{site.baseurl}}/docs/TextClustering.pptx), [PDF for clustering]({{site.baseurl}}/docs/PDFs/TextClustering.pdf)) ([Slides for k-means]({{site.baseurl}}/docs/k-means.pptx), [PDF for k-means]({{site.baseurl}}/docs/PDFs/k-means.pdf))
 	- *Liu, Tao, Shengping Liu, Zheng Chen, and Wei-Ying Ma. "An evaluation on feature selection for text clustering." In ICML, vol. 3, pp. 488-495. 2003.* ([PDF](http://www.aaai.org/Papers/ICML/2003/ICML03-065.pdf))
 	- *Hartigan, John A., and Manchek A. Wong. "Algorithm AS 136: A k-means clustering algorithm." Applied statistics (1979): 100-108.* ([PDF](http://www.labri.fr/perso/bpinaud/userfiles/downloads/hartigan_1979_kmeans.pdf))
 	- *Wagstaff, Kiri, Claire Cardie, Seth Rogers, and Stefan Schrödl. "Constrained k-means clustering with background knowledge." In ICML, vol. 1, pp. 577-584. 2001.* ([PDF](https://web.cse.msu.edu/~cse802/notes/ConstrainedKmeans.pdf))   
@@ -172,7 +172,7 @@ title: Lectures
 
 > Topic models are a suite of algorithms that uncover the hidden thematic structure in document collections. We will introduce the general idea of topic modeling, two basic topic models, i.e., Probabilistic Latent Semantic Indexing (pLSI) and Latent Dirichlet Allocation (LDA), and their variants for different application scenarios, including classification, imagine annotation, collaborative filtering, and hierarchical topical structure modeling.
 
-- ### **Day 1**: Topic models I 
+- ### **Day 1**: Topic models I ([slides]({{site.baseurl}}/docs/topic models.pptx))
 	- *Hofmann, Thomas. "Probabilistic latent semantic analysis." In Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence, pp. 289-296. Morgan Kaufmann Publishers Inc., 1999.* ([PDF](http://dl.acm.org/citation.cfm?id=2073829))
 	- *Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." the Journal of machine Learning research 3 (2003): 993-1022.* ([PDF](http://dl.acm.org/citation.cfm?id=944937))	
 	- *Blei, David M., and John D. Lafferty. "Dynamic topic models." In Proceedings of the 23rd international conference on Machine learning, pp. 113-120. ACM, 2006.* ([PDF](http://dl.acm.org/citation.cfm?id=1143859))

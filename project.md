@@ -210,18 +210,13 @@ The instructor has selected a set of representative course projects from former 
 		<td>A Data Mining Approach to Protest Outbreak Prediction in the Arab World</td>
 	</tr>
 	<tr>
-		<td>Jinghe Zhang</td>
-		<td>April 30</td> 
-		<td>Recognizing Mental Disorders by Mining College Health Surveillance Network Data</td>
-	</tr>
-	<tr>
 		<td>Haoyu Chen, Haoran Hou</td>
 		<td>April 30</td> 
 		<td>A Question Recommendation System for Question Answer Communities</td>
 	</tr>	
 	<tr>
 		<td>Zeming Lin</td>
-		<td>May 2</td> 
+		<td>April 30</td> 
 		<td>Natural Language Processing with LSTM Networks</td>
 	</tr>
 	<tr>
@@ -232,7 +227,7 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>Sugandha Agrawal, Chetan Mishra</td>
 		<td>May 2</td> 
-		<td>Text Mining Project Proposal</td>
+		<td>Visualization tool depicting topical analysis on presidential documents</td>
 	</tr>
 	<tr>
 		<td>Asif Salekin, Sarah Masud Preum</td>
@@ -268,6 +263,11 @@ The instructor has selected a set of representative course projects from former 
 		<td>Gong Lin</td>
 		<td>May 2</td> 
 		<td>Using Metric Learning to Enhance Semi-supervised Learning</td>
+	</tr>
+	<tr>
+		<td>Jinghe Zhang</td>
+		<td>May 2</td> 
+		<td>Recognizing Mental Disorders by Mining College Health Surveillance Network Data</td>
 	</tr>
 </table>
 </center>
