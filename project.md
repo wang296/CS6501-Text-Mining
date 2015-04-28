@@ -216,7 +216,7 @@ The instructor has selected a set of representative course projects from former 
 	</tr>
 	<tr>
 		<td>Xiaoqian Liu</td>
-		<td>April 30</td> 
+		<td>May 2</td> 
 		<td>Text Content-based Music Recommendation by Using Features and Emotions Extracted from Music Critics</td>
 	</tr>
 	<tr>
