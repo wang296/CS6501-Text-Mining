@@ -122,12 +122,12 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Jinghe Zhang</td>
 		<td>April 23</td> 
-		<td>Item-based collaborative filtering recommendation algorithms.</td>
+		<td>[Item-based collaborative filtering recommendation algorithms.]({{site.baseurl}}/docs/Presentation/jz4kg-collaborative.pptx)</td>
 	</tr>
 	<tr>
 		<td>Sugandha Agrawal</td>
 		<td>April 23</td> 
-		<td>Scaling personalized web search.</td>
+		<td>[Scaling personalized web search.]({{site.baseurl}}/docs/Presentation/sa5ev-pagerank.pptx)</td>
 	</tr>
 </table>
 </center>
