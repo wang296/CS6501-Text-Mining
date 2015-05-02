@@ -11,6 +11,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**May 1**: Solution for Quiz 5 has been posted.
+
 **April 27**: Slides for hierarchical clustering have been posted.
 
 **April 23**: Solutions for Quiz 4 have been posted.

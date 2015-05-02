@@ -202,7 +202,7 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>Mingjun Wang</td>
 		<td>April 30</td> 
-		<td>Using Textual Content from Twitter for Next-Place Prediction</td>
+		<td>[Using Textual Content from Twitter for Next-Place Prediction]({{site.baseurl}}/docs/Projects/FinalProject-mw4cc.pptx)</td>
 	</tr>
 	<tr>
 		<td>Peter Wu</td>
@@ -220,24 +220,24 @@ The instructor has selected a set of representative course projects from former 
 		<td>Text Content-based Music Recommendation by Using Features and Emotions Extracted from Music Critics</td>
 	</tr>
 	<tr>
-		<td>Sugandha Agrawal, Chetan Mishra</td>
+		<td>Haoyu Chen, Haoran Hou</td>
 		<td>May 2</td> 
-		<td>Visualization tool depicting topical analysis on presidential documents</td>
-	</tr>
-	<tr>
-		<td>Asif Salekin, Sarah Masud Preum</td>
-		<td>May 2</td> 
-		<td>Detecting Behavioral Events Using Structured Learning</td>
-	</tr>
-	<tr>
-		<td>Md Mustafizur Rahman</td>
-		<td>May 2</td> 
-		<td>Posterior Regularization on Topic Modeling for Labeling Unstructured Data</td>
+		<td>A Question Recommendation System for Question Answer Communities</td>
 	</tr>
 	<tr>
 		<td>Qingyun Wu</td>
 		<td>May 2</td> 
 		<td>A Multi-armed Bandit Approach to News Article Recommendation</td>
+	</tr>
+	<tr>
+		<td>Sugandha Agrawal, Chetan Mishra</td>
+		<td>May 2</td> 
+		<td>Visualization tool depicting topical analysis on presidential documents</td>
+	</tr>
+	<tr>
+		<td>Md Mustafizur Rahman</td>
+		<td>May 2</td> 
+		<td>Posterior Regularization on Topic Modeling for Labeling Unstructured Data</td>
 	</tr>
 	<tr>
 		<td>Jason Ye</td>
@@ -265,9 +265,9 @@ The instructor has selected a set of representative course projects from former 
 		<td>Recognizing Mental Disorders by Mining College Health Surveillance Network Data</td>
 	</tr>
 	<tr>
-		<td>Haoyu Chen, Haoran Hou</td>
+		<td>Asif Salekin, Sarah Masud Preum</td>
 		<td>May 2</td> 
-		<td>A Question Recommendation System for Question Answer Communities</td>
+		<td>Detecting Behavioral Events Using Structured Learning</td>
 	</tr>
 </table>
 </center>
