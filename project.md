@@ -197,7 +197,7 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>Daniel Brady</td>
 		<td>April 30</td> 
-		<td>Visualization Tool for Sentiment over Space and Time</td>
+		<td>[Visualization Tool for Sentiment over Space and Time]({{site.baseurl}}/docs/Projects/AnimatedHeatmaps-djb4t.pptx)</td>
 	</tr>
 	<tr>
 		<td>Mingjun Wang</td>
@@ -207,67 +207,67 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>Peter Wu</td>
 		<td>April 30</td> 
-		<td>A Data Mining Approach to Protest Outbreak Prediction in the Arab World</td>
+		<td>[Social Theory Driven Operational Forecasting of Civil Unrest Event Outbreaks]({{site.baseurl}}/docs/Projects/cw9dd_presentation.pptx)</td>
 	</tr>
 	<tr>
 		<td>Zeming Lin</td>
 		<td>April 30</td> 
-		<td>Natural Language Processing with LSTM Networks</td>
+		<td>[Part of Speech Tagging with LSTM Networks Project Presentation]({{site.baseurl}}/docs/Projects/presentation-zl4ry.pdf)</td>
 	</tr>
 	<tr>
 		<td>Xiaoqian Liu</td>
 		<td>May 2</td> 
-		<td>Text Content-based Music Recommendation by Using Features and Emotions Extracted from Music Critics</td>
+		<td>[Content-based Music Recommendation Using Hierarchical Dirichlet Process]({{site.baseurl}}/docs/Projects/slides-xl3ma.pptx)</td>
 	</tr>
 	<tr>
 		<td>Haoyu Chen, Haoran Hou</td>
 		<td>May 2</td> 
-		<td>A Question Recommendation System for Question Answer Communities</td>
+		<td>[An Question Recommendation System for Question Answer Community]({{site.baseurl}}/docs/Projects/Final-Presentation-Haoyu-Haoran.pdf)</td>
 	</tr>
 	<tr>
 		<td>Qingyun Wu</td>
 		<td>May 2</td> 
-		<td>A Multi-armed Bandit Approach to News Article Recommendation</td>
+		<td>[A Bandit Approach to Personalized News Article Recommendation]({{site.baseurl}}/docs/Projects/CoLinUCB_qw2ky.pdf)</td>
 	</tr>
 	<tr>
 		<td>Sugandha Agrawal, Chetan Mishra</td>
 		<td>May 2</td> 
-		<td>Visualization tool depicting topical analysis on presidential documents</td>
+		<td>[Visualization tool depicting topical analysis on presidential documents]({{site.baseurl}}/docs/Projects/ProjectPresentation-sa5ev.pptx)</td>
 	</tr>
 	<tr>
 		<td>Md Mustafizur Rahman</td>
 		<td>May 2</td> 
-		<td>Posterior Regularization on Topic Modeling for Labeling Unstructured Data</td>
+		<td>[Posterior Regularization on Topic Modeling]({{site.baseurl}}/docs/Projects/Project-mr4xb.pptx)</td>
 	</tr>
 	<tr>
 		<td>Jason Ye</td>
 		<td>May 2</td> 
-		<td>An Application of Query Auto-Completion on the ReviewMiner Search Engine</td>
+		<td>[Content-based Query Auto-completion]({{site.baseurl}}/docs/Projects/QAC_Presentation.pptx)</td>
 	</tr>
 	<tr>
 		<td>Lingjie Zhang, Yu Huang</td>
 		<td>May 2</td> 
-		<td>Review Spams Detection</td>
+		<td>[Exploration of Spam Reviews Detection]({{site.baseurl}}/docs/Projects/exploration_of_spam_reviews_detection_final.pdf)</td>
 	</tr>	
 	<tr>
 		<td>Mohammad Al Boni, Keira Qi Zhou</td>
 		<td>May 2</td> 
-		<td>User-Specific Sentiment Analysis Using Transfer Learning</td>
+		<td>[Model Adaptation for Personalized Opinion Analysis]({{site.baseurl}}/docs/Projects/Presentation_Boni_Zhou.pptx)</td>
 	</tr>
 	<tr>
 		<td>Gong Lin</td>
 		<td>May 2</td> 
-		<td>Using Metric Learning to Enhance Semi-supervised Learning</td>
+		<td>[Exploration of Similarity Calculation to Enhance Transductive Learning]({{site.baseurl}}/docs/Projects/TMProjectSlides0502_lg5bt.pdf)</td>
 	</tr>
 	<tr>
 		<td>Jinghe Zhang</td>
 		<td>May 2</td> 
-		<td>Recognizing Mental Disorders by Mining College Health Surveillance Network Data</td>
+		<td>[A Similarity Measure for Patient Sequences]({{site.baseurl}}/docs/Projects/ProjectPresentation_JingheZhang.pdf)</td>
 	</tr>
 	<tr>
 		<td>Asif Salekin, Sarah Masud Preum</td>
 		<td>May 2</td> 
-		<td>Detecting Behavioral Events Using Structured Learning</td>
+		<td>[Verbal Behavior Event Detection Using Textual and Acoustic Semantics]({{site.baseurl}}/docs/Projects/projectPresentationSarah.pdf)</td>
 	</tr>
 </table>
 </center>
