@@ -16,14 +16,14 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/poole.css">
-  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/syntax.css">
-  <link rel="stylesheet" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/css/lanyon.css">
+  <link rel="stylesheet" href="/~hw5x/Course/CS6501-Text-Mining/_site/css/poole.css">
+  <link rel="stylesheet" href="/~hw5x/Course/CS6501-Text-Mining/_site/css/syntax.css">
+  <link rel="stylesheet" href="/~hw5x/Course/CS6501-Text-Mining/_site/css/lanyon.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x146" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/UVA_Rotunda_Logo.png">
-  <link rel="shortcut icon" sizes="32x32" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/uva_rotunda.jpg">  
+  <link rel="apple-touch-icon-precomposed" sizes="144x146" href="/~hw5x/Course/CS6501-Text-Mining/_site/UVA_Rotunda_Logo.png">
+  <link rel="shortcut icon" sizes="32x32" href="/~hw5x/Course/CS6501-Text-Mining/_site/uva_rotunda.jpg">  
 </head>
 
 
@@ -49,7 +49,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site">Home</a>
+    <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site">Home</a>
 
     
 
@@ -59,7 +59,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/assignments/">Homework</a>
+          <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site/assignments/">Homework</a>
         
       
     
@@ -69,31 +69,31 @@
     
       
         
-          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/lectures/">Lectures</a>
+          <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site/lectures/">Lectures</a>
         
       
     
       
         
-          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/presentation/">Paper Presentation</a>
+          <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site/presentation/">Paper Presentation</a>
         
       
     
       
         
-          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/project/">Course Project</a>
+          <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site/project/">Course Project</a>
         
       
     
       
         
-          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/quizzes/">Quizzes</a>
+          <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site/quizzes/">Quizzes</a>
         
       
     
       
         
-          <a class="sidebar-nav-item" href="/~hw5x/Course/Text-Mining-2015-Spring/_site/resources/">Resources</a>
+          <a class="sidebar-nav-item" href="/~hw5x/Course/CS6501-Text-Mining/_site/resources/">Resources</a>
         
       
     
@@ -104,7 +104,7 @@
   		Currently v1.0.0
   	</p>
     <p>
-      &copy; 2015. All rights reserved. <a href="http://www.cs.virginia.edu/">CS@UVa</a>
+      &copy; 2016. All rights reserved. <a href="http://www.cs.virginia.edu/">CS@UVa</a>
     </p>
   </div>
 </div>
@@ -116,8 +116,8 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/~hw5x/Course/Text-Mining-2015-Spring/_site" title="Home">CS 6501: Text Mining</a>
-            <small>Spring 2015 &middot; <a href="http://www.cs.virginia.edu/">CS@UVa</a></small>
+            <a href="/~hw5x/Course/CS6501-Text-Mining/_site" title="Home">CS 6501: Text Mining</a>
+            <small>Spring 2016 &middot; <a href="http://www.cs.virginia.edu/">CS@UVa</a></small>
           </h3>
         </div>
       </div>
@@ -142,7 +142,7 @@
 <p>We will use the same small Yelp review data set as we used in MP1 on the CS lab servers (e.g., <em>labunix01.cs.virginia.edu</em>, <em>labunix02.cs.virginia.edu</em>, <em>labunix03.cs.virginia.edu</em>):</p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">&quot;/home/hw5x/TextMining/MP1/data/Yelp_Small&quot; 
 </code></pre></div>
-<p>More details of this review data set can be found in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">MP1 description</a>.</p>
+<p>More details of this review data set can be found in our previous <a href="/%7Ehw5x/Course/CS6501-Text-Mining/_site/mps/mp1.html">MP1 description</a>.</p>
 
 <p>Please reuse your implementation for MP1 as much as possible. Based that, you should be able to finish this assignment without too much effort. </p>
 
@@ -162,7 +162,7 @@
 
 <h2>Basic text processing techniques</h2>
 
-<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal (please use the standard <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>). More action details can be found in our previous <a href="/%7Ehw5x/Course/Text-Mining-2015-Spring/_site/mps/mp1.html">description of MP1</a>. Note, in all the following tasks, we will only use <strong>unigram as our feature</strong> and <strong>json files in the train folder</strong>.   </p>
+<p>We will use the same text processing techniques as we have explored in MP1, including tokenization, stemming, normalization and stopword removal (please use the standard <a href="http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop">Smart system&#39;s stopword list</a>). More action details can be found in our previous <a href="/%7Ehw5x/Course/CS6501-Text-Mining/_site/mps/mp1.html">description of MP1</a>. Note, in all the following tasks, we will only use <strong>unigram as our feature</strong> and <strong>json files in the train folder</strong>.   </p>
 
 <h2>Defining the classes</h2>
 
