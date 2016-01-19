@@ -113,7 +113,7 @@ title: Lectures
 	- *Lewis, David D., and William A. Gale. "A sequential algorithm for training text classifiers." In Proceedings of the 17th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 3-12. Springer-Verlag New York, Inc., 1994.* ([PDF](http://arxiv.org/pdf/cmp-lg/9407020))
 	- *Zhang, Jian, Rong Jin, Yiming Yang, and Alexander G. Hauptmann. "Modified logistic regression: An approximation to svm and its applications in large-scale text categorization." In ICML, pp. 888-895. 2003.* ([PDF](http://www.aaai.org/Papers/ICML/2003/ICML03-115.pdf))
 
-- ### **Day 4**: [Support vector machine](http://en.wikipedia.org/wiki/Support_vector_machine) ([Slides]({{site.baseurl}}/docs/svm.pptx), [PDF]({{site.baseurl}}/docs/PDFs/svm.pdf))
+- ### **Day 4**: [Support vector machines](http://en.wikipedia.org/wiki/Support_vector_machine) ([Slides]({{site.baseurl}}/docs/svm.pptx), [PDF]({{site.baseurl}}/docs/PDFs/svm.pdf))
 	- *Suykens, Johan AK, and Joos Vandewalle. "Least squares support vector machine classifiers." Neural processing letters 9, no. 3 (1999): 293-300.* ([PDF](http://link.springer.com/article/10.1023/A:1018628609742))
 	- *Joachims, Thorsten. "Training linear SVMs in linear time." In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 217-226. ACM, 2006.* ([PDF](http://dl.acm.org/citation.cfm?id=1150429))
 	- *Nigam, Kamal, Andrew Kachites McCallum, Sebastian Thrun, and Tom Mitchell. "Text classification from labeled and unlabeled documents using EM." Machine learning 39, no. 2-3 (2000): 103-134.* ([PDF](http://link.springer.com/article/10.1023/A:1007692713085))
@@ -191,34 +191,6 @@ title: Lectures
 
 ----
 
-## Lecture VII: [Social Media and Network Analysis](http://en.wikipedia.org/wiki/Social_network_analysis)
-
-> We will apply the introduced text mining algorithms on social media and introduce Google's winning algorithm PageRank. We will also introduce the application of link analysis techniques in social network analysis.
-
-- ### **Day 1**: [Pagerank](http://en.wikipedia.org/wiki/PageRank) and [HITS](http://en.wikipedia.org/wiki/HITS_algorithm)            
-    - *Page, Lawrence, Sergey Brin, Rajeev Motwani, and Terry Winograd. "The PageRank citation ranking: Bringing order to the web." (1999).* ([PDF](http://ilpubs.stanford.edu:8090/422))
-    - *Kleinberg, Jon M. "Authoritative sources in a hyperlinked environment." Journal of the ACM (JACM) 46, no. 5 (1999): 604-632.* ([PDF](http://dl.acm.org/citation.cfm?id=324140))
-    - *Haveliwala, Taher H. "Topic-sensitive pagerank." In Proceedings of the 11th international conference on World Wide Web, pp. 517-526. ACM, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=511513))
-    - *Jeh, Glen, and Jennifer Widom. "Scaling personalized web search." In Proceedings of the 12th international conference on World Wide Web, pp. 271-279. ACM, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=775191))
-    - *Jeh, Glen, and Jennifer Widom. "SimRank: a measure of structural-context similarity." In Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 538-543. ACM, 2002.* ([PDF](http://dl.acm.org/citation.cfm?id=775126))
-    - *Erkan, Günes, and Dragomir R. Radev. "LexRank: Graph-based lexical centrality as salience in text summarization." J. Artif. Intell. Res.(JAIR) 22, no. 1 (2004): 457-479.* ([PDF](http://www.aaai.org/Papers/JAIR/Vol22/JAIR-2214.pdf))
-    - *Wan, Xiaojun, and Jianwu Yang. "Multi-document summarization using cluster-based link analysis." In Proceedings of the 31st annual international ACM SIGIR conference on Research and development in information retrieval, pp. 299-306. ACM, 2008.* ([PDF](http://dl.acm.org/citation.cfm?id=1390386))
-    - *Craswell, Nick, and Martin Szummer. "Random walks on the click graph." Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval. ACM, 2007.* ([PDF](http://dl.acm.org/citation.cfm?id=1277784))
-    - *Richardson, Matthew, Amit Prakash, and Eric Brill. "Beyond PageRank: machine learning for static ranking." Proceedings of the 15th international conference on World Wide Web. ACM, 2006.* ([PDF](http://dl.acm.org/citation.cfm?id=1135881))
- 
-- ### **Day 2**: [Social network analysis](http://en.wikipedia.org/wiki/Social_network_analysis)
-    - *Mislove, Alan, Massimiliano Marcon, Krishna P. Gummadi, Peter Druschel, and Bobby Bhattacharjee. "Measurement and analysis of online social networks." In Proceedings of the 7th ACM SIGCOMM conference on Internet measurement, pp. 29-42. ACM, 2007.* ([PDF](http://dl.acm.org/citation.cfm?id=1298311))
-    - *Shalizi, Cosma Rohilla, and Andrew C. Thomas. "Homophily and contagion are generically confounded in observational social network studies." Sociological Methods & Research 40.2 (2011): 211-239.* ([PDF](http://smr.sagepub.com/content/40/2/211.short))
-    - *Java, Akshay, Xiaodan Song, Tim Finin, and Belle Tseng. "Why we twitter: understanding microblogging usage and communities." In Proceedings of the 9th WebKDD and 1st SNA-KDD 2007 workshop on Web mining and social network analysis, pp. 56-65. ACM, 2007.* ([PDF](http://dl.acm.org/citation.cfm?id=1348556))
-    - *Kwak, Haewoon, et al. "What is Twitter, a social network or a news media?." Proceedings of the 19th international conference on World wide web. ACM, 2010.* ([PDF](http://dl.acm.org/citation.cfm?id=1772751))
-    - *Suh, Bongwon, et al. "Want to be retweeted? large scale analytics on factors impacting retweet in twitter network." Social computing (socialcom), 2010 ieee second international conference on. IEEE, 2010.* ([PDF](http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5590452&tag=1))
-    - *Newman, Mark EJ. "Finding community structure in networks using the eigenvectors of matrices." Physical review E 74, no. 3 (2006): 036104.* ([PDF](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.74.036104))
-    - *Leskovec, Jure, Kevin J. Lang, and Michael Mahoney. "Empirical comparison of algorithms for network community detection." Proceedings of the 19th international conference on World wide web. ACM, 2010.* ([PDF](http://dl.acm.org/citation.cfm?id=1772755))
-    - *Kempe, David, Jon Kleinberg, and Éva Tardos. "Maximizing the spread of influence through a social network." Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2003.* ([PDF](http://dl.acm.org/citation.cfm?id=956769))                  
-    - *Chen, Wei, Yajun Wang, and Siyu Yang. "Efficient influence maximization in social networks." Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2009.* ([PDF](http://dl.acm.org/citation.cfm?id=1557047))
-
-
----
 
 ## Lecture VIII: Text Mining Applications
 

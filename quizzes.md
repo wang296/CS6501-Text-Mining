@@ -3,12 +3,12 @@ layout: page
 title: Quizzes
 ---
 
-**February 12**: Quiz 1 for Vector Space Model and Language model. [Solution]({{site.baseurl}}/docs/quizzes/quiz1-solution.pdf).
+**[TBD]**: Quiz 1 for Vector Space Model and Language model. 
 
-**March 22**: Quiz 2 for Natural Language Processing. [Solution]({{site.baseurl}}/docs/quizzes/quiz2-solution.pdf).
+**[TBD]**: Quiz 2 for Natural Language Processing. 
 
-**April 12**: Quiz 3 for Introduction to Text Categorization. [Solution]({{site.baseurl}}/docs/quizzes/quiz3-solution.pdf).
+**[TBD]**: Quiz 3 for Text Categorization. 
 
-**April 23**: Quiz 4 for kNN, Naive Bayes, Logistic Regression and SVM. [Solution]({{site.baseurl}}/docs/quizzes/quiz4-solution.pdf).
+**[TBD]**: Quiz 4 for Clustering and EM algorithm.
 
-**May 1**: Quiz 5 for clustering and EM algorithm. [Solution]({{site.baseurl}}/docs/quizzes/quiz5-solution.pdf).
+**[TBD]**: Quiz 5 for Probabilistic Topic Modeling.

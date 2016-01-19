@@ -71,7 +71,7 @@ The following list and comments only represent the instructor's personal opinion
 
 ## LaTeX
 
- - [Here]({{site.baseurl}}/docs/cs6501-templates.zip) are the LaTeX files necessary to
+ - [Here](http://www.acm.org/publications/proceedings-template) are the LaTeX files necessary to
    write the project report.
  - We want everyone to use the same format so we can grade each paper fairly.
  - Additionally, LaTeX is a skill we feel you should learn if you haven't
