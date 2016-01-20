@@ -7,7 +7,7 @@ title: Lectures
 
 > We will highlight the basic structure and major topics of this course, and go over some logistic issues and course requirements.     
 
-- **Day 1**: Introduction {% comment %}  ([Slides]({{site.baseurl}}/docs/IntroductionToTextMining.pptx), [PDF]({{site.baseurl}}/docs/PDFs/IntroductionToTextMining.pdf); [Course Policy]({{site.baseurl}}/docs/CoursePolicy.pptx), [PDF]({{site.baseurl}}/docs/PDFs/CoursePolicy.pdf)) {% endcomment %}
+- **Day 1**: Introduction ([Slides]({{site.baseurl}}/docs/IntroductionToTextMining.pptx), [PDF]({{site.baseurl}}/docs/PDFs/IntroductionToTextMining.pdf); [Course Policy]({{site.baseurl}}/docs/CoursePolicy.pptx), [PDF]({{site.baseurl}}/docs/PDFs/CoursePolicy.pdf))
 
 -----
 

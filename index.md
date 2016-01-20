@@ -13,6 +13,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 
 # Announcements
 
+**January 19**: The slides for introduction to text mining and course policy have been posted.
+
 **January 18**: Course [Piazza](https://piazza.com/virginia/spring2016/cs6501/home) webpage is available now, please sign up the course.
 
 **January 18**: The template for course project report is provided [here](http://www.acm.org/publications/proceedings-template).
