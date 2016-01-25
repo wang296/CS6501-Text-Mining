@@ -15,7 +15,7 @@ title: Lectures
 
 > We will discuss how to represent the unstructured text documents with appropriate format and structure to support later automated text mining algorithms.
 
-- ### **Day 1**: [Vector space model](http://en.wikipedia.org/wiki/Vector_space_model) {% comment %} ([Slides]({{site.baseurl}}/docs/VS model.pptx), [PDF]({{site.baseurl}}/docs/PDFs/VS model.pdf)) {% endcomment %}       
+- ### **Day 1**: [Vector space model](http://en.wikipedia.org/wiki/Vector_space_model) ([Slides]({{site.baseurl}}/docs/VS model.pptx), [PDF]({{site.baseurl}}/docs/PDFs/VS model.pdf))                         
 	- *Salton, Gerard, Anita Wong, and Chung-Shu Yang. "A vector space model for automatic indexing." Communications of the ACM 18, no. 11 (1975): 613-620.* ([PDF](http://dl.acm.org/citation.cfm?id=361220))
 	- *Salton, Gerard, and Christopher Buckley. "Term-weighting approaches in automatic text retrieval." Information processing & management 24, no. 5 (1988): 513-523.* ([PDF](http://www.sciencedirect.com/science/article/pii/0306457388900210))
 	- *Raghavan, Vijay V., and SK Michael Wong. "A critical analysis of vector space model for information retrieval." Journal of the American Society for information Science 37, no. 5 (1986): 279-287.* ([PDF](http://www.sics.se/~jussi/Artiklar/2008.04.01.ECIR_Glasgow_filament/2007_rejected_SIGIR/filament/refs/raghavan.pdf))

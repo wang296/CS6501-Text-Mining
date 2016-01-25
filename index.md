@@ -12,8 +12,9 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**January 24**: The lecture slides for "vector space models" and course policy have been posted.
 
-**January 19**: The slides for introduction to text mining and course policy have been posted.
+**January 19**: The lecture slides for "introduction to text mining" and "course policy" have been posted.
 
 **January 18**: Course [Piazza](https://piazza.com/virginia/spring2016/cs6501/home) webpage is available now, please sign up the course.
 
