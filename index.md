@@ -12,6 +12,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**January 31**: The lecture slides for "language models" have been posted.
+
 **January 24**: The lecture slides for "vector space models" have been posted.
 
 **January 19**: The lecture slides for "introduction to text mining" and "course policy" have been posted.
