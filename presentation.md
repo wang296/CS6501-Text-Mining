@@ -21,3 +21,24 @@ Paper presentation sign up is due in the end of **4th week** of the semester. Th
 Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.php) for peer evaluation.
 
 -----
+-----
+## Sign up sheet <a name="paper-signup"></a>
+<center>
+<table border="1" style="width:650px;">
+	<tr>
+		<td>Name</td>
+		<td>Date</td> 
+		<td>Paper Title</td>
+	</tr>
+	<tr>
+		<td>Anish Tondwalkar, Juan Pablo Arrivillaga</td>
+		<td>TBD</td> 
+		<td>A statistical approach to machine translation</td>
+	</tr>	
+	<tr>
+		<td>Adam Rosenberg, Leandra Irvine, Gus Logsdon</td>
+		<td>March 2rd</td> 
+		<td>Twitter as a Corpus for Sentiment Analysis and Opinion Mining</td>
+	</tr>	
+</table>
+</center>
