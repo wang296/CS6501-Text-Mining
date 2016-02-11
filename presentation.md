@@ -24,7 +24,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 -----
 ## Sign up sheet <a name="paper-signup"></a>
 <center>
-<table border="1" style="width:650px;">
+<table border="1" style="width:750px;">
 	<tr>
 		<td>Name</td>
 		<td>Date</td> 
@@ -40,5 +40,15 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>March 2rd</td> 
 		<td>Twitter as a Corpus for Sentiment Analysis and Opinion Mining</td>
 	</tr>	
+	<tr>
+		<td>Jason Lewris, Don Chesworth</td>
+		<td>March 16th</td> 
+		<td>Thumbs up? Sentiment Classification using Machine Learning Techniques</td>
+	</tr> 
+	<tr>
+		<td>Katherine Schinkel, Marcus Rosti, Leslie Tanner</td>
+		<td>April 11th</td> 
+		<td>Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales</td>
+	</tr>
 </table>
 </center>
