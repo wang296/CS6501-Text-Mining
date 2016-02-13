@@ -41,8 +41,13 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Twitter as a Corpus for Sentiment Analysis and Opinion Mining</td>
 	</tr>	
 	<tr>
+		<td>Hope McIntyre, Brian Sachjten, Nick Venuti, Matt Hays</td>
+		<td>March 2rd</td> 
+		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
+	</tr>	
+	<tr>
 		<td>Jason Lewris, Don Chesworth</td>
-		<td>March 16th</td> 
+		<td>April 11th</td> 
 		<td>Thumbs up? Sentiment Classification using Machine Learning Techniques</td>
 	</tr> 
 	<tr>

@@ -1,0 +1,5 @@
+_site
+_site/*
+*.swp
+.sass-cache
+./docs/codes/
