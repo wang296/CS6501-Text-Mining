@@ -21,10 +21,9 @@ Paper presentation sign up is due in the end of **4th week** of the semester. Th
 Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.php) for peer evaluation.
 
 -----
------
 ## Sign up sheet <a name="paper-signup"></a>
 <center>
-<table border="1" style="width:750px;">
+<table border="1" style="width:800px;">
 	<tr>
 		<td>Name</td>
 		<td>Date</td> 
@@ -46,7 +45,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
 	</tr>	
 	<tr>
-		<td>Zhengkun Li, Hao Wu and Ning Yu</td>
+		<td>Zhengkun Li, Hao Wu, Ning Yu</td>
 		<td>April 4th</td> 
 		<td>Data Clustering: 50 years beyond K-Means</td>
 	</tr>
