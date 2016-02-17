@@ -12,6 +12,9 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+
+**February 16th**: The lecture slides for "part of speech tagging and sequence labeling" have been posted. 
+
 **February 13th**: MP1 has been posted and it has two due dates.   
 
 **February 11th**: The lecture slides for "introduction to natural language processing" have been posted.   

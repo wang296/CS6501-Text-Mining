@@ -46,6 +46,11 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
 	</tr>	
 	<tr>
+		<td>Zhengkun Li, Hao Wu and Ning Yu</td>
+		<td>April 4th</td> 
+		<td>Data Clustering: 50 years beyond K-Means</td>
+	</tr>
+	<tr>
 		<td>Jason Lewris, Don Chesworth</td>
 		<td>April 11th</td> 
 		<td>Thumbs up? Sentiment Classification using Machine Learning Techniques</td>
