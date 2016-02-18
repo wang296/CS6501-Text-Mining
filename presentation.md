@@ -28,11 +28,6 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Name</td>
 		<td>Date</td> 
 		<td>Paper Title</td>
-	</tr>
-	<tr>
-		<td>Anish Tondwalkar, Juan Pablo Arrivillaga</td>
-		<td>TBD</td> 
-		<td>A statistical approach to machine translation</td>
 	</tr>	
 	<tr>
 		<td>Adam Rosenberg, Leandra Irvine, Gus Logsdon</td>
@@ -45,9 +40,19 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
 	</tr>	
 	<tr>
+		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawa</td>
+		<td>April 4th</td> 
+		<td>A statistical approach to machine translation</td>
+	</tr>	
+	<tr>
 		<td>Zhengkun Li, Hao Wu, Ning Yu</td>
 		<td>April 4th</td> 
 		<td>Data Clustering: 50 years beyond K-Means</td>
+	</tr>
+	<tr>
+		<tdMatt Hawthorn, Nikhil Mascarenas, Shannon Mitchell</td>
+		<td>April 6th</td> 
+		<td>Evaluation of hierarchical clustering algorithms for document datasets</td>
 	</tr>
 	<tr>
 		<td>Jason Lewris, Don Chesworth</td>
@@ -58,6 +63,11 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Katherine Schinkel, Marcus Rosti, Leslie Tanner</td>
 		<td>April 11th</td> 
 		<td>Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales</td>
+	</tr>
+	<tr>
+		<td>Wasi Uddin Ahmad, Abu Sayeed Mondol, Md Masudur Rahman</td>
+		<td>April 13th</td> 
+		<td>Exploiting query reformulations for web search result diversification</td>
 	</tr>
 </table>
 </center>
