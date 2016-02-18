@@ -3,7 +3,7 @@ layout: page
 title: Quizzes
 ---
 
-**[TBD]**: Quiz 1 for Vector Space Model and Language model. 
+**February 17th**: Quiz 1 for Vector Space Model and Language model [Solution]({{site.baseurl}}/docs/quizzes/quiz1-solution.pdf). 
 
 **[TBD]**: Quiz 2 for Natural Language Processing. 
 

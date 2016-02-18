@@ -50,7 +50,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Data Clustering: 50 years beyond K-Means</td>
 	</tr>
 	<tr>
-		<tdMatt Hawthorn, Nikhil Mascarenas, Shannon Mitchell</td>
+		<td>Matt Hawthorn, Nikhil Mascarenas, Shannon Mitchell</td>
 		<td>April 6th</td> 
 		<td>Evaluation of hierarchical clustering algorithms for document datasets</td>
 	</tr>
