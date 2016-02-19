@@ -40,6 +40,11 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
 	</tr>	
 	<tr>
+		<td>Deyuan Guo, Elaheh Sadredini</td>
+		<td>March 28th</td> 
+		<td>Hierarchical document clustering using frequent itemsets</td>
+	</tr>	
+	<tr>
 		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawa</td>
 		<td>April 4th</td> 
 		<td>A statistical approach to machine translation</td>
@@ -68,6 +73,21 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Wasi Uddin Ahmad, Abu Sayeed Mondol, Md Masudur Rahman</td>
 		<td>April 13th</td> 
 		<td>Exploiting query reformulations for web search result diversification</td>
+	</tr>
+	<tr>
+		<td>William Middleton, Jason Adams, Ian Clark, Antoine Rigaut</td>
+		<td>April 13th</td> 
+		<td>Temporal Opinion Mining</td>
+	</tr>
+	<tr>
+		<td>Paul Cherian, Aditya Bindra, Benjamin Haines</td>
+		<td>April 18th</td> 
+		<td>Determining the sentiment of opinions</td>
+	</tr>
+	<tr>
+		<td>Ziding Liu, Fanjia Kong, Haoyu Li</td>
+		<td>April 20th</td> 
+		<td>Supervised topic models</td>
 	</tr>
 </table>
 </center>
