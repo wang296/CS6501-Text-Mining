@@ -45,6 +45,11 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Part-of-Speech Tagging for Twitter: Annotation, Features, and Experiments</td>
 	</tr>	
 	<tr>
+		<td>Dinesh Surapaneni</td>
+		<td>March 17th</td> 
+		<td>Efficient Estimation of Word Representations in Vector Space</td>
+	</tr>	
+	<tr>
 		<td>Deyuan Guo, Elaheh Sadredini</td>
 		<td>March 28th</td> 
 		<td>Hierarchical document clustering using frequent itemsets</td>
