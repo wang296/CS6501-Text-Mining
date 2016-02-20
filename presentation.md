@@ -38,6 +38,11 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Hope McIntyre, Brian Sachjten, Nick Venuti, Matt Hays</td>
 		<td>March 2rd</td> 
 		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
+	</tr>
+	<tr>
+		<td>Xing Li, Lihua Cai, Yue Hu</td>
+		<td>March 14th</td> 
+		<td>Part-of-Speech Tagging for Twitter: Annotation, Features, and Experiments</td>
 	</tr>	
 	<tr>
 		<td>Deyuan Guo, Elaheh Sadredini</td>
@@ -88,6 +93,16 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Ziding Liu, Fanjia Kong, Haoyu Li</td>
 		<td>April 20th</td> 
 		<td>Supervised topic models</td>
+	</tr>
+	<tr>
+		<td>Huazheng Wang, Yuxiang Xiang, Yuting Wang</td>
+		<td>April 25th</td> 
+		<td>Matrix factorization techniques for recommender systems</td>
+	</tr>
+	<tr>
+		<td>Jinlong Feng, Renqin Cai</td>
+		<td>April 25th</td> 
+		<td>Modeling Annotated Data</td>
 	</tr>
 </table>
 </center>
