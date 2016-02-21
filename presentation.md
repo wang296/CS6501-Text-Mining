@@ -35,7 +35,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Twitter as a Corpus for Sentiment Analysis and Opinion Mining</td>
 	</tr>	
 	<tr>
-		<td>Hope McIntyre, Brian Sachjten, Nick Venuti, Matt Hays</td>
+		<td>Hope McIntyre, Brian Sachtjen, Nick Venuti, Matt Hays</td>
 		<td>March 2rd</td> 
 		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
 	</tr>
@@ -55,7 +55,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Hierarchical document clustering using frequent itemsets</td>
 	</tr>	
 	<tr>
-		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawa</td>
+		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawal</td>
 		<td>April 4th</td> 
 		<td>A statistical approach to machine translation</td>
 	</tr>	
@@ -65,7 +65,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Data Clustering: 50 years beyond K-Means</td>
 	</tr>
 	<tr>
-		<td>Matt Hawthorn, Nikhil Mascarenas, Shannon Mitchell</td>
+		<td>Matt Hawthorn, Nikhil Mascarenhas, Shannon Mitchell</td>
 		<td>April 6th</td> 
 		<td>Evaluation of hierarchical clustering algorithms for document datasets</td>
 	</tr>
@@ -75,12 +75,12 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Thumbs up? Sentiment Classification using Machine Learning Techniques</td>
 	</tr> 
 	<tr>
-		<td>Katherine Schinkel, Marcus Rosti, Leslie Tanner</td>
+		<td>Katherine Schinkel, Marcus Rosti</td>
 		<td>April 11th</td> 
 		<td>Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales</td>
 	</tr>
 	<tr>
-		<td>Wasi Uddin Ahmad, Abu Sayeed Mondol, Md Masudur Rahman</td>
+		<td>Wasi Uddin Ahmad, Md Masudur Rahman</td>
 		<td>April 13th</td> 
 		<td>Exploiting query reformulations for web search result diversification</td>
 	</tr>
@@ -93,6 +93,11 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 		<td>Paul Cherian, Aditya Bindra, Benjamin Haines</td>
 		<td>April 18th</td> 
 		<td>Determining the sentiment of opinions</td>
+	</tr>
+	<tr>
+		<td>Paul Vasiu</td>
+		<td>April 18th</td> 
+		<td>Multi-document summarization by sentence extractio</td>
 	</tr>
 	<tr>
 		<td>Ziding Liu, Fanjia Kong, Haoyu Li</td>
