@@ -13,6 +13,10 @@ This is the course website for **CS 6501:** ***Text Mining***.
 
 # Announcements
 
+**March 1st**: The lecture slides for "Lexical Semantics Word Senses" have been posted.   
+
+**February 29th**: We will have our first make-up class on March 1st, 11am-12:15pm, in Thornton Hall E303.
+
 **February 16th**: The lecture slides for "part of speech tagging and sequence labeling" have been posted. 
 
 **February 13th**: MP1 has been posted and it has two due dates.   
