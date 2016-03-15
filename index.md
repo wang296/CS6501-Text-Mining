@@ -12,6 +12,11 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+
+**March 14th**: The lecture slides for "Text Categorization" have been posted.  
+
+**March 14th**: We will have our second make-up class on March 15th, 11am-12:15pm, in Thornton Hall E303.
+
 **March 2nd**: The lecture slides for "Statistical Machine Translation" have been posted.   
 
 **March 1st**: The lecture slides for "Lexical Semantics Word Senses" have been posted.   
