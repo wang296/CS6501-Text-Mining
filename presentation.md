@@ -18,8 +18,7 @@ Paper presentation sign up is due in the end of **4th week** of the semester. Th
 -----
 ## Peer-evaluation website
 
-Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.php) for peer evaluation.
-
+Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.php) for peer evaluation.                     
 -----
 ## Sign up sheet <a name="paper-signup"></a>
 <center>
@@ -32,21 +31,21 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Adam Rosenberg, Leandra Irvine, Gus Logsdon</td>
 		<td>March 2rd</td> 
-		<td>Twitter as a Corpus for Sentiment Analysis and Opinion Mining</td>
+		<td>[Twitter as a Corpus for Sentiment Analysis and Opinion Mining]({{site.baseurl}}/docs/Presentation/twitter-sentiment.pptx)</td>
 	</tr>	
 	<tr>
 		<td>Hope McIntyre, Brian Sachtjen, Nick Venuti</td>
 		<td>March 2rd</td> 
-		<td>Semantic Density Analysis: Comparing word meaning across time and phonetic space</td>
+		<td>[Semantic Density Analysis: Comparing word meaning across time and phonetic space]({{site.baseurl}}/docs/Presentation/Semantic-Density.pdf)</td>
 	</tr>
 	<tr>
 		<td>Lihua Cai, Yue Hu</td>
 		<td>March 14th</td> 
-		<td>Part-of-Speech Tagging for Twitter: Annotation, Features, and Experiments</td>
+		<td>[Part-of-Speech Tagging for Twitter: Annotation, Features, and Experiments]({{site.baseurl}}/docs/Presentation/twitter-postag.pptx)</td>
 	</tr>	
 	<tr>
 		<td>Dinesh Surapaneni</td>
-		<td>March 17th</td> 
+		<td>March 16th</td> 
 		<td>Efficient Estimation of Word Representations in Vector Space</td>
 	</tr>	
 	<tr>
