@@ -13,6 +13,10 @@ This is the course website for **CS 6501:** ***Text Mining***.
 
 # Announcements
 
+**March 21th**: We will have our second quiz covering the concepts in natural language processing on March 23rd.  
+
+**March 21th**: The lecture slides for "kNN & Naïve Bayes" have been posted.  
+
 **March 14th**: The lecture slides for "Text Categorization" have been posted.  
 
 **March 14th**: We will have our second make-up class on March 15th, 11am-12:15pm, in Thornton Hall E303.
