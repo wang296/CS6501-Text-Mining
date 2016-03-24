@@ -5,7 +5,7 @@ title: Quizzes
 
 **February 17th**: Quiz 1 for Vector Space Model and Language model [Solution]({{site.baseurl}}/docs/quizzes/quiz1-solution.pdf). 
 
-**[TBD]**: Quiz 2 for Natural Language Processing [Solution]({{site.baseurl}}/docs/quizzes/quiz2-solution.pdf). 
+**March 24th**: Quiz 2 for Natural Language Processing [Solution]({{site.baseurl}}/docs/quizzes/quiz2-solution.pdf). 
 
 **[TBD]**: Quiz 3 for Text Categorization. 
 
