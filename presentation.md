@@ -46,7 +46,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Dinesh Surapaneni</td>
 		<td>March 16th</td> 
-		<td>Efficient Estimation of Word Representations in Vector Space</td>
+		<td>[Efficient Estimation of Word Representations in Vector Space]({{site.baseurl}}/docs/Presentation/dks6rp-word2vec.pptx)</td>
 	</tr>	
 	<tr>
 		<td>Deyuan Guo, Elaheh Sadredini</td>
