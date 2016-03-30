@@ -12,6 +12,8 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**March 29th**: The lecture slides for "Logistic Regression" have been posted.
+
 **March 24th**: Solution for Quiz 2 has been posted.
 
 **March 21th**: We will have our second quiz covering the concepts in natural language processing on March 23rd.  

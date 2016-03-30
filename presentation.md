@@ -51,7 +51,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Deyuan Guo, Elaheh Sadredini</td>
 		<td>March 28th</td> 
-		<td>Hierarchical document clustering using frequent itemsets</td>
+		<td>[Hierarchical document clustering using frequent itemsets]({{site.baseurl}}/docs/Presentation/FIHC.pdf)</td>
 	</tr>	
 	<tr>
 		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawal</td>
