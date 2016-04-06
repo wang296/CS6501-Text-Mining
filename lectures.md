@@ -113,7 +113,7 @@ title: Lectures
 	- *Lewis, David D., and William A. Gale. "A sequential algorithm for training text classifiers." In Proceedings of the 17th annual international ACM SIGIR conference on Research and development in information retrieval, pp. 3-12. Springer-Verlag New York, Inc., 1994.* ([PDF](http://arxiv.org/pdf/cmp-lg/9407020))
 	- *Zhang, Jian, Rong Jin, Yiming Yang, and Alexander G. Hauptmann. "Modified logistic regression: An approximation to svm and its applications in large-scale text categorization." In ICML, pp. 888-895. 2003.* ([PDF](http://www.aaai.org/Papers/ICML/2003/ICML03-115.pdf))
 
-- ### **Day 4**: [Support vector machines](http://en.wikipedia.org/wiki/Support_vector_machine) {% comment %} ([Slides]({{site.baseurl}}/docs/svm.pptx), [PDF]({{site.baseurl}}/docs/PDFs/svm.pdf)){% endcomment %}
+- ### **Day 4**: [Support vector machines](http://en.wikipedia.org/wiki/Support_vector_machine) ([Slides]({{site.baseurl}}/docs/svm.pptx), [PDF]({{site.baseurl}}/docs/PDFs/svm.pdf))				
 	- *Suykens, Johan AK, and Joos Vandewalle. "Least squares support vector machine classifiers." Neural processing letters 9, no. 3 (1999): 293-300.* ([PDF](http://link.springer.com/article/10.1023/A:1018628609742))
 	- *Joachims, Thorsten. "Training linear SVMs in linear time." In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining, pp. 217-226. ACM, 2006.* ([PDF](http://dl.acm.org/citation.cfm?id=1150429))
 	- *Nigam, Kamal, Andrew Kachites McCallum, Sebastian Thrun, and Tom Mitchell. "Text classification from labeled and unlabeled documents using EM." Machine learning 39, no. 2-3 (2000): 103-134.* ([PDF](http://link.springer.com/article/10.1023/A:1007692713085))
