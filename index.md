@@ -12,6 +12,12 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**April 6th**: The lecture slides for "Support Vector Machines" have been posted.
+
+**April 2nd**: MP3 has been posted and it is due on May 2nd.
+
+**April 2nd**: MP2 has been posted and it is due on April 11th.
+
 **March 29th**: The lecture slides for "Logistic Regression" have been posted.
 
 **March 24th**: Solution for Quiz 2 has been posted.
