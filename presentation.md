@@ -96,7 +96,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Paul Vasiu</td>
 		<td>April 18th</td> 
-		<td>Multi-document summarization by sentence extractio</td>
+		<td>Multi-document summarization by sentence extraction</td>
 	</tr>
 	<tr>
 		<td>Ziding Liu, Fanjia Kong, Haoyu Li</td>
