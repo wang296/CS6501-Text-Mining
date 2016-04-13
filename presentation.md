@@ -56,27 +56,27 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawal</td>
 		<td>April 4th</td> 
-		<td>A statistical approach to machine translation</td>
+		<td>[A statistical approach to machine translation]({{site.baseurl}}/docs/Presentation/A+statistical+approach+to+machine+translation.pptx)</td>
 	</tr>	
 	<tr>
 		<td>Zhengkun Li, Hao Wu, Ning Yu</td>
 		<td>April 4th</td> 
-		<td>Data Clustering: 50 years beyond K-Means</td>
+		<td>[Data Clustering: 50 years beyond K-Means]({{site.baseurl}}/docs/Presentation/presentation_Yu_Wu_Li_final.pptx)</td>
 	</tr>
 	<tr>
 		<td>Matt Hawthorn, Nikhil Mascarenhas, Shannon Mitchell</td>
 		<td>April 6th</td> 
-		<td>Evaluation of hierarchical clustering algorithms for document datasets</td>
+		<td>[Evaluation of hierarchical clustering algorithms for document datasets]({{site.baseurl}}/docs/Presentation/Paper_presentation_som3dq.pdf)</td>
 	</tr>
 	<tr>
 		<td>Jason Lewris, Don Chesworth</td>
 		<td>April 11th</td> 
-		<td>Thumbs up? Sentiment Classification using Machine Learning Techniques</td>
+		<td>[Thumbs up? Sentiment Classification using Machine Learning Techniques]({{site.baseurl}}/docs/Presentation/SentimentClassification_PaperPresentation.pptx)</td>
 	</tr> 
 	<tr>
 		<td>Katherine Schinkel, Marcus Rosti</td>
 		<td>April 11th</td> 
-		<td>Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales</td>
+		<td>[Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales]({{site.baseurl}}/docs/Presentation/Seeing+Stars.pdf)</td>
 	</tr>
 	<tr>
 		<td>Wasi Uddin Ahmad, Md Masudur Rahman</td>
