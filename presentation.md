@@ -81,7 +81,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Wasi Uddin Ahmad, Md Masudur Rahman</td>
 		<td>April 13th</td> 
-		<td>Exploiting query reformulations for web search result diversification</td>
+		<td>[Exploiting query reformulations for web search result diversification]({{site.baseurl}}/docs/Presentation/Exploiting+Query+Reformulations+for+Web+Search+Result+Diversification.pdf)</td>
 	</tr>
 	<tr>
 		<td>William Middleton, Jason Adams, Ian Clark, Antoine Rigaut</td>
