@@ -12,6 +12,10 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+**April 19th**: The lecture slides for "k-means Clustering" have been posted.
+
+**April 18th**: The lecture slides for "Text Clustering" have been posted.
+
 **April 6th**: The lecture slides for "Support Vector Machines" have been posted.
 
 **April 2nd**: MP3 has been posted and it is due on May 2nd.
