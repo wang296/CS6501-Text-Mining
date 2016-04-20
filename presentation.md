@@ -86,12 +86,12 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>William Middleton, Jason Adams, Ian Clark, Antoine Rigaut</td>
 		<td>April 13th</td> 
-		<td>Temporal Opinion Mining</td>
+		<td>[Temporal Opinion Mining]({{site.baseurl}}/docs/Presentation/Temporal+Opinion+Mining+Presentation.pdf)</td>
 	</tr>
 	<tr>
 		<td>Paul Cherian, Aditya Bindra, Benjamin Haines</td>
 		<td>April 18th</td> 
-		<td>Determining the sentiment of opinions</td>
+		<td>[Determining the sentiment of opinions]({{site.baseurl}}/docs/Presentation/Determining+the+Sentiment+of+Opinions.pdf)</td>
 	</tr>
 	<tr>
 		<td>Paul Vasiu</td>
