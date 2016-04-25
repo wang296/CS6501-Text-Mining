@@ -101,7 +101,7 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Ziding Liu, Fanjia Kong, Haoyu Li</td>
 		<td>April 20th</td> 
-		<td>Supervised topic models</td>
+		<td>[Supervised topic models]({{site.baseurl}}/docs/Presentation/supervised topic model.pptx)</td>
 	</tr>
 	<tr>
 		<td>Huazheng Wang, Yuxiang Xiang, Yuting Wang</td>
