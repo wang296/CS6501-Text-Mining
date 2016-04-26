@@ -139,7 +139,7 @@ title: Lectures
 	- *Dempster, Arthur P., Nan M. Laird, and Donald B. Rubin. "Maximum likelihood from incomplete data via the EM algorithm." Journal of the Royal Statistical Society. Series B (Methodological) (1977): 1-38.* ([PDF](http://www.jstor.org/stable/2984875))
 	- *On the convergence properties of the EM algorithm* ([PDF](http://www.jstor.org/stable/2240463))
 	
-- ### **Day 2**: [Agglomerative clustering](http://en.wikipedia.org/wiki/Hierarchical_clustering) - hierarchical structure clustering {% comment %} ([Slides]({{site.baseurl}}/docs/Hierarchical clustering.pptx), [PDF]({{site.baseurl}}/docs/PDFs/Hierarchical clustering.pdf)){% endcomment %}                
+- ### **Day 2**: [Agglomerative clustering](http://en.wikipedia.org/wiki/Hierarchical_clustering) - hierarchical structure clustering ([Slides]({{site.baseurl}}/docs/Hierarchical clustering.pptx), [PDF]({{site.baseurl}}/docs/PDFs/Hierarchical clustering.pdf))                               
 	- *Steinbach, Michael, George Karypis, and Vipin Kumar. "A comparison of document clustering techniques." In KDD workshop on text mining, vol. 400, no. 1, pp. 525-526. 2000.* ([PDF](https://wwws.cs.umn.edu/tech_reports_upload/tr2000/00-034.ps))
 	- *Hotho, Andreas, Alexander Maedche, and Steffen Staab. "Ontology-based text document clustering." KI 16, no. 4 (2002): 48-54.* ([PDF](http://pdf.aminer.org/000/386/677/ontology_based_text_document_clustering.pdf))
 	- *Karypis, George, Eui-Hong Han, and Vipin Kumar. "Chameleon: Hierarchical clustering using dynamic modeling." Computer 32, no. 8 (1999): 68-75.* ([PDF](http://glaros.dtc.umn.edu/gkhome/fetch/papers/chameleon.pdf))
@@ -172,7 +172,7 @@ title: Lectures
 
 > Topic models are a suite of algorithms that uncover the hidden thematic structure in document collections. We will introduce the general idea of topic modeling, two basic topic models, i.e., Probabilistic Latent Semantic Indexing (pLSI) and Latent Dirichlet Allocation (LDA), and their variants for different application scenarios, including classification, imagine annotation, collaborative filtering, and hierarchical topical structure modeling.
 
-- ### **Day 1**: Topic models I {% comment %} ([slides]({{site.baseurl}}/docs/topic models.pptx)){% endcomment %}
+- ### **Day 1**: Topic models I  ([slides]({{site.baseurl}}/docs/topic models.pptx), [PDF]({{site.baseurl}}/docs/PDFs/topic models.pdf))
 	- *Hofmann, Thomas. "Probabilistic latent semantic analysis." In Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence, pp. 289-296. Morgan Kaufmann Publishers Inc., 1999.* ([PDF](http://dl.acm.org/citation.cfm?id=2073829))
 	- *Blei, David M., Andrew Y. Ng, and Michael I. Jordan. "Latent dirichlet allocation." the Journal of machine Learning research 3 (2003): 993-1022.* ([PDF](http://dl.acm.org/citation.cfm?id=944937))	
 	- *Blei, David M., and John D. Lafferty. "Dynamic topic models." In Proceedings of the 23rd international conference on Machine learning, pp. 113-120. ACM, 2006.* ([PDF](http://dl.acm.org/citation.cfm?id=1143859))
