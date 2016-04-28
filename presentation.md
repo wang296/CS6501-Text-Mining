@@ -106,12 +106,12 @@ Please use this [page](http://www.cs.virginia.edu/~hw5x/Course/evaluation/login.
 	<tr>
 		<td>Huazheng Wang, Yuxiang Xiang, Yuting Wang</td>
 		<td>April 25th</td> 
-		<td>Matrix factorization techniques for recommender systems</td>
+		<td>[Matrix factorization techniques for recommender systems]({{site.baseurl}}/docs/Presentation/collaborative filtering.pptx)</td>
 	</tr>
 	<tr>
 		<td>Jinlong Feng, Renqin Cai</td>
 		<td>April 25th</td> 
-		<td>Modeling Annotated Data</td>
+		<td>[Modeling Annotated Data]({{site.baseurl}}/docs/Presentation/CorrLDA.pptx)</td>
 	</tr>
 </table>
 </center>
