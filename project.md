@@ -184,3 +184,95 @@ The instructor has selected a set of representative course projects from former 
 - **Social influence v.s. homophily**: Users in Yelp write reviews about businesses and make friends who share similar tastes and preferences. However it is unknown whether users become friends because they visited the same restaurants before (i.e., homophily); or they visited the same restaurants because they were friend (i.e., )influence. Distinguishing these two factors are very important for social network based recommendations.    
 
 - **Query intent classification**: Current product search system can only support simply keyword search, e.g., "canon 5d3". It is preferred if the system can support some simple semantic search, e.g., "cheap digit camera with high resolution." The system should be able to correctly map the specifiers of "cheap" and "high" to corresponding aspects of the product, e.g., price and image quality, and return all the results matching such criteria. One can imagine this as a translation process and opinionated review text documents provide nice resource to estimate such translation model.
+
+# Presentation Schedule 
+
+<center>
+<table border="1" style="width:800px;">
+	<tr>
+		<td>Order</td> 
+		<td>Name</td>
+		<td>Project Title</td>
+	</tr>	
+	<tr>
+		<td>1</td>
+		<td>Wasi Uddin Ahmad, Md Masudur Rahman</td>
+		<td>Language Model based Privacy Protection in Personalized Web Search</td>
+	</tr>	
+	<tr>
+		<td>2</td> 
+		<td>Matt Hawthorn, Nikhil Mascarenhas, Shannon Mitchell</td>
+		<td>Clustering Documents in Topic Space: Worth the Effort?</td>
+	</tr>
+	<tr>
+		<td>3</td> 
+		<td>Jason Lewris, Don Chesworth</td>
+		<td>Movie Box Office Prediction Engine</td>
+	</tr> 
+	<tr>
+		<td>4</td> 		
+		<td>Katherine Schinkel, Marcus Rosti</td>
+		<td>The Automated Script Reviewer</td>
+	</tr>		
+	<tr>
+		<td>5</td> 
+		<td>Adam Rosenberg, Leandra Irvine, Gus Logsdon</td>
+		<td>Automated Tweet Content Quality Assessment</td>
+	</tr>	
+	<tr>
+		<td>6</td> 
+		<td>Ziding Liu, Fanjia Kong, Haoyu Li</td>
+		<td>Automated Essay Scoring</td>
+	</tr>
+	<tr>
+		<td>7</td> 
+		<td>Hope McIntyre, Brian Sachtjen, Nick Venuti</td>
+		<td>Contextual Shifts of Political Buzzwords</td>
+	</tr>
+	<tr>
+		<td>8</td> 
+		<td>William Middleton, Jason Adams, Ian Clark, Antoine Rigaut</td>
+		<td>Identifying Political Leaning in the News</td>
+	</tr>
+	<tr>
+		<td>9</td> 
+		<td>Paul Cherian, Aditya Bindra, Benjamin Haines</td>
+		<td>Sentiment Analysis to Predict S&P 500 Behavior</td>
+	</tr>
+	<tr>
+		<td>10</td> 
+		<td>Deyuan Guo, Elaheh Sadredini</td>
+		<td>Sentiment Analysis with the Micron’s Automata Processor</td>
+	</tr>	
+	<tr>
+		<td>11</td> 
+		<td>Lihua Cai, Yue Hu</td>
+		<td>Understand The Semantics of Mobile Phone Text Messages</td>
+	</tr>	
+	<tr>
+		<td>12</td> 
+		<td>Dinesh Surapaneni</td>
+		<td>Peter answers: Artificially intelligent computer system to solve multiple choice question in scientific field</td>
+	</tr>	
+	<tr>
+		<td>13</td> 
+		<td>Jinlong Feng, Renqin Cai</td>
+		<td>Question Retrieval in Community Question and Answer</td>
+	</tr>
+	<tr>
+		<td>14</td> 
+		<td>Anish Tondwalkar, Juan Pablo Arrivillaga, Prateek Agrawal</td>
+		<td>Automated Tutor for English Writing</td>
+	</tr>	
+	<tr>
+		<td>15</td> 
+		<td>Zhengkun Li, Hao Wu, Ning Yu</td>
+		<td>Faculty Homepage Crawling and Research Interests Analysis</td>
+	</tr>	
+	<tr>
+		<td>16</td> 
+		<td>Huazheng Wang, Yuxiang Xiang, Yuting Wang</td>
+		<td>Text based Recommendation System in Online Setting</td>
+	</tr>
+</table>
+</center>

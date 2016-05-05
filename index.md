@@ -12,6 +12,11 @@ This is the course website for **CS 6501:** ***Text Mining***.
 **Class Calendar**: [Google Calendar]({{site.baseurl}}/calendar/)
 
 # Announcements
+
+**May 4th**: Solution for Quiz 3 has been posted.
+
+**May 4th**: Course project presentation schedule is out.
+
 **April 25th**: The lecture slides for "Topic modeling" have been posted.
 
 **April 25th**: The lecture slides for "Agglomerative clustering" have been posted.

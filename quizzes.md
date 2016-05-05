@@ -7,8 +7,6 @@ title: Quizzes
 
 **March 24th**: Quiz 2 for Natural Language Processing [Solution]({{site.baseurl}}/docs/quizzes/quiz2-solution.pdf). 
 
-**[TBD]**: Quiz 3 for Text Categorization. 
+**April 25th**: Quiz 3 for Text Categorization [Solution]({{site.baseurl}}/docs/quizzes/quiz3-solution.pdf). 
 
-**[TBD]**: Quiz 4 for Clustering and EM algorithm.
-
-**[TBD]**: Quiz 5 for Probabilistic Topic Modeling.
+**May 6th**: Quiz 4 for Clustering and EM algorithm.
