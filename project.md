@@ -186,7 +186,6 @@ The instructor has selected a set of representative course projects from former 
 - **Query intent classification**: Current product search system can only support simply keyword search, e.g., "canon 5d3". It is preferred if the system can support some simple semantic search, e.g., "cheap digit camera with high resolution." The system should be able to correctly map the specifiers of "cheap" and "high" to corresponding aspects of the product, e.g., price and image quality, and return all the results matching such criteria. One can imagine this as a translation process and opinionated review text documents provide nice resource to estimate such translation model.
 
 # Presentation Schedule 
-
 <center>
 <table border="1" style="width:800px;">
 	<tr>
@@ -242,7 +241,7 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>10</td> 
 		<td>Deyuan Guo, Elaheh Sadredini</td>
-		<td>Sentiment Analysis with the Micron’s Automata Processor</td>
+		<td>Rule-based POS Tagging on the Micron’s Automata Processor</td>
 	</tr>	
 	<tr>
 		<td>11</td> 
@@ -257,7 +256,7 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>13</td> 
 		<td>Jinlong Feng, Renqin Cai</td>
-		<td>Question Retrieval in Community Question and Answer</td>
+		<td>Modeling Topic Correspondence for Text Retrieval</td>
 	</tr>
 	<tr>
 		<td>14</td> 
