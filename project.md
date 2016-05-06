@@ -256,7 +256,7 @@ The instructor has selected a set of representative course projects from former 
 	<tr>
 		<td>13</td> 
 		<td>Jinlong Feng, Renqin Cai</td>
-		<td>Modeling Topic Correspondence for Text Retrieval</td>
+		<td>Modeling Correspondence for Text Retrieval</td>
 	</tr>
 	<tr>
 		<td>14</td> 
