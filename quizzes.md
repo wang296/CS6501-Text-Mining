@@ -9,4 +9,4 @@ title: Quizzes
 
 **April 25th**: Quiz 3 for Text Categorization [Solution]({{site.baseurl}}/docs/quizzes/quiz3-solution.pdf). 
 
-**May 6th**: Quiz 4 for Clustering and EM algorithm.
+**May 6th**: Quiz 4 for Clustering and EM algorithm [Solution]({{site.baseurl}}/docs/quizzes/quiz4-solution.pdf). 
